@@ -1,0 +1,25 @@
+:root{
+
+--background-color: #fff3ea;
+--button-color: #b56d65;
+--icon-color: #5a403d;
+--nav-color: #e5c0bf;
+--yellow-color:#ffdfb7;
+--light-pink-color:#db9c95;
+
+}
+
+/*
+Medidas telefono:
+Medidas Tablet:
+Medidas PC:
+*/
+
+body{ 
+
+font-family: 'Noto Sans', sans-serif; 
+/*elegir una fuente*/
+font-family: 'Quicksand', sans-serif;
+
+
+}
