@@ -16,10 +16,69 @@ Medidas PC:
 */
 
 body{ 
+    background-color: var(--background-color);
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
-font-family: 'Noto Sans', sans-serif; 
-/*elegir una fuente*/
-font-family: 'Quicksand', sans-serif;
+}
+
+/*---------------Navegador principal---------------------*/
+
+.Top-nav{
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 25%;
+    background-color: var(--nav-color);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.Top-nav-name{ 
+    color: var(--icon-color);
+}
+.fa-solid .fa-bars{
+    font-size: medium;
+    color: var(--icon-color);
+}
 
 
+/*---------------------------Contenido Principal----------------------------*/
+.Main-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Main-welcome{ 
+    background-color: var(--button-color);
+    height: 30%;
+    width: 80%;
+   text-align: center;
+
+}
+
+
+.Footer-index{
+    position: relative;
+    background-color: var(--icon-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+   margin-top: auto;
+    
+    
+}
+.Footer-rrss{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    color: var(--icon-color);
+    font-size: 20px;
 }
