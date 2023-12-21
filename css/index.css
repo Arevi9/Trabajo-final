@@ -74,7 +74,9 @@ body{
 }
 .Main-categoria{
 display:inline-block;
-width: 80%;
+width: 100%;
+margin: 0 auto;
+
 
 }
 
@@ -83,6 +85,9 @@ width: 80%;
     height: 150px;
     border-radius: 10px;
     background-color: var(--medium-color);
+    display: inline-block;
+    margin: 30px;
+
 }
 
 .Main-categoria--diseño{
@@ -90,6 +95,8 @@ width: 80%;
     height: 150px;
     border-radius: 10px;
     background-color: var(--medium-color);
+    display: inline-block;
+    margin: 30px;
 }
 
 .Main-categoria--animacion{
@@ -97,12 +104,16 @@ width: 80%;
     height: 150px;
     border-radius: 10px;
     background-color: var(--medium-color);
+    display: inline-block;
+    margin: 30px;
 }
 .Main-categoria--abanicos{
     width: 200px;
     height: 150px;
     border-radius: 10px;
     background-color: var(--medium-color);
+    display: inline-block;
+    margin: 30px;
 }
 /*--------------------------Footer---------------------------*/
 .Footer-index{
