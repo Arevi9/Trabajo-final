@@ -1,12 +1,11 @@
 :root{
 
---background-color: #fff3ea;
+--background-color: #ffffff;
 --button-color: #b56d65;
 --icon-color: #5a403d;
 --nav-color: #e5c0bf;
 --yellow-color:#ffdfb7;
 --light-pink-color:#db9c95;
---medium-color: #a77772;
 
 }
 
@@ -73,9 +72,10 @@ body{
    text-align: center;
 }
 .Main-categoria{
-display:inline-block;
+display:flex;
+flex-wrap: wrap;
 width: 100%;
-margin: 0 auto;
+justify-content: center;
 
 
 }
@@ -84,8 +84,7 @@ margin: 0 auto;
     width: 200px;
     height: 150px;
     border-radius: 10px;
-    background-color: var(--medium-color);
-    display: inline-block;
+    background-color: var(--light-pink-color);
     margin: 30px;
 
 }
@@ -95,7 +94,6 @@ margin: 0 auto;
     height: 150px;
     border-radius: 10px;
     background-color: var(--medium-color);
-    display: inline-block;
     margin: 30px;
 }
 
@@ -104,7 +102,6 @@ margin: 0 auto;
     height: 150px;
     border-radius: 10px;
     background-color: var(--medium-color);
-    display: inline-block;
     margin: 30px;
 }
 .Main-categoria--abanicos{
@@ -112,8 +109,14 @@ margin: 0 auto;
     height: 150px;
     border-radius: 10px;
     background-color: var(--medium-color);
-    display: inline-block;
     margin: 30px;
+}
+
+.Main-shop-banner{
+
+    width: 90%;
+    height: 200px;
+    background-color: var(--yellow-color);
 }
 /*--------------------------Footer---------------------------*/
 .Footer-index{
