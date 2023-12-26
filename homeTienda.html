@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Tienda</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <!-----------------------------NAVEGADOR---------------------->
+
+<nav class="Top-nav">
+    <div class="Top-nav-logo">
+      <h1 class="Top-nav-name">Alba Redondo</h1>
+    </div>
+    <div class="Top-nav-menu">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</nav>
+<!--La etiqueta main recogerá dentro de ella la información principal de la página, en este caso los objetos a la venta de la tienda online-->
+    <main>
+
+        <form  action="" method="GET">
+            <input class="Item-search" type="search" name="Buscador" placeholder="Buscar">
+            <button><img class="Item-searchIcon" src="/img/icons/searchIcon.svg" alt="Buscar"></button>
+        </form>
+
+        <!--Dentro de este div se encuentran todos los artículos que componen la tienda-->
+        <div class="Item-container" id="Articulo">
+            <!--Formulario para funcionamiento del carrito-->
+            <form action="" id="FormCarrito"></form>
+    
+
+
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <script>
+        const FormCarrito =document.getElementById("FormCarrito")
+        const listaTienda = document.getElementById("Articulo");
+
+        const itemsTienda =[{
+            
+            imagen: "/img/tienda/conjunto.jpg",
+            nombre:"Conjunto azul eléctrico",
+            precio:"10,00",
+
+        },{
+            
+            imagen: "/img/tienda/pulsera3.jpg",
+            nombre:"Pulsera Floral",
+            precio:"4,00",
+
+        },{
+            
+            imagen: "/img/tienda/pulseras1.jpg",
+            nombre:"Pulsera Floral",
+            precio:"4,00",
+
+        },{
+            
+            imagen: "/img/tienda/pulsera2.jpg",
+            nombre:"Pulsera Floral",
+            precio:"4,00",
+
+        },{
+            
+            imagen: "/img/tienda/pendientesVerdes.jpg",
+            nombre:"Pulsera Floral",
+            precio:"4,00",
+
+        },
+    ]
+
+
+        itemsTienda.forEach((item) => {
+
+listaTienda.innerHTML += `
+<div id="Articulo" class="Item-box">
+        <img class="Item-img" src="${item.imagen}" alt="Producto"> 
+        <h2 class="Item-h2">${item.nombre}</h2>
+        <h4 class="Item-h4">${item.precio}</h4>
+</div>
+    `});
+
+FormCarrito.innerHTML+="<input type='submit' value>"
+
+function incrementar(indice){
+        itemsTienda[indice].cant+=1;
+        if(itemsTienda[indice].cant > 10){
+            itemsTienda[indice].cant=10;
+        }
+        imprimirCarro();
+    }
+
+    function decrementar(indice){
+        itemsTienda[indice].cant-=1;
+        if(itemsTienda[indice].cant < 1){
+            itemsTienda[indice].cant=0;
+        }
+        imprimirCarro();
+    }
+
+
+    </script>
+
+
+
+
+</body>
+</html>
