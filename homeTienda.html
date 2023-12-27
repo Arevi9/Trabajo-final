@@ -54,43 +54,21 @@
 
 
 
-    <script>
+    <script >
+        // Hacer una solicitud HTTP para obtener el JSON
+        fetch('homeTienda.json')
+        .then(response => response.json())
+      .then(data => {
+        // Hacer algo con los datos
+        console.log(data);
+      })
+      .catch(error => console.error('Error al obtener el JSON:', error));
+
+
         const FormCarrito =document.getElementById("FormCarrito")
         const listaTienda = document.getElementById("Articulo");
 
-        const itemsTienda =[{
-            
-            imagen: "/img/tienda/conjunto.jpg",
-            nombre:"Conjunto azul eléctrico",
-            precio:"10,00",
-
-        },{
-            
-            imagen: "/img/tienda/pulsera3.jpg",
-            nombre:"Pulsera Floral",
-            precio:"4,00",
-
-        },{
-            
-            imagen: "/img/tienda/pulseras1.jpg",
-            nombre:"Pulsera Floral",
-            precio:"4,00",
-
-        },{
-            
-            imagen: "/img/tienda/pulsera2.jpg",
-            nombre:"Pulsera Floral",
-            precio:"4,00",
-
-        },{
-            
-            imagen: "/img/tienda/pendientesVerdes.jpg",
-            nombre:"Pulsera Floral",
-            precio:"4,00",
-
-        },
-    ]
-
+        const itemsTienda =[]
 
         itemsTienda.forEach((item) => {
 

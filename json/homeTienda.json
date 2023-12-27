@@ -1,0 +1,34 @@
+{
+            
+    "imagen": "/img/tienda/conjunto.jpg",
+    "nombre":"Conjunto azul eléctrico",
+    "precio":"10,00"
+
+},{
+    
+    "imagen": "/img/tienda/pulsera3.jpg",
+    "nombre":"Pulsera Floral",
+    "precio":"4,00",
+
+},{
+    
+   "imagen": "/img/tienda/pulseras1.jpg",
+    "nombre":"Pulsera Floral",
+    "precio":"4,00",
+
+},{
+    
+    "imagen": "/img/tienda/pulsera2.jpg",
+    "nombre":"Pulsera Floral",
+    "precio":"4,00",
+
+},{
+    
+    "imagen": "/img/tienda/pendientesVerdes.jpg",
+    "nombre":"Pulsera Floral",
+    "precio":"4,00",
+
+}
+
+
+
