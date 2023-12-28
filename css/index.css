@@ -27,6 +27,76 @@ body{
 
 /*---------------Navegador principal---------------------*/
 
+
+a{text-decoration: none;}
+
+.Top-nav-ul {
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0;
+    gap: 3rem;
+}
+
+.Top-nav-li {
+    list-style-type: none;
+    padding: 18px 0px;
+  }
+
+  .Top-nav-li .Top-nav-ul {
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    align-items: flex-start;
+    transition: all 0.5s ease;
+    width: 300px;
+    right: 20px;
+    top: 87px;
+    border-radius: 5px;
+    gap: 0;
+    padding: 20px 0px;
+    opacity: 0;
+    box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+  }
+  
+  .Sub-item {
+    width: 84%;
+    display: flex;
+    align-items: center;
+    gap: 0.725rem;
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .Sub-item:hover {
+    background-color: rgba(232, 232, 232, 0.4);
+  }
+  
+  .Sub-item:hover p {
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .Sub-item p {
+    font-size: 0.85rem;
+    color: #888888;
+    font-weight: 500;
+    margin: 0.4rem 0;
+    flex: 1;
+  }
+
+
+
+
+
+
 .Top-nav{
     overflow: hidden;
     display: flex;
@@ -35,7 +105,11 @@ body{
     align-items: center;
     background-color: var(--nav-color);
     padding: 10px;
-    margin: 0 0 30px 0;
+    margin: 0 0 0px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+
 
 }
 .Top-nav-name{ 
@@ -44,7 +118,8 @@ body{
 }
 
 .Top-nav-menu{
-
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -66,23 +141,36 @@ li ul {
   }
 ul li:hover > ul,
 ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: flex;
-}
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    }
 
+.Top-nav-profileImg{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    }
+
+.Top-nav-menuIcon{
+    margin-right: 40px;
+
+}
 /*---------------------------Contenido Principal----------------------------*/
 .Main-container{
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    margin-top: 80px;
 }
 
-.Main-title{
+.Main-page{
     background-color: var(--light-pink-color);
-    height: 15%;
-    width: 80%;
+    height: 600px;
+    width: 100%;
    text-align: center;
 }
 .Main-categoria{
@@ -132,14 +220,14 @@ ul li ul:hover {
     height: 200px;
     background-color: var(--yellow-color);
 }
-/*--------------------------Footer---------------------------*/
+/*--------------------------FOOTER---------------------------*/
 .Footer-index{
     position: relative;
     background-color: var(--icon-color);
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 150px;
+    height: 100px;
     margin: auto 0 0 0;
     
 }
@@ -151,6 +239,10 @@ ul li ul:hover {
     color: var(--yellow-color);
     font-size: 20px;
     margin: auto 0 30px 0;
+}
+.Footer-copyright{
+    color: var(--yellow-color);
+    font-weight: normal;
 }
 
 
@@ -221,3 +313,75 @@ ul li ul:hover {
     padding: 5px;
     margin: 0;
 }
+
+
+
+
+
+/*----------------Perfil--------------------------*/
+
+.Profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Perfil-info{ display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 90%;
+    background-color: var(--light-pink-color);
+    border-radius: 20px;
+    margin-top: 20px;}
+
+.Perfil-info-general{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+.Perfil-info-words{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    font-size: 0.9rem;
+    gap: 5px;
+   
+}
+.Perfil-info-dato2{  font-size: 0.7rem;
+    font-weight: light;
+    color: var(--text-color-2);}
+
+    .Perfil-info-icon{
+    color: var(--primary-color);
+    margin-left: 20px;
+    font-size: 16px;
+    }
+
+/*--------PARTE DE ARRIBA PERFIL---------*/
+
+
+.Perfil-principal{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    width: 80%;
+    align-items: center;
+    height: 40%;
+    margin-bottom: 30px;
+    }
+
+.Perfil-img{ 
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+    }
+.Perfil-name{
+    margin-right: 40px;
+    }
