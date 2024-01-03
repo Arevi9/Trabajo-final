@@ -147,17 +147,16 @@ a{text-decoration: none;}
 
 .Main-page{
     background-color: var(--light-pink-color);
-    height: 600px;
+    height: 900px;
     width: 100%;
    text-align: center;
 }
+.Main-title
 .Main-categoria{
     display:flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-
-
 }
 
 .Main-categoria--ilustracion{
