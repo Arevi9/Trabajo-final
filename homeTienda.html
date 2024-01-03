@@ -18,6 +18,7 @@
 
 
 </nav>
+
 <!--La etiqueta main recogerá dentro de ella la información principal de la página, en este caso los objetos a la venta de la tienda online-->
     <main class="Item-main">
 
@@ -47,21 +48,13 @@
 
 
 
-    <script >
-        // Hacer una solicitud HTTP para obtener el JSON
-        fetch('homeTienda.json')
-        .then(response => response.json())
-      .then(data => {
-        // Hacer algo con los datos
-        console.log(data);
-      })
-      .catch(error => console.error('Error al obtener el JSON:', error));
+    <script src="/json/homeTienda.json" >
 
-
+ 
         const FormCarrito =document.getElementById("FormCarrito")
         const listaTienda = document.getElementById("Articulo");
 
-        const itemsTienda =[]
+        const itemsTienda =
 
         itemsTienda.forEach((item) => {
 
@@ -91,6 +84,14 @@ function incrementar(indice){
         imprimirCarro();
     }
 
+     // Hacer una solicitud HTTP para obtener el JSON brealizando fetch
+           fetch('homeTienda.json')
+        .then(response => response.json())
+      .then(data => {
+     // Hacer algo con los datos
+        console.log(data);
+      })
+      .catch(error => console.error('Error al obtener el JSON:', error));
 
     </script>
 

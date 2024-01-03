@@ -26,24 +26,16 @@
         <ul class="Top-nav-ul">
             <li class="Top-nav-li">
                 <img class="Top-nav-menuIcon" src="/img/icons/menuIcon.svg" alt="Menú">
-              <ul>
-                <li class="Sub-item">
-                  <a href="/profile.html">Mi perfil</a>
-                </li>
-                <li class="Sub-item">
-                    <a href="/homeTienda.html">Tienda</a>
-                  </li>
-                <li class="Sub-item">
-                  <a href="../lp/Eventos_ciudad.html">Portfolio</a>
-                </li>
-                <li class="Sub-item">
-                  <a href="../otras_paginas/faq.html">Contacto</a>
-                </li>
-                <li class="Sub-item">
-                    <a href="../frontal_page/index.html">Cerrar sesión</a>
-                  </li>
+           
+              <ul class="Top-nav-subMenu">
+                <li class="Sub-item"><a  class="Top-nav-link" href="/profile.html">Mi perfil</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="/homeTienda.html">Tienda</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="../lp/Eventos_ciudad.html">Portfolio</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="../otras_paginas/faq.html">Contacto</a></li>
+                <li class="Sub-item "><a class="Top-nav-link" href="../frontal_page/index.html">Cerrar sesión</a></li>
               </ul>
-      
+              </li>
+            
     </div>
 
 </nav>
@@ -83,7 +75,7 @@
 <!------------------------Footer--------------------------------------------------------->
 <footer class="Footer-index">
     <div>
-        <h5 class="Footer-copyright">© 2023, Alba Redondo</h5>
+        <h5 class="Footer-copyright">© 2024, Alba Redondo</h5>
     </div>
 
     <div class="Footer-rrss">
@@ -103,12 +95,27 @@
 
 <!------------------------------------------SCRIPT------------------------------------------->
 
+
+
 <script>
 
+    // Para cerrar el menú desplegable al hacer clic fuera de él
+    document.addEventListener('click', function (e) {
+      const menuItems = document.querySelectorAll('.menu-item');
+
+      menuItems.forEach(function (menuItem) {
+        if (!menuItem.contains(e.target)) {
+          const submenu = menuItem.querySelector('.submenu');
+          if (submenu) {
+            submenu.style.display = 'none';
+          }
+        }
+      });
+    });
+  </script>
 
 
 
-</script>
 
 </body>
 </html>

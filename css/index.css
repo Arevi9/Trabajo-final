@@ -3,9 +3,9 @@
 --background-color: #ffffff;
 --button-color: #b56d65;
 --icon-color: #5a403d;
---nav-color: #e5c0bf;
+--nav-color: #db9c95;
 --yellow-color:#ffdfb7;
---light-pink-color:#db9c95;
+--light-pink-color:#e5c0bf;
 
 }
 
@@ -27,29 +27,37 @@ body{
 
 /*---------------Navegador principal---------------------*/
 
-
+/*Quitar la decoración de los hipervínculos*/
 a{text-decoration: none;}
 
+ /*Modificar el aspecto de las listas del navegador*/
 .Top-nav-ul {
     margin: 0;
     padding: 0;
     padding-inline-start: 0;
     gap: 3rem;
 }
-
+ /* Estilo para los enlaces del menú desplegable */
+.Top-nav-link {
+    display: block;
+    padding: 8px 0;
+    color: var(--icon-color);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
 .Top-nav-li {
     list-style-type: none;
     padding: 18px 0px;
   }
 
-  .Top-nav-li .Top-nav-ul {
+  .Top-nav-li .Top-nav-ul  {
     flex-direction: column;
     position: fixed;
     background-color: white;
     align-items: flex-start;
     transition: all 0.5s ease;
-    width: 300px;
-    right: 20px;
+    width: 18.75rem;
+    right: 1.25rem;
     top: 87px;
     border-radius: 5px;
     gap: 0;
@@ -59,13 +67,15 @@ a{text-decoration: none;}
     display: none;
   }
   
-  ul li:hover > ul,
-  ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
+ /*Uso de hover para hacer aparecer y desaparecer las opciones del menú del navegador*/
+ .Top-nav-ul:hover .Top-nav-subMenu {
+    display: block;
+
   }
   
+
+    /* Estilos para el menú desplegable */
+
   .Sub-item {
     width: 84%;
     display: flex;
@@ -75,14 +85,7 @@ a{text-decoration: none;}
     padding: 0.5rem 1.5rem;
   }
 
-  .Sub-item:hover {
-    background-color: rgba(232, 232, 232, 0.4);
-  }
-  
-  .Sub-item:hover p {
-    color: #000;
-    cursor: pointer;
-  }
+
   
   .Sub-item p {
     font-size: 0.85rem;
@@ -91,10 +94,6 @@ a{text-decoration: none;}
     margin: 0.4rem 0;
     flex: 1;
   }
-
-
-
-
 
 
 .Top-nav{
@@ -123,28 +122,7 @@ a{text-decoration: none;}
 
 }
 
-li ul {
-    flex-direction: column;
-    position: fixed;
-    background-color: white;
-    align-items: flex-start;
-    transition: all 0.5s ease;
-    width: 18.75rem;
-    right: 1.25rem;
-    top: 87px;
-    border-radius: 5px;
-    gap: 0;
-    padding: 20px 0px;
-    opacity: 0;
-    box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);
-    display: none;
-  }
-ul li:hover > ul,
-ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    }
+
 
 .Top-nav-profileImg{
     border-radius: 50%;
