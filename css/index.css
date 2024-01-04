@@ -25,6 +25,14 @@ body{
 
 }
 
+.Btn{ background-color: var(--button-color);
+color: var(--background-color);
+padding: 10px;
+font-size: 20px;
+border: none;
+border-radius: 5px;
+}
+
 /*---------------Navegador principal---------------------*/
 
 /*Quitar la decoración de los hipervínculos*/
@@ -410,3 +418,65 @@ width: 80%;
         width: 450px;
         object-fit: contain;
     }
+
+
+    /*----------Inicio de Sesion--------------*/
+.Log-in-container{display: flex;
+flex-direction: column;
+align-items: center;}
+    
+#Container-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .Inicio-btn {width: 250; margin-bottom: 30px; margin-top: 15px;}
+
+.Login {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 90%;;
+    background-color: var(--light-pink-color);
+    border-radius: 5%;
+    padding: 20px;
+}
+
+form {
+    width: 80%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#user_email{
+    border: none;
+    background-color: white;
+    height: auto;
+    margin-top: 18px;
+    outline: 0;
+    padding: 10px;
+    width: 360px;
+    color: black;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+
+#user_password{
+
+}
+
+a {text-decoration: none;
+color: black;}
+
+
+
+hr {
+    border-color: white;
+}
+
+
+

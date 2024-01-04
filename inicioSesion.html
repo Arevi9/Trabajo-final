@@ -3,80 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de Sesión</title>
-    <style>
-        body {
-          font-family: Arial, sans-serif;
-        }
-    
-        #carrito {
-          border: 1px solid #ccc;
-          padding: 10px;
-          margin-bottom: 20px;
-        }
-    
-        #productos {
-          display: flex;
-          flex-wrap: wrap;
-        }
-    
-        .producto {
-          border: 1px solid #ccc;
-          padding: 10px;
-          margin: 10px;
-          text-align: center;
-        }
-      </style>
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    
-    <div id="carrito">
-        <h2>Carrito de Compra</h2>
-        <ul id="lista-carrito"></ul>
-        <p>Total: <span id="total">0</span> euros</p>
-      </div>
-    
-      <div id="productos">
-        <div class="producto" data-nombre="Producto 1" data-precio="10">Producto 1 - 10 euros</div>
-        <div class="producto" data-nombre="Producto 2" data-precio="20">Producto 2 - 20 euros</div>
-        <div class="producto" data-nombre="Producto 3" data-precio="15">Producto 3 - 15 euros</div>
-      </div>
+    <main class="Log-in-container">
 
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const listaCarrito = document.getElementById('lista-carrito');
-        const totalSpan = document.getElementById('total');
-      
-        // Agregar evento click a los productos
-        const productos = document.querySelectorAll('.producto');
-        productos.forEach(producto => {
-          producto.addEventListener('click', agregarAlCarrito);
-        });
-      
-        // Función para agregar productos al carrito
-        function agregarAlCarrito(event) {
-          const productoSeleccionado = event.target;
-          const nombre = productoSeleccionado.dataset.nombre;
-          const precio = parseFloat(productoSeleccionado.dataset.precio);
-      
-          // Crear elemento de lista para el carrito
-          const nuevoProducto = document.createElement('li');
-          nuevoProducto.textContent = `${nombre} - ${precio} euros`;
-      
-          // Agregar el producto al carrito
-          listaCarrito.appendChild(nuevoProducto);
-      
-          // Actualizar el total
-          actualizarTotal(precio);
-        }
-      
-        // Función para actualizar el total del carrito
-        function actualizarTotal(precio) {
-          const totalActual = parseFloat(totalSpan.textContent);
-          const nuevoTotal = totalActual + precio;
-          totalSpan.textContent = nuevoTotal.toFixed(2); // Redondear a dos decimales
-        }
-      });
-    </script>
+    <div id="Container-principal">
+
+        <div class="Login">
+            <form action="paginaprincipal.html" method="get">
+                <input type="email" id="user_email" placeholder="Email"><br>
+                <input type="password" id="user_password" placeholder="Contraseña">
+
+            <div class="Inicio-btn">
+                <a class="Btn" href="/index.html">Iniciar sesión</a>
+            </div>
+            </form>
+            
+          <h4>¿No tienes cuenta todavía?</h4> <br>
+            <div style="width: 250;">
+            <a class="Btn" href="register.html">Crear cuenta nueva</a>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>
