@@ -36,21 +36,20 @@
 
         </div>
 
-
-
-
     </main>
-
-
-
-
-
-
-
 
     <script src="/json/homeTienda.json" >
 
- 
+      // Hacer una solicitud HTTP para obtener el JSON realizando fetch
+      fetch('homeTienda.json')
+        .then(response => response.json())
+      .then(data => {
+     // Hacer algo con los datos
+        console.log(data);
+      })
+      .catch(error => console.error('Error al obtener el JSON:', error));
+
+      
         const FormCarrito =document.getElementById("FormCarrito")
         const listaTienda = document.getElementById("Articulo");
 
@@ -58,13 +57,13 @@
 
         itemsTienda.forEach((item) => {
 
-listaTienda.innerHTML += `
-<div id="Articulo" class="Item-box">
-        <img class="Item-img" src="${item.imagen}" alt="Producto"> 
-        <h2 class="Item-h2">${item.nombre}</h2>
-        <h4 class="Item-h4">${item.precio}</h4>
-</div>
-    `});
+        listaTienda.innerHTML += `
+        <div id="Articulo" class="Item-box">
+                <img class="Item-img" src="${item.imagen}" alt="Producto"> 
+                <h2 class="Item-h2">${item.nombre}</h2>
+                <h4 class="Item-h4">${item.precio}</h4>
+        </div>
+            `});
 
 FormCarrito.innerHTML+="<input type='submit' value>"
 
@@ -84,14 +83,7 @@ function incrementar(indice){
         imprimirCarro();
     }
 
-     // Hacer una solicitud HTTP para obtener el JSON brealizando fetch
-           fetch('homeTienda.json')
-        .then(response => response.json())
-      .then(data => {
-     // Hacer algo con los datos
-        console.log(data);
-      })
-      .catch(error => console.error('Error al obtener el JSON:', error));
+
 
     </script>
 

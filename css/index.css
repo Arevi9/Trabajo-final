@@ -146,12 +146,25 @@ a{text-decoration: none;}
 }
 
 .Main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--light-pink-color);
     height: 900px;
     width: 100%;
    text-align: center;
 }
-.Main-title
+
+.Main-title{ font-family: "Macondo";
+font-size: 45px;
+color: var(--button-color);}
+
+.Main-img{
+background-color: var(--yellow-color);
+height: 300px;
+width: 80%;
+}
+
 .Main-categoria{
     display:flex;
     flex-wrap: wrap;
@@ -160,35 +173,37 @@ a{text-decoration: none;}
 }
 
 .Main-categoria--ilustracion{
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     border-radius: 10px;
     background-color: var(--light-pink-color);
     margin: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 
 }
 
 .Main-categoria--diseño{
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     border-radius: 10px;
     background-color: var(--medium-color);
     margin: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
-.Main-categoria--animacion{
-    width: 200px;
-    height: 150px;
-    border-radius: 10px;
-    background-color: var(--medium-color);
-    margin: 30px;
-}
 .Main-categoria--abanicos{
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     border-radius: 10px;
     background-color: var(--medium-color);
     margin: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .Main-shop-banner{
@@ -361,4 +376,37 @@ a{text-decoration: none;}
     }
 .Perfil-name{
     margin-right: 40px;
+    }
+
+
+    /*--------------------DISEÑO----------------*/
+
+.Diseño-h1{
+    font-family: "Macondo";
+    color: var(--button-color);
+}
+
+.Carta-mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-pink-color);
+    padding: 5px;
+    margin-top: 90px;
+    width: 100%;
+}
+.Carta-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+    .Carta-img{
+        height: 340px;
+        width: 450px;
+        object-fit: contain;
     }
