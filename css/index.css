@@ -20,6 +20,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     display: flex;
     flex-direction: column;
+    align-items: center;
     min-height: 100vh;
     margin: 0;
 
@@ -31,6 +32,7 @@ padding: 10px;
 font-size: 20px;
 border: none;
 border-radius: 5px;
+margin-top: 20px;
 }
 
 /*---------------Navegador principal---------------------*/
@@ -127,10 +129,7 @@ a{text-decoration: none;}
 .Top-nav-menu{
     display: flex;
     flex-direction: row;
-
 }
-
-
 
 .Top-nav-profileImg{
     border-radius: 50%;
@@ -421,62 +420,73 @@ width: 80%;
 
 
     /*----------Inicio de Sesion--------------*/
-.Log-in-container{display: flex;
-flex-direction: column;
-align-items: center;}
+    .Login-container {
+        background-color: var(--light-pink-color);
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        height: 280px;
+        text-align: center;
+    }
+
+    /*Libre movimiento de los elementos*/
+    #Login-form {
+        display: flex;
+        flex-direction: column;
+    }
+       /*titulo de la pagina web*/
+    .Login-title{
+        font-family: "Macondo";
+        font-size: 45px;
+        color: var(--button-color);
+        margin: 100px 0 50px 0;
+    }
+       /*margen entre las etiquetas*/
+    label {
+        margin-top: 10px;
+    }
+       /*estilo de los inputs del form*/
+    input {
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 4px;
+    }
+
+
+   /*Responsive en pantalla pequeña*/
+@media screen and (max-width: 480px){
+
+.Login-container{
+
+    width: 250px;
+    }
+    .Login-title{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .Login-container{
     
-#Container-principal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        width: 450px;
+        }
+        .Login-title{
+            font-size: 40px;
+        } 
+    }
+    @media screen and (max-width: 1600px){
 
- .Inicio-btn {width: 250; margin-bottom: 30px; margin-top: 15px;}
-
-.Login {
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    width: 90%;;
-    background-color: var(--light-pink-color);
-    border-radius: 5%;
-    padding: 20px;
-}
-
-form {
-    width: 80%;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-#user_email{
-    border: none;
-    background-color: white;
-    height: auto;
-    margin-top: 18px;
-    outline: 0;
-    padding: 10px;
-    width: 360px;
-    color: black;
-    margin-bottom: 10px;
-    font-size: 14px;
-    border-radius: 5px;
-
-}
-
-#user_password{
-
-}
-
-a {text-decoration: none;
-color: black;}
-
-
-
-hr {
-    border-color: white;
-}
-
-
+        .Login-container{
+        
+            width: 490px;
+            height: 350px;
+            }
+            .Login-title{
+                font-size: 45px; 
+            }   
+        }
+    
 
