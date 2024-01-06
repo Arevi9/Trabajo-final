@@ -5,48 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Quicksand:wght@400;500;600;700&display=swap" 
+    rel="stylesheet">
 </head>
 <style>
-.Registro-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- 
-}
-.Registro-form{
-background-color: var(--yellow-color);
-height: auto;
-width: 90%;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 20px;
-border-radius: 10px;
 
-
-}
-.Registro-form-list{
-
-
-}
-.Registro-label{
-
-
-}
-.Registro-input{
-border: none;
-border-radius: 5px;
-padding: 10px;
-width: 95%;
-margin:10px 0px 10px 0px;
-}
 
 </style>
 <body>
+    <!--Formulario de registro-->
     <main class="Registro-container">
-        <h3>REGISTRO</h3>
+
         <form class="Registro-form" action="" method="get">
-     
+            <h2 class="Registro-h2">Registro</h2>
                 
                     <label class="Registro-label" for="name">Nombre:</label> 
                     <input class="Registro-input" type="text" id="name" name="user_name" />
@@ -60,8 +31,8 @@ margin:10px 0px 10px 0px;
                     <label class="Registro-label" for="password">Contraseña:</label>
                     <input class="Registro-input" type="password" id="password" name="user_password"  />
               
-
-                    <a class="Btn">Crear cuenta</a>
+                    <!--Link a la página de inicio de sesión-->
+                    <a href="/InicioSesion.html"><h3 class="Btn">Crear cuenta</h3></a>
                 </form>
             </main>
             
