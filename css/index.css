@@ -200,6 +200,9 @@ a{text-decoration: none;}
     flex-wrap: wrap;
     width: 100%;
     gap: 20px;
+    animation-name: aaa;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 .Main-categoria-ilustracion{
@@ -211,6 +214,7 @@ a{text-decoration: none;}
     display: flex;
     align-items: center;
     margin-top: 20px;
+
 
 }
 
