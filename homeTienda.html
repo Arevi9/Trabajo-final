@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,81 +9,124 @@
 </head>
 
 <body>
-    <!-----------------------------NAVEGADOR---------------------->
+<!-----------------------------NAVEGADOR---------------------->
 
+<!--Navegador para acceder a todas las pestañas de la página-->
 <nav class="Top-nav">
     <div class="Top-nav-logo">
       <h1 class="Top-nav-name">Alba Redondo</h1>
     </div>
-    <div class="Top-nav-menu"> <img src="/img/icons/menuIcon.svg" alt="Menú">
-
+    <div class="Top-nav-menu">
+       
+       <!--Menú desplegable hecho con listas para navegar por la página-->
+        <ul class="Top-nav-ul">
+            <li class="Top-nav-li">
+                <img class="Top-nav-menuIcon" src="/img/icons/menuIcon.svg" alt="Menú">
+           
+             <!-- <ul class="Top-nav-subMenu">
+                <li class="Sub-item"><a  class="Top-nav-link" href="/profile.html">Mi perfil</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="/homeTienda.html">Tienda</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="../lp/Eventos_ciudad.html">Portfolio</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="../otras_paginas/faq.html">Contacto</a></li>
+                <li class="Sub-item "><a class="Top-nav-link" href="../frontal_page/index.html">Cerrar sesión</a></li>
+              </ul>
+              </li>-->
+            
+    </div>
 
 </nav>
 
-<!--La etiqueta main recogerá dentro de ella la información principal de la página, en este caso los objetos a la venta de la tienda online-->
+    <!--La etiqueta main recogerá dentro de ella la información principal de la página, en este caso los objetos a la venta de la tienda online-->
     <main class="Item-main">
 
-        <form  action="" method="GET">
+        <form action="" method="GET">
             <input class="Item-search" type="search" name="Buscador" placeholder="Buscar">
-            <button class="Item-searchButton"><img class="Item-searchIcon" src="/img/icons/searchIcon.svg" alt="Buscar"></button>
+            <button class="Item-searchButton"><img class="Item-searchIcon" src="/img/icons/searchIcon.svg"
+                    alt="Buscar"></button>
         </form>
 
         <!--Dentro de este div se encuentran todos los artículos que componen la tienda-->
         <div class="Item-container" id="Articulo">
             <!--Formulario para funcionamiento del carrito-->
-            <form action="" id="FormCarrito"></form>
-    
-
-
         </div>
+            <form action="" id="FormCarrito">
+            </form>
+
+
+
+
 
     </main>
 
-    <script src="/json/homeTienda.json" >
+    <script>
 
-      // Hacer una solicitud HTTP para obtener el JSON realizando fetch
-      fetch('homeTienda.json')
-        .then(response => response.json())
-      .then(data => {
-     // Hacer algo con los datos
-        console.log(data);
-      })
-      .catch(error => console.error('Error al obtener el JSON:', error));
+ const FormCarrito = document.getElementById("FormCarrito");
 
-      
-        const FormCarrito =document.getElementById("FormCarrito")
-        const listaTienda = document.getElementById("Articulo");
+ const listaTienda = document.getElementById("Articulo");
 
-        const itemsTienda =
 
-        itemsTienda.forEach((item) => {
 
+ // Hacer una solicitud HTTP para obtener el JSON realizando fetch
+        fetch('./json/homeTienda.json')
+    //trae los datos del JSON al HTML
+            .then( informacion =>{
+                return informacion.json();
+            })
+     //muestra los datos 
+            .then(datos =>{
+               
+                console.log(datos);
+                mostrar(datos);
+            })
+     //mensaje de error si los datos no son leídos
+            .catch(error => console.error('Error al obtener el JSON:', error));
+
+
+ //función para imprimir los datos en el HTML           
+function mostrar(objetos){
+    objetos.forEach((item, i) => {
         listaTienda.innerHTML += `
         <div id="Articulo" class="Item-box">
                 <img class="Item-img" src="${item.imagen}" alt="Producto"> 
                 <h2 class="Item-h2">${item.nombre}</h2>
                 <h4 class="Item-h4">${item.precio}</h4>
+                <h2 class="Item-h2">Cantidad: ${item.cantidad}</h2>
+
+                <button onClick='incrementar(${i})'>+</button>
+                <button onClick='decrementar(${i})'>-</button>
         </div>
-            `});
+            `
+    });
+}
 
-FormCarrito.innerHTML+="<input type='submit' value>"
+function imprimirCarrito(){
+            FormCarrito.innerHTML="";
+            listaTienda.innerHTML="";
+                // imprimimos el formulario
+        FormCarrito.innerHTML+= `<input type="text" name="item_${item.nombre}" value="${item.cantidad}" (€ ${item.precio})<br>
+                `;}
+    
 
-function incrementar(indice){
-        itemsTienda[indice].cant+=1;
-        if(itemsTienda[indice].cant > 10){
-            itemsTienda[indice].cant=10;
+  FormCarrito.innerHTML += "<input type='submit' value>"
+
+
+
+        function incrementar(indice) {
+            listaTienda [indice].cantidad +=1;
+            if (listaTienda [indice].cantidad > 10) {
+                listaTienda [indice].cantidad = 10;
+            }
+            imprimirCarrito();
         }
-        imprimirCarro();
-    }
 
-    function decrementar(indice){
-        itemsTienda[indice].cant-=1;
-        if(itemsTienda[indice].cant < 1){
-            itemsTienda[indice].cant=0;
+        function decrementar(indice) {
+            listaTienda[indice].cantidad -= 1;
+            if (listaTienda[indice].cantidad < 1) {
+                listaTienda[indice].cantidad = 0;
+            }
+            imprimirCarrito();
         }
-        imprimirCarro();
-    }
-
+        console.log(imprimirCarrito)
 
 
     </script>
@@ -90,5 +134,7 @@ function incrementar(indice){
 
 
 
+
 </body>
+
 </html>

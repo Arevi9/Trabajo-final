@@ -24,10 +24,13 @@
 
 
 
-<div class="Carta-mainContainer">
+<div class="Carta-mainContainer"id="trabajo">
     <span><h1 class="Diseño-h1">Diseño</h1></span>
 
     <div class="Carta-box">
+        <h2>Carta cafetería Bellas Artes UM</h2>
+        <h3>Año</h3>
+        <h4>Descripcion</h4>
         <img class="Carta-img" src="/img/carta/cartaCafetería-01.png" alt="Carta 1">
         <img class="Carta-img" src="/img/carta/cartaCafetería-02.png" alt="Carta 2">
         <img class="Carta-img" src="/img/carta/mockupCarta.png" alt="Mockup Carta">
@@ -53,6 +56,28 @@
 
 </main>
 
+<script>
+const ponernombre = document.getElementById ("trabajo");
 
+// Hacer una solicitud HTTP para obtener el JSON realizando fetch
+fetch('./json/diseño.json')
+    //trae los datos del JSON al HTML
+            .then( informacion =>{
+                return informacion.json();
+            })
+     //muestra los datos 
+            .then(datos =>{
+               
+                console.log(datos);
+                mostrar(datos);
+            })
+     //mensaje de error si los datos no son leídos
+            .catch(error => console.error('Error al obtener el JSON:', error));
+
+
+
+
+
+</script>
 </body>
 </html>
