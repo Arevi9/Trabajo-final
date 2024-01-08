@@ -9,31 +9,40 @@
     rel="stylesheet">
 </head>
 <body>
-        <!-----------------------------NAVEGADOR---------------------->
+<!-----------------------------NAVEGADOR---------------------->
 
+<!--Navegador para acceder a todas las pestañas de la página-->
 <nav class="Top-nav">
     <div class="Top-nav-logo">
       <h1 class="Top-nav-name">Alba Redondo</h1>
     </div>
-    <div class="Top-nav-menu"> <img src="/img/icons/menuIcon.svg" alt="Menú">
-
+    <div class="Top-nav-menu">
+       
+       <!--Menú desplegable hecho con listas para navegar por la página-->
+        <ul class="Top-nav-ul">
+            <li class="Top-nav-li">
+                <img class="Top-nav-menuIcon" src="/img/icons/menuIcon.svg" alt="Menú">
+           
+        <ul class="Top-nav-subMenu">
+                <li class="Sub-item"><a  class="Top-nav-link" href="/profile.html">Mi perfil</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="/homeTienda.html">Tienda</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="../lp/Eventos_ciudad.html">Portfolio</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="../otras_paginas/faq.html">Contacto</a></li>
+                <li class="Sub-item "><a class="Top-nav-link" href="../frontal_page/index.html">Cerrar sesión</a></li>
+              </ul>
+              </li>
+            
+    </div>
 
 </nav>
+
 <main>
 <!--Mockups de los trabajos de mi portfolio del area de diseño-->
-
-
 
 <div class="Carta-mainContainer"id="trabajo">
     <span><h1 class="Diseño-h1">Diseño</h1></span>
 
-    <div class="Carta-box">
-        <h2>Carta cafetería Bellas Artes UM</h2>
-        <h3>Año</h3>
-        <h4>Descripcion</h4>
-        <img class="Carta-img" src="/img/carta/cartaCafetería-01.png" alt="Carta 1">
-        <img class="Carta-img" src="/img/carta/cartaCafetería-02.png" alt="Carta 2">
-        <img class="Carta-img" src="/img/carta/mockupCarta.png" alt="Mockup Carta">
+    <div class="Carta-box" id="cartaMenu">
     </div>
 
 </div>
@@ -56,6 +65,7 @@
 
 </main>
 
+<!------------------------------------------SCRIPT------------------------------------------->
 <script>
 const ponernombre = document.getElementById ("trabajo");
 
@@ -73,6 +83,38 @@ fetch('./json/diseño.json')
             })
      //mensaje de error si los datos no son leídos
             .catch(error => console.error('Error al obtener el JSON:', error));
+
+
+
+//función para cambiar la imagen del menú de la cafetería
+
+ const cartaMenu = document.getElementById("cartaMenu")
+
+const cartaImg =["/img/carta/cartaCafeteria-01.png",
+    "/img/carta/cartaCafeteria-02.png",
+    "/img/carta/mockupCarta.png"
+    ]
+//Se define el índice para hacer funcionar la función
+let i= 1
+
+function cambiarImagen(){
+
+  //console.log(cartaImg[i])
+cartaMenu.innerHTML=
+ `<div><img class="Diseño-change" src=${cartaImg[i]} alt="Carta cafetería"></div>
+        <h2 class="Diseño-title">Carta cafetería Bellas Artes UM</h2>
+        <h3>2022</h3>
+        <span><h4 class="Diseño-descripcion">Diseño de la carta de la cafetería de la Facultad de Bellas Artes situada en el campus de Espinardio de la Universidad de Murcia. <br>
+            Este diseño fue realizado tras un estudio de los elementos más destacables del lugar, como lo son sus dibujos que presentan el menú al cliente en una pizarra que actúa como pared y los azulejos de colores situados bajo la barra. <br>
+            Combinando estos elementos junto a la idea general de las Bellas Artes, el resultado es una carta en formato tríptico donde la comida es presentada como en el menú de un videojuego.</h4></span>`;
+ i++;
+  if (i==3) {
+    i=0;
+  }
+}
+// frecuencia a la que la imagen cambia
+    setInterval(cambiarImagen, 3000);
+
 
 
 

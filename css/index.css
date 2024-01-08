@@ -55,6 +55,7 @@ a{text-decoration: none;}
     display: block;
     padding: 8px 0;
     color: var(--icon-color);
+    font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease;
   }
@@ -63,29 +64,27 @@ a{text-decoration: none;}
     padding: 18px 0px;
   }
 
-  .Top-nav-li .Top-nav-ul  {
+  .Top-nav-subMenu{
+    display: none;
     flex-direction: column;
     position: fixed;
-    background-color: white;
+    background-color:var(--yellow-color);
     align-items: flex-start;
     transition: all 0.5s ease;
     width: 18.75rem;
     right: 1.25rem;
-    top: 87px;
     border-radius: 5px;
-    gap: 0;
     padding: 20px 0px;
     opacity: 0;
-    box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);
-    display: none;
-  }
+    box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);}
   
  /*Uso de hover para hacer aparecer y desaparecer las opciones del menú del navegador*/
- .Top-nav-ul:hover .Top-nav-subMenu {
+ .Top-nav-li:hover .Top-nav-subMenu{
     display: block;
+    opacity: 1;
+    display: flex;
 
   }
-  
 
     /* Estilos para el menú desplegable */
 
@@ -98,13 +97,6 @@ a{text-decoration: none;}
     padding: 0.5rem 1.5rem;
   }
 
-  .Sub-item p {
-    font-size: 0.85rem;
-    color: #888888;
-    font-weight: 500;
-    margin: 0.4rem 0;
-    flex: 1;
-  }
 
 .Top-nav{
     overflow: hidden;
@@ -183,18 +175,21 @@ a{text-decoration: none;}
     height: 200px;
     width: 200px;
     object-fit: cover;
-    z-index: 2;
+    border: solid 5px var(--button-color);
     }
-.Main-decoration{ background-color: wheat;
-        opacity: 65%;
-        border-radius: 50%;
-        height: 200px;
-        width: 200px;
-        margin-right: -50px;
+.Main-h3{
+    color: var(--button-color);
 
-        
-        }
-
+}
+.Main-h2{
+    color:var(--icon-color)
+    ;
+}
+.Main-description{
+    padding: 10px;
+    font-weight: 500;
+    color: var(--icon-color);
+}
 .Main-categoria{
     display:flex;
     flex-wrap: wrap;
@@ -241,13 +236,27 @@ a{text-decoration: none;}
     color: var(--background-color);
     font-size: 30px;
 }
-
+.Main-separacion{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
 .Main-shop-banner{
-
+    display: flex;
+    justify-content: center;
     margin-top: 30px;
     height: 200px;
-    width: 70%;
+    width: 100%;
+    padding: 10px;
     background: linear-gradient(to bottom, #db9c95, #ffffff);
+}
+.Logo-img{
+    height: 200px;
+    width:70%;
+    object-fit: contain;
+    margin-left: 55px;
 }
 
 
@@ -317,6 +326,7 @@ a{text-decoration: none;}
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+
 }
 
 .Item-search{
@@ -390,17 +400,23 @@ a{text-decoration: none;}
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 86px 0 0 0;
+    background-color: var(--light-pink-color);
+    width: 100%;
 }
 
 .Perfil-info{ display: flex;
     flex-direction: column;
     height: 40%;
     width: 90%;
-    background-color: var(--light-pink-color);
+    background-color: var(--background-color);
     border-radius: 20px;
-    margin-top: 20px;}
+    margin: 20px 0;
+    
+;}
 
 .Perfil-info-general{
+
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -417,16 +433,13 @@ a{text-decoration: none;}
     gap: 5px;
    
 }
-.Perfil-info-dato2{  font-size: 0.7rem;
+.Perfil-info-dato2{  font-size: 0.9rem;
     font-weight: light;
     color: var(--text-color-2);}
 
-    .Perfil-info-icon{
-    color: var(--primary-color);
-    margin-left: 20px;
-    font-size: 16px;
-    }
-
+.Perfil-me{
+    padding: 20px;
+}
 /*-------------------------------------PARTE DE ARRIBA PERFIL---------------------------------------------*/
 
 
@@ -442,15 +455,14 @@ a{text-decoration: none;}
     }
 
 .Perfil-img{ 
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 10px;
+    margin: 20px 0 0 10px;
+
     }
-.Perfil-name{
-    margin-right: 40px;
-    }
+
 
 
  /*-----------------------------------------DISEÑO------------------------------------*/
@@ -458,6 +470,25 @@ a{text-decoration: none;}
 .Diseño-h1{
     font-family: "Macondo";
     color: var(--button-color);
+    font-size: 36px;
+}
+.Diseño-title{
+    font-family: "Macondo";
+    color: var(--icon-color);
+    font-size: 20px;
+}
+.Diseño-change{
+
+    height: 300px; 
+    width: 500px; 
+    object-fit:contain;
+    margin-top: 30px;
+}
+.Diseño-descripcion{
+
+    font-weight: normal;
+    font-size: 18px;
+    padding: 10px;
 }
 
 .Carta-mainContainer{
@@ -475,6 +506,7 @@ a{text-decoration: none;}
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     width: 100%;
     height: auto;

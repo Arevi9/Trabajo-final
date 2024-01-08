@@ -12,34 +12,26 @@
 
 <!--Navegador para acceder a todas las pestañas de la página-->
 <nav class="Top-nav">
-    <div class="Top-nav-logo">
-      <h1 class="Top-nav-name">Alba Redondo</h1>
-    </div>
-    <div class="Top-nav-menu">
-       
-       <!--Menú desplegable hecho con listas para navegar por la página-->
-        <ul class="Top-nav-ul">
-            <li class="Top-nav-li">
-                <img class="Top-nav-menuIcon" src="/img/icons/menuIcon.svg" alt="Menú">
-              <ul>
-                <li class="Sub-item">
-                  <a href="/profile.html">Mi perfil</a>
-                </li>
-                <li class="Sub-item">
-                    <a href="/homeTienda.html">Tienda</a>
-                  </li>
-                <li class="Sub-item">
-                  <a href="../lp/Eventos_ciudad.html">Portfolio</a>
-                </li>
-                <li class="Sub-item">
-                  <a href="../otras_paginas/faq.html">Contacto</a>
-                </li>
-                <li class="Sub-item">
-                    <a href="../frontal_page/index.html">Cerrar sesión</a>
-                  </li>
-              </ul>
-      
-    </div>
+  <div class="Top-nav-logo">
+    <h1 class="Top-nav-name">Alba Redondo</h1>
+  </div>
+  <div class="Top-nav-menu">
+     
+     <!--Menú desplegable hecho con listas para navegar por la página-->
+      <ul class="Top-nav-ul">
+          <li class="Top-nav-li">
+              <img class="Top-nav-menuIcon" src="/img/icons/menuIcon.svg" alt="Menú">
+         
+      <ul class="Top-nav-subMenu">
+              <li class="Sub-item"><a  class="Top-nav-link" href="/profile.html">Mi perfil</a></li>
+              <li class="Sub-item"><a  class="Top-nav-link" href="/homeTienda.html">Tienda</a></li>
+              <li class="Sub-item"><a  class="Top-nav-link" href="../lp/Eventos_ciudad.html">Portfolio</a></li>
+              <li class="Sub-item"><a  class="Top-nav-link" href="../otras_paginas/faq.html">Contacto</a></li>
+              <li class="Sub-item "><a class="Top-nav-link" href="../frontal_page/index.html">Cerrar sesión</a></li>
+            </ul>
+            </li>
+          
+  </div>
 
 </nav>
 
@@ -47,15 +39,25 @@
 <main class="Profile-container">
    
         <div class="Perfil-principal">
-            <img class="Perfil-img" src="/img/tienda/pendientesFlorRosa.jpg" alt="Imagen de perfil"> <div class="Perfil-name">
-                <span><h2>Tomás</h2></span>
-                <span>descripcion</span>
+            <img class="Perfil-img" src="/img/perfil/perfil2.jpg" alt="Imagen de perfil"> <div class="Perfil-name">
+                <span><h2>Alba Redondo</h2></span>
+               <span>22 años</span>
          </div>
         </div>
             <div id="PerfilInfo" class="Perfil-info">
             </div>
+            <div class="Perfil-me">
+              <h3>Estudios</h3>
+              <span><ul>
+                <li>Grado en Bellas Artes en la Universidad de Murcia</li>
+                <li>Máster en Diseño Gráfico y Web en CEI: Escuela de diseño y marketing</li>
+              </ul></span>
 
-
+              <h3>Experiencia</h3>
+              <span>
+                <ul><li>Camarera </li></ul>
+              </span>
+            </div>
         
        
 </main>
@@ -65,20 +67,14 @@
        
      const PerfilInfo = document.getElementById("PerfilInfo")
    
-           var info = [{
-   
-               icono: "fa-regular fa-user",
-               informacion: "Nombre completo",
-               nombre: "Tomás Samot"
-           }, {
-               icono: "fa-regular fa-envelope",
+           var info = [ {
+
                informacion: "Email",
-               nombre: "tomasamot39@gmail.com"
+               nombre: "alba.rv912@gmail.com"
    
            }, {
-               icono: "fa-solid fa-phone",
                informacion: "Teléfono de contacto",
-               nombre: "658 56 42 81"
+               nombre: "687 75 59 66"
    
            }];
    
@@ -87,7 +83,6 @@
    
    info.forEach((dato) => {
        ProfileBox = ProfileBox + `<div class="Perfil-info-general">
-           <i class="Perfil-info-icon ${dato.icono}"></i>
            <div class= "Perfil-info-words"> 
                <span>${dato.informacion}</span>
                <span class=Perfil-info-dato2>${dato.nombre}</span>
