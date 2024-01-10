@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-Tienda</title>
     <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Quicksand:wght@400;500;600;700&display=swap" 
+    rel="stylesheet">
+  
 </head>
 
 <body>
@@ -14,7 +17,7 @@
 <!--Navegador para acceder a todas las pestañas de la página-->
 <nav class="Top-nav">
     <div class="Top-nav-logo">
-      <h1 class="Top-nav-name">Alba Redondo</h1>
+      <a href="./index.html"><h1 class="Top-nav-name">Alba Redondo</h1></a>
     </div>
     <div class="Top-nav-menu">
        
@@ -24,11 +27,11 @@
                 <img class="Top-nav-menuIcon" src="/img/icons/menuIcon.svg" alt="Menú">
            
         <ul class="Top-nav-subMenu">
-                <li class="Sub-item"><a  class="Top-nav-link" href="/profile.html">Mi perfil</a></li>
-                <li class="Sub-item"><a  class="Top-nav-link" href="/homeTienda.html">Tienda</a></li>
-                <li class="Sub-item"><a  class="Top-nav-link" href="../lp/Eventos_ciudad.html">Portfolio</a></li>
-                <li class="Sub-item"><a  class="Top-nav-link" href="../otras_paginas/faq.html">Contacto</a></li>
-                <li class="Sub-item "><a class="Top-nav-link" href="../frontal_page/index.html">Cerrar sesión</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./profile.html">Mi perfil</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./homeTienda.html">Tienda</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./diseño.html">Portfolio</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./profile.html">Contacto</a></li>
+                <li class="Sub-item "><a class="Top-nav-link" href="./InicioSesion.html">Cerrar sesión</a></li>
               </ul>
               </li>
             
@@ -38,6 +41,8 @@
 
     <!--La etiqueta main recogerá dentro de ella la información principal de la página, en este caso los objetos a la venta de la tienda online-->
     <main class="Item-main">
+
+        <h1>¡Bienvenido!</h1>
 
         <form action="" method="GET">
             <input class="Item-search" type="search" name="Buscador" placeholder="Buscar">
@@ -90,10 +95,10 @@ function mostrar(objetos){
                 <img class="Item-img" src="${item.imagen}" alt="Producto"> 
                 <h2 class="Item-h2">${item.nombre}</h2>
                 <h4 class="Item-h4">${item.precio}</h4>
-                <h2 class="Item-h2">Cantidad: ${item.cantidad}</h2>
+                <h2 class="Item-h3">Cantidad: ${item.cantidad}</h2>
 
-                <button onClick='incrementar(${i})'>+</button>
-                <button onClick='decrementar(${i})'>-</button>
+                <button class="Btn-item" onClick='incrementar(${i})'>+</button>
+                <button class="Btn-item" onClick='decrementar(${i})'>-</button>
         </div>
             `
     });

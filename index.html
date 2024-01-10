@@ -16,7 +16,7 @@
 <!--Navegador para acceder a todas las pestañas de la página-->
 <nav class="Top-nav">
     <div class="Top-nav-logo">
-      <h1 class="Top-nav-name">Alba Redondo</h1>
+      <a href="./index.html"><h1 class="Top-nav-name">Alba Redondo</h1></a>
     </div>
     <div class="Top-nav-menu">
        
@@ -26,11 +26,11 @@
                 <img class="Top-nav-menuIcon" src="/img/icons/menuIcon.svg" alt="Menú">
            
         <ul class="Top-nav-subMenu">
-                <li class="Sub-item"><a  class="Top-nav-link" href="/profile.html">Mi perfil</a></li>
-                <li class="Sub-item"><a  class="Top-nav-link" href="/homeTienda.html">Tienda</a></li>
-                <li class="Sub-item"><a  class="Top-nav-link" href="../lp/Eventos_ciudad.html">Portfolio</a></li>
-                <li class="Sub-item"><a  class="Top-nav-link" href="../otras_paginas/faq.html">Contacto</a></li>
-                <li class="Sub-item "><a class="Top-nav-link" href="../frontal_page/index.html">Cerrar sesión</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./profile.html">Mi perfil</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./homeTienda.html">Tienda</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./diseño.html">Portfolio</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./profile.html">Contacto</a></li>
+                <li class="Sub-item "><a class="Top-nav-link" href="./InicioSesion.html">Cerrar sesión</a></li>
               </ul>
               </li>
             
@@ -45,27 +45,25 @@
     <div class="Main-page">
       <h2 class="Main-title">Alba Redondo</h2>
       <div class="Main-aboutMe"> 
-        <div class="Main-decoration"></div>
         <div><img class="Main-img" src="/img/perfil/perfil.jpg" alt="Alba Redondo">
       </div>
-
-        <div>
+<!--Presentación de introducción a mi página-->
+        <div class="Main-presentacion">
           <h2 class="Main-h2">¡Hola! Soy Alba</h2>
           <h3 class="Main-h3">Diseñadora web</h3>
-         <div class="Main-description"><span>Soy una diseñadora gráfica y web actualmente en desarrollo viviendo en Valencia, España. <br> Estudio un máster
+         <div class="Main-description"><span> <h4 class="Main-h4">Soy una diseñadora gráfica y web actualmente en desarrollo viviendo en Valencia, España. <br> Estudio un máster
             de diseño gráfico y web en CEI: escuela de diseño y marketing. <br>
-            Aparte de mis estudios de diseño, cuento con algunos trabajos como ilustradora y una página donde creo y vendo artesanía.
+            Aparte de mis estudios de diseño, cuento con algunos trabajos como ilustradora y una página donde creo y vendo artesanía.</h4>
           </span></div>
         </div>
-       
-
       </div>
     </div>
 
+    <!--Distintas categorías dentro de mi portfolio a las que acceder-->
     <div class="Main-categoria">
 
         <div class="Main-categoria-ilustracion">
-            <h3 class="Main-categoria-title">ILUSTRACIÓN</h3>
+           <a href="./Ilustracion.html"> <h3 class="Main-categoria-title">ILUSTRACIÓN</h3></a>
         </div>
 
        <div class="Main-categoria-diseño">
@@ -73,11 +71,12 @@
         </div>
         
         <div class="Main-categoria-joyas">
-            <h3 class="Main-categoria-title">JOYAS</h3>
+            <a href="./joyas.html"><h3 class="Main-categoria-title">JOYAS</h3></a>
         </div>
 
     </div>
 
+    <!--Link a la página principal de mi tienda-->
   <div class="Main-separacion">Puedes visitar mi tienda para adquirir mi trabajo</div>
       <div class="Main-shop-banner">
         <a href="./homeTienda.html">
@@ -93,6 +92,7 @@
         <h5 class="Footer-copyright">© 2024, Alba Redondo</h5>
     </div>
 
+    <!--Redes sociales y contacto-->
     <div class="Footer-rrss">
        <a href="https://www.instagram.com/arevi__rv9/"><img src="/img/icons/instagramIcon.svg" alt="Instagram"></a> 
         <img src="/img/icons/envelopeIcon.svg" alt="Correo">
@@ -110,19 +110,7 @@
 
 <script>
 
-    // Para cerrar el menú desplegable al hacer clic fuera de él
-    document.addEventListener('click', function (e) {
-      const menuItems = document.querySelectorAll('.menu-item');
 
-      menuItems.forEach(function (menuItem) {
-        if (!menuItem.contains(e.target)) {
-          const submenu = menuItem.querySelector('.submenu');
-          if (submenu) {
-            submenu.style.display = 'none';
-          }
-        }
-      });
-    });
   </script>
 
 

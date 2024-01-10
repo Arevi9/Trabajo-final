@@ -14,7 +14,7 @@
 <!--Navegador para acceder a todas las pestañas de la página-->
 <nav class="Top-nav">
     <div class="Top-nav-logo">
-      <h1 class="Top-nav-name">Alba Redondo</h1>
+      <a href="./index.html"><h1 class="Top-nav-name">Alba Redondo</h1></a>
     </div>
     <div class="Top-nav-menu">
        
@@ -24,11 +24,11 @@
                 <img class="Top-nav-menuIcon" src="/img/icons/menuIcon.svg" alt="Menú">
            
         <ul class="Top-nav-subMenu">
-                <li class="Sub-item"><a  class="Top-nav-link" href="/profile.html">Mi perfil</a></li>
-                <li class="Sub-item"><a  class="Top-nav-link" href="/homeTienda.html">Tienda</a></li>
-                <li class="Sub-item"><a  class="Top-nav-link" href="../lp/Eventos_ciudad.html">Portfolio</a></li>
-                <li class="Sub-item"><a  class="Top-nav-link" href="../otras_paginas/faq.html">Contacto</a></li>
-                <li class="Sub-item "><a class="Top-nav-link" href="../frontal_page/index.html">Cerrar sesión</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./profile.html">Mi perfil</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./homeTienda.html">Tienda</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./diseño.html">Portfolio</a></li>
+                <li class="Sub-item"><a  class="Top-nav-link" href="./profile.html">Contacto</a></li>
+                <li class="Sub-item "><a class="Top-nav-link" href="./InicioSesion.html">Cerrar sesión</a></li>
               </ul>
               </li>
             
@@ -43,6 +43,11 @@
     <span><h1 class="Diseño-h1">Diseño</h1></span>
 
     <div class="Carta-box" id="cartaMenu">
+        <h2 class="Diseño-title">Carta cafetería Bellas Artes UM</h2>
+        <h3>2022</h3>
+        <span><h4 class="Diseño-descripcion">Diseño de la carta de la cafetería de la Facultad de Bellas Artes situada en el campus de Espinardio de la Universidad de Murcia. <br>
+            Este diseño fue realizado tras un estudio de los elementos más destacables del lugar, como lo son sus dibujos que presentan el menú al cliente en una pizarra que actúa como pared y los azulejos de colores situados bajo la barra. <br>
+            Combinando estos elementos junto a la idea general de las Bellas Artes, el resultado es una carta en formato tríptico donde la comida es presentada como en el menú de un videojuego.</h4></span>`;
     </div>
 
 </div>
@@ -67,23 +72,6 @@
 
 <!------------------------------------------SCRIPT------------------------------------------->
 <script>
-const ponernombre = document.getElementById ("trabajo");
-
-// Hacer una solicitud HTTP para obtener el JSON realizando fetch
-fetch('./json/diseño.json')
-    //trae los datos del JSON al HTML
-            .then( informacion =>{
-                return informacion.json();
-            })
-     //muestra los datos 
-            .then(datos =>{
-               
-                console.log(datos);
-                mostrar(datos);
-            })
-     //mensaje de error si los datos no son leídos
-            .catch(error => console.error('Error al obtener el JSON:', error));
-
 
 
 //función para cambiar la imagen del menú de la cafetería
@@ -101,12 +89,8 @@ function cambiarImagen(){
 
   //console.log(cartaImg[i])
 cartaMenu.innerHTML=
- `<div><img class="Diseño-change" src=${cartaImg[i]} alt="Carta cafetería"></div>
-        <h2 class="Diseño-title">Carta cafetería Bellas Artes UM</h2>
-        <h3>2022</h3>
-        <span><h4 class="Diseño-descripcion">Diseño de la carta de la cafetería de la Facultad de Bellas Artes situada en el campus de Espinardio de la Universidad de Murcia. <br>
-            Este diseño fue realizado tras un estudio de los elementos más destacables del lugar, como lo son sus dibujos que presentan el menú al cliente en una pizarra que actúa como pared y los azulejos de colores situados bajo la barra. <br>
-            Combinando estos elementos junto a la idea general de las Bellas Artes, el resultado es una carta en formato tríptico donde la comida es presentada como en el menú de un videojuego.</h4></span>`;
+ `<div><img class="Diseño-change" src=${cartaImg[i]} alt="Carta cafetería"></div>`
+       
  i++;
   if (i==3) {
     i=0;
