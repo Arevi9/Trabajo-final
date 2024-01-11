@@ -1,11 +1,12 @@
 :root{
 
---background-color: #ffffff;
---button-color: #b56d65;
---icon-color: #5a403d;
---nav-color: #db9c95;
---yellow-color:#ffdfb7;
---light-pink-color:#e5c0bf;
+--background-color: #fff8f0;
+--button-color: #0e4675;
+--icon-color: #1b1424;
+--nav-color: #f2c17c;
+--yellow-color:#77c6ff;
+--light-pink-color:#ffbaaa;
+--menu-color:#ec92ab;
 
 }
 
@@ -68,7 +69,7 @@ a{text-decoration: none;}
     display: none;
     flex-direction: column;
     position: fixed;
-    background-color:var(--yellow-color);
+    background-color:var(--menu-color);
     align-items: flex-start;
     transition: all 0.5s ease;
     width: 18.75rem;
@@ -104,10 +105,12 @@ a{text-decoration: none;}
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to bottom, #db9c95 50%,  #e5c0bf);
+    background-color: var(--nav-color);
+    box-shadow: 1px 1px 10px #896c43;
     padding: 10px;
     margin: 0 0 0px 0;
     width: 100%;
+    height: 60px;
     position: fixed;
     z-index: 2;
 }
@@ -156,13 +159,12 @@ a{text-decoration: none;}
     background-color: var(--light-pink-color);
     height: 800px;
     width: 100%;
-    background: linear-gradient(to top, #db9c95 10%,  #e5c0bf);
 
 }
 
 .Main-title{ font-family: "Macondo";
     font-size: 45px;
-    color: var(--button-color);}
+    color: var(--background-color);}
 
 .Main-aboutMe{
     display: flex;
@@ -203,7 +205,7 @@ a{text-decoration: none;}
     font-weight: 500;
     text-align: center;
     color: var(--icon-color);
-    background-color: var(--light-pink-color);
+    background-color: var(--background-color);
     box-shadow: 1px 2px 10px var(--icon-color);
     border-radius: 10px;
     width: 80%;
@@ -300,7 +302,7 @@ a{text-decoration: none;}
 
 @media screen and (min-width: 1100px){
     .Main-title{ 
-        font-size: 65px;
+        font-size: 55px;
        }
        .Main-aboutMe{
      gap: 70px;
@@ -356,12 +358,11 @@ a{text-decoration: none;}
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    color: var(--yellow-color);
     font-size: 20px;
     margin: auto 0 30px 0;
 }
 .Footer-copyright{
-    color: var(--yellow-color);
+    color: var(--background-color);
     font-weight: normal;
 }
 
