@@ -36,13 +36,14 @@
 
 </nav>
 
-<main>
-<!--Mockups de los trabajos de mi portfolio del area de diseño-->
 
-<div class="Carta-mainContainer"id="trabajo">
-    <span><h1 class="Diseño-h1">Diseño</h1></span>
+    
+    <!-- Sección 1 -->
+    <h2>Sección 1</h2>
+    <img id="imagen1" class="Carta-img" src="/img/coleccionLibros/portada1.png" alt="Seccion 1 - Imagen 1">
+    <button onclick="cambiarImagen('imagen1', imagenesSeccion1)">Cambiar Imagen Sección 1</button>
+    <div class="Carta-box">
 
-    <div class="Carta-box" id="cartaMenu">
         <h2 class="Diseño-title">Carta cafetería Bellas Artes UM</h2>
         <h3>2022</h3>
         <span><h4 class="Diseño-descripcion">Diseño de la carta de la cafetería de la Facultad de Bellas Artes situada en el campus de Espinardio de la Universidad de Murcia. <br>
@@ -50,60 +51,65 @@
             Combinando estos elementos junto a la idea general de las Bellas Artes, el resultado es una carta en formato tríptico donde la comida es presentada como en el menú de un videojuego.</h4></span>`;
     </div>
 
-</div>
+    
+    <!-- Sección 2 -->
+    <h2>Sección 2</h2>
+    <img id="imagen2" class="Carta-img" src="/img/carta/diseño.png" alt="Seccion 2 - Imagen 1">
+    <button onclick="cambiarImagen('imagen2', imagenesSeccion2)">Cambiar Imagen Sección 2</button>
+    
 
-<div class="Coleccion">
+    <div class="Coleccion">
 
-    <div class="Carta-box">
-        <img class="Carta-img" src="/img/coleccionLibros/coleccion1.png" alt="Carta 1">
-        <img class="Carta-img" src="/img/coleccionLibros/portada1.png" alt="Carta 2">
-        <img class="Carta-img" src="/img/coleccionLibros/interior1.png" alt="Mockup Carta">
+        <div class="Carta-box">
+            <img class="Carta-img" id="myImage" src="/img/coleccionLibros/coleccion1.png" alt="Carta 1">
+            <img class="Carta-img" src="/img/coleccionLibros/portada1.png" alt="Carta 2">
+            <img class="Carta-img" src="/img/coleccionLibros/interior1.png" alt="Mockup Carta">
+        </div>
+
+        <div class="Carta-box">
+
+        </div>
+    
+    
     </div>
-    <div class="Carta-box">
-        <img class="Carta-img" src="/img/coleccionLibros/coleccion2.png" alt="Carta 1">
-        <img class="Carta-img" src="/img/coleccionLibros/portada2.png" alt="Carta 2">
-        <img class="Carta-img" src="/img/coleccionLibros/interior2.png" alt="Mockup interior libro">
-    </div>
-
-
-</div>
-
-</main>
-
-<!------------------------------------------SCRIPT------------------------------------------->
-<script>
-
-
-//función para cambiar la imagen del menú de la cafetería
-
- const cartaMenu = document.getElementById("cartaMenu")
-
-const cartaImg =["/img/carta/cartaCafeteria-01.png",
-    "/img/carta/cartaCafeteria-02.png",
-    "/img/carta/mockupCarta.png"
-    ]
-//Se define el índice para hacer funcionar la función
-let i= 1
-
-function cambiarImagen(){
-
-  //console.log(cartaImg[i])
-cartaMenu.innerHTML=
- `<div><img class="Diseño-change" src=${cartaImg[i]} alt="Carta cafetería"></div>`
-       
- i++;
-  if (i==3) {
-    i=0;
-  }
-}
-// frecuencia a la que la imagen cambia
-    setInterval(cambiarImagen, 3000);
 
 
 
 
 
 
-</script>
+
+
+
+
+    <script>
+
+//Las funciones cambiarImagen son específicas para cada sección, y se utiliza una condición para determinar cuál array de imágenes debe manipularse.
+
+      // Definir arrays con las rutas de las imágenes para cada sección
+      var imagenesSeccion1 = ["/img/coleccionLibros/coleccion1.png", "/img/coleccionLibros/coleccion2.png", "/img/coleccionLibros/interior1.png"];
+      var imagenesSeccion2 = ["/img/carta/cartaCafeteria-01.png", "/img/carta/cartaCafeteria-02.png", "/img/carta/mockupCarta.png"];
+    
+      // Inicializar índices para cada sección
+      var indiceImagenSeccion1 = 0;
+      var indiceImagenSeccion2 = 0;
+    
+      function cambiarImagen(idImagen, arrayImagenes) {
+        var imagen = document.getElementById(idImagen);
+    
+        // Cambiar la fuente de la imagen
+        //El símbolo % se utiliza para asegurarse de que el índice esté dentro de los límites del array, por lo que si llega al final, vuelve al principio.
+        if (arrayImagenes === imagenesSeccion1) {
+          indiceImagenSeccion1 = (indiceImagenSeccion1 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenSeccion1];
+        } else if (arrayImagenes === imagenesSeccion2) {
+          indiceImagenSeccion2 = (indiceImagenSeccion2 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenSeccion2];
+        }
+      }
+
+       //Al hacer clic en el botón, la función cambiarImagen se ejecutará, cambiando la fuente de la imagen al siguiente elemento en el array imagenes. 
+    </script>
+    
 </body>
 </html>
