@@ -2,39 +2,61 @@
     {
             
     "imagen": "/img/tienda/conjunto.jpg",
-    "nombre":"Conjunto azul eléctrico",
-    "precio":"10,00",
-    "cantidad": 0
+    "nombre":"Conjunto azul eléctrico"
+
 
 },{
     
     "imagen": "/img/tienda/pulsera3.jpg",
-    "nombre":"Pulsera Floral",
-    "precio":"4,00",
-    "cantidad": 0
+    "nombre":"Pulsera flores elegante"
+
 
 },{
     
    "imagen": "/img/tienda/pulseras1.jpg",
-    "nombre":"Pulsera Floral",
-    "precio":"4,00",
-    "cantidad": 0
+    "nombre":"Pulsera Flor de Loto"
+
 
 },{
     
     "imagen": "/img/tienda/pulsera2.jpg",
-    "nombre":"Pulsera Floral",
-    "precio":"4,00",
-    "cantidad": 0
+    "nombre":"Pulsera Winter"
+
 
 },{
     
     "imagen": "/img/tienda/pendientesVerdes.jpg",
-    "nombre":"Pulsera Floral",
-    "precio":"4,00",
-    "cantidad": 0
+    "nombre":"Pendientes verdes"
 
-}]
+
+},{
+    
+    "imagen": "/img/tienda/pendientesFlorAzul.jpg",
+    "nombre":"Pendientes de flor azules"
+
+
+},{
+    
+    "imagen": "/img/tienda/pendientesFlorRosa.jpg",
+    "nombre":"Pendientes de flor rosas"
+
+
+},{
+    
+    "imagen": "/img/tienda/pulsera2.jpg",
+    "nombre":"Pulsera Winter"
+
+
+},{
+    
+    "imagen": "/img/tienda/pulsera2.jpg",
+    "nombre":"Pulsera Winter"
+
+
+}
+
+
+]
 
 
 

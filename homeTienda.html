@@ -11,7 +11,7 @@
   
 </head>
 
-<body  style="background-color: var(--nav-color);">
+<body>
 <!-----------------------------NAVEGADOR---------------------->
 
 <!--Navegador para acceder a todas las pestañas de la página-->
@@ -52,20 +52,38 @@
 
         <!--Dentro de este div se encuentran todos los artículos que componen la tienda-->
         <div class="Item-container" id="Articulo">
-            <!--Formulario para funcionamiento del carrito-->
         </div>
-            <form action="" id="FormCarrito">
-            </form>
+
 
 
 
 
 
     </main>
+    
+<!------------------------Footer--------------------------------------------------------->
+<footer class="Footer-index">
+    <div>
+        <h5 class="Footer-copyright">© 2024, Alba Redondo</h5>
+    </div>
+
+    <!--Redes sociales y contacto-->
+    <div class="Footer-rrss">
+       <a href="https://www.instagram.com/arevi__rv9/"><img src="/img/icons/instagramIcon.svg" alt="Instagram"></a> 
+        <img src="/img/icons/envelopeIcon.svg" alt="Correo">
+        <img src="/img/icons/phoneIcon.svg" alt="Teléfono de contacto">
+
+    </div>
+
+</footer>
+
+
+
+
 
     <script>
 
- const FormCarrito = document.getElementById("FormCarrito");
+
 
  const listaTienda = document.getElementById("Articulo");
 
@@ -93,45 +111,12 @@ function mostrar(objetos){
         listaTienda.innerHTML += `
         <div id="Articulo" class="Item-box">
                 <img class="Item-img" src="${item.imagen}" alt="Producto"> 
-                <h2 class="Item-h2">${item.nombre}</h2>
-                <h4 class="Item-h4">${item.precio}</h4>
-                <h2 class="Item-h3">Cantidad: ${item.cantidad}</h2>
+                <div class="Item-name"><h2 class="Item-h2">${item.nombre}</h2></div>
 
-                <button class="Btn-item" onClick='incrementar(${i})'>+</button>
-                <button class="Btn-item" onClick='decrementar(${i})'>-</button>
         </div>
             `
     });
 }
-
-function imprimirCarrito(){
-            FormCarrito.innerHTML="";
-            listaTienda.innerHTML="";
-                // imprimimos el formulario
-        FormCarrito.innerHTML+= `<input type="text" name="item_${item.nombre}" value="${item.cantidad}" (€ ${item.precio})<br>
-                `;}
-    
-
-  FormCarrito.innerHTML += "<input type='submit' value>"
-
-
-
-        function incrementar(indice) {
-            listaTienda [indice].cantidad +=1;
-            if (listaTienda [indice].cantidad > 10) {
-                listaTienda [indice].cantidad = 10;
-            }
-            imprimirCarrito();
-        }
-
-        function decrementar(indice) {
-            listaTienda[indice].cantidad -= 1;
-            if (listaTienda[indice].cantidad < 1) {
-                listaTienda[indice].cantidad = 0;
-            }
-            imprimirCarrito();
-        }
-        console.log(imprimirCarrito)
 
 
     </script>
