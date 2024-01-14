@@ -9,7 +9,7 @@
 --light-pink-color:#8cc7fa;
 --menu-color:#9e9e9e;
 --text-light-color:#ffffff;
---text-dark-color:#0a0a0a;
+--text-dark-color:#1a1a1c;
 
 
 }
@@ -31,7 +31,7 @@ Medidas PC:
 
 body{ 
     background-color: var(--background-color);
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Bitter', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,7 +159,7 @@ a{text-decoration: none;}
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: 50px;
+    margin-top: 100px;
     width: 100%;
 }
 
@@ -170,8 +170,9 @@ a{text-decoration: none;}
     flex-direction: column;
     align-items: center;
     background-color: var(--light-pink-color);
-    height: 800px;
-    width: 100%;
+    height: auto;
+    padding: 50px;
+    margin-bottom: 100px;
 
 }
 
@@ -191,11 +192,14 @@ a{text-decoration: none;}
     height: 200px;
     width: 300px;
     object-fit: cover;
-    box-shadow: 1px 2px 10px var(--icon-color);
+    box-shadow: 1px 2px 10px var(--text-dark-color);
     }
-    
+.Main-h1{
+    font-weight: bold;
+    color: var(--text-dark-color);
+}
 .Main-h3{
-    color: var(--button-color);
+    color: var(--text-dark-color);
 
 }
 .Main-h4{
@@ -206,6 +210,7 @@ a{text-decoration: none;}
 .Main-h2{
     color:var(--icon-color);
     margin-bottom: 0;
+    font-weight: 400;
 }
 .Main-presentacion{
     display: flex;
