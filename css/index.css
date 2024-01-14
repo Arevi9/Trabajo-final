@@ -673,7 +673,9 @@ a{text-decoration: none;}
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             width: 100%;
+            margin-top: 50px;
 
         }
         .Bg-title-desing{
@@ -686,19 +688,173 @@ a{text-decoration: none;}
 
         }
         .Bg-title-h1{
-            font-size: var(--h1--font-size--mobile);
+            font-size: var(--h2--font-size--mobile);
             color: var(--text-light-color);
+            text-shadow: 2px 1px 10px var(--icon-color);
+            margin: -130px 0 0 30px;
+            z-index: 1;
+         
+        }
+        .Info-container-description{
+            font-size: var(--h5--font-size--mobile);
+            word-spacing:0.3rem ;
+            padding: 10px;
+
         }
 
         .Info-container{
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            height: auto;
+            justify-content: space-around;
+            height:auto;
             width: 100%;
+            margin: 100px 0 50px 0;
+            gap:50px ;
+        
+        }
+
+        .Info-date{
+
+            background-color: var(--light-pink-color);
+            width: 300px;
+            padding: 20px;
+            height: 100px;
         }
         .Game-main{
             object-fit: contain;
             height: 500px;
             width: 600px;
         }
+
+        .Bg-title-menu{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 200px;
+            background-image: url(/img/carta/headerCarta.png);
+            background-repeat: no-repeat;
+            filter: brightness(90%);
+            object-fit: cover;
+            background-color: #0e4675;
+            align-items: center;
+
+        }
+        .Bg-title-game{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 200px;
+            background-image: url(/img/tarot/juegoHeader.png);
+            background-repeat: no-repeat;
+            filter: brightness(80%);
+            object-fit: contain;
+            background-color: #0e4675;
+            align-items: center;
+
+        }
+        .Game-position{
+            display: flex; 
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .Game-img-main{
+            height: 240px;
+            width: 340px;
+            object-fit: cover;
+            box-shadow: 1px 1px 10px var(--icon-color);
+        }
+        .Game-img1{
+            height: 240px;
+            width: 340px;
+            object-fit: cover;
+            box-shadow: 1px 1px 10px var(--icon-color);
+        }
+        .Game-img2{
+            height: 440px;
+            width: 340px;
+            object-fit: cover;
+            box-shadow: 1px 1px 10px var(--icon-color);
+        }
+
+        .Carta-img{
+
+            height: 240px;
+            width: 340px;
+            object-fit: cover;
+            box-shadow: 1px 1px 10px var(--icon-color);
+        }
+        .Desing-images{
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+
+        @media screen and (min-width: 320px) {
+
+
+            .Carta-img{
+
+                height: 200px;
+                width: 280px;
+                object-fit: contain;
+                box-shadow: 1px 1px 10px var(--icon-color);
+            }
+
+            .Bg-title-h1{
+                font-size: var(--h2--font-size--mobile);
+                text-align: center;
+                margin: -130px 0 0 10px;
+     
+             
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+
+
+            .Carta-img{
+
+                height: 600px;
+                width: 1000px;
+                object-fit: contain;
+                box-shadow: 1px 1px 10px var(--icon-color);
+            }
+            .Info-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                height:auto;
+                width: 60%;
+                margin: 150px 0 100px 0;
+                gap:150px ;
+            }
+            .Info-container-description{
+                font-size: var(--h3--font-size--mobile);
+                word-spacing:0.3rem ;
+            }
+            .Info-date{
+               text-align: center;
+                background-color: var(--light-pink-color);
+                width: 300px;
+                padding: 20px;
+                height: 150px;
+            }
+            .Game-img1{
+                height: 440px;
+                width: 640px;
+
+            }
+            .Game-img-main{
+                height: 740px;
+                width: 1040px;    
+        }
+        .Game-img2{
+            height: 640px;
+            width: 440px;
+        }
+    }
+
