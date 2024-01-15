@@ -1,15 +1,16 @@
 :root{
 
 --background-color: #fff8f0;
---button-color: #0e4675;
---button-color-hover:#437cab;
---icon-color: #1b1424;
---nav-color: #f2c17c;
---yellow-color:#77c6ff;
---light-pink-color:#8cc7fa;
+--button-color: #ce8f5a;
+--button-color-hover:#efd199;
+--icon-color: #334755;
+--nav-color: #c5dfe1;
+--light-color:#6287a2;
+--backgound-blue-color:#80c8bc;
+--light-blue-color:#5ec0ca;
 --menu-color:#9e9e9e;
 --text-light-color:#ffffff;
---text-dark-color:#1a1a1c;
+--text-dark-color:#050708;
 
 
 }
@@ -69,7 +70,7 @@ a{text-decoration: none;}
     transition: background-color 0.3s ease;
   }
 
-
+  /*Estilos para el menú desplegable */
   .Top-nav-subMenu{
     display: flex;
     flex-direction: column;
@@ -82,8 +83,7 @@ a{text-decoration: none;}
     box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);}
 
 
-    /* Estilos para el menú desplegable */
-
+/* Estilos para el menú desplegable */
   .Sub-item {
     justify-content: flex-end;
     display: flex;
@@ -95,6 +95,7 @@ a{text-decoration: none;}
     margin-right: 100px;
   }
 
+  /*Base del navegador principal*/
 .Top-nav{
     display: flex;
     flex-direction: row;
@@ -109,21 +110,16 @@ a{text-decoration: none;}
     position: fixed;
     z-index: 2;
 }
+
+/*Estilo del logo/nombre de la página*/
 .Top-nav-logo{ 
-    color: var(--button-color);
+    color: var(--light-blue-color);
     font-size: 1.5rem;
     margin-left: 30px;
     margin-top: -5;
     font-family: "Macondo";
 }
-
-.Top-nav-profileImg{
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    }
-
+/*Todo lo que tenga -desktop es el menú en pantalla de pc*/
     .Nav-desktop ul{
     list-style: none;
       padding: 0;
@@ -131,6 +127,7 @@ a{text-decoration: none;}
       display: flex;
       
     }
+    /*Todo lo que tenga -mobile es el menú en pantalla de teléfono*/
     .Nav-mobile ul {
       list-style: none;
       padding: 0;
@@ -163,7 +160,7 @@ a{text-decoration: none;}
       cursor: pointer;
     }
     
-    
+/*Responsive en varias pantallas*/
     @media (max-width: 768px) {
       .Nav-desktop {
         display: none;
@@ -175,7 +172,7 @@ a{text-decoration: none;}
         position: absolute;
         padding: 0.5rem 1.5rem;
         gap: 0.725rem;
-        top: 60px;
+        top: 42px;
         width: 100%;
         background-color: transparent;
         overflow: hidden;
@@ -198,7 +195,7 @@ a{text-decoration: none;}
 
     }
 
-/*---------------------------Contenido Principal----------------------------*/
+/*---------------------------Contenido Principal del index----------------------------*/
 .Main-container{
 
     display: flex;
@@ -209,19 +206,15 @@ a{text-decoration: none;}
     width: 100%;
 }
 
-
-/**/
 .Main-page{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--light-pink-color);
+    background-color: var(--light-blue-color);
     height: auto;
     padding: 50px;
     margin-bottom: 100px;
-
 }
-
 
 
 .Main-aboutMe{
@@ -242,10 +235,10 @@ a{text-decoration: none;}
     }
 .Main-h1{
     font-weight: bold;
-    color: var(--text-dark-color);
+    color: var(--text-light-color);
 }
 .Main-h3{
-    color: var(--text-dark-color);
+    color: var(--text-light-color);
 
 }
 .Main-h4{
@@ -254,7 +247,7 @@ a{text-decoration: none;}
 
 }
 .Main-h2{
-    color:var(--icon-color);
+    color:var(--text-light-color);
     margin-bottom: 0;
     font-weight: 400;
 }
@@ -287,7 +280,7 @@ a{text-decoration: none;}
 .Main-categoria-ilustracion{
     width: 100%;
     height: 200px;
-    background-color: var(--button-color);
+    background-color: var(--backgound-blue-color);
     background-size: cover;
     justify-content: center;
     display: flex;
@@ -302,7 +295,7 @@ a{text-decoration: none;}
 .Main-categoria-diseño{
     width: 100%;
     height: 200px;
-    background-color: var(--nav-color);
+    background-color: var(--button-color-hover);
     background-size: cover;
     justify-content: center;
     display: flex;
@@ -315,7 +308,7 @@ a{text-decoration: none;}
 .Main-categoria-joyas{
     width: 100%;
     height: 200px;
-    background-color: var(--light-pink-color);
+    background-color: var(--button-color);
     justify-content: center;
     display: flex;
     align-items: center;
@@ -342,12 +335,7 @@ a{text-decoration: none;}
     padding: 10px;
 
 }
-.Logo-img{
-    height: 200px;
-    width:70%;
-    object-fit: contain;
-    margin-left: 55px;
-}
+
 
 
 @keyframes contraccionExpandir {
@@ -393,9 +381,9 @@ a{text-decoration: none;}
     .Main-h3{
         font-size: 20px;
     }
-    .Top-nav-name{ 
-  
-        font-size: 2rem;
+    .Top-nav-logo{ 
+        
+        font-size: 2.2rem;
  
     }
 
@@ -439,6 +427,10 @@ a{text-decoration: none;}
     margin-top: 100px;
 
 }
+.Logo-img{
+    height: 200px;
+margin-bottom: 80px;
+}
 
 .Item-search{
     border: none;
@@ -456,7 +448,7 @@ a{text-decoration: none;}
     padding: 5px;
     box-shadow: 1px 2px 10px #636160;
     border-radius: 10px;
-    background-color: var(--button-color);
+    background-color: var(--light-blue-color);
 
 }
 .Item-container{
@@ -474,27 +466,37 @@ a{text-decoration: none;}
     border-radius: 10px;
     margin: 10px 5px 5px 5px;
     text-align: center;
-
+}
+.Item-box-siren{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px 5px 5px 5px;
 
 }
 .Item-name{
     height:50px;
     width: 100%;
-    background: linear-gradient(0deg,rgba(0,0,0,.7),rgba(132, 131, 136, 0.3) 90%,transparent);
+    background-color: var(--light-blue-color);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px ;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 1px 2px 10px var(--icon-color);
 }
 .Item-img{
 
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-top-left-radius:10px ;
-    border-top-right-radius:10px ;
+    box-shadow: 1px 2px 10px var(--icon-color);
     margin: 0;
+    border-radius: 10px;
 
 }
 
@@ -502,11 +504,49 @@ a{text-decoration: none;}
     font-size: 1rem;
     padding: 5px;
     margin: 0;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--text-light-color);
+}
+.Jewel-btn{
+    background-color: var(--light-blue-color);
+    border: none;
+    padding: 14px;
+    border-radius: 35px;
+    height: 50px;
+    color: var(--text-light-color);
+    margin-left: -40px;
+
+}
+@media (max-width: 768px) {
+
+    .Item-box{
+        width: 400px;
+        height: 300px;
+        border-radius: 10px;
+        margin: 10px 5px 5px 5px;
+        text-align: center;
+    }
+
 
 }
 
+
+
+@media (max-width: 1600px) {
+.Item-search{
+
+    padding: 10px;
+    margin-right: 5px;
+    width: 350px;
+}
+
+.Item-searchButton{
+    height: 39px;
+    width: 40px;
+
+
+}
+}
 /*--------------------------------------Perfil----------------------------------------------------------*/
 
 .Profile-container{
@@ -514,7 +554,7 @@ a{text-decoration: none;}
     flex-direction: column;
     align-items: center;
     margin: 86px 0 0 0;
-    background-color: var(--light-pink-color);
+    background-color: var(--backgound-blue-color);
     width: 100%;
 }
 .Profile-img{

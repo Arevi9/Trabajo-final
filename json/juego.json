@@ -11,8 +11,9 @@
         Tarot, con el objetivo de reexaminar y reinterpretar su significado y simbolismos originales. Su
         objetivo principal es desafiar las supersticiones y creencias arraigadas en torno a la lectura del 
         destino, las cuales pueden limitar la capacidad de las personas para tomar decisiones autónomas 
-        y conscientes.</p> 
-        <p>Las cartas han sido ilustradas siguiendo una temática centrada en las supersticiones más 
+        y conscientes.</p>
+
+       <p>Las cartas han sido ilustradas siguiendo una temática centrada en las supersticiones más 
         comunes de la cultura occidental. Además, se ha buscado una estética inspirada en la Francia del 
         siglo XVIII, conocido por ser el siglo de las luces, con el objetivo de aportar una atmósfera visual 
         y artística particular a la baraja. El Tarot de Marsella, considerado uno de los Tarots más antiguos 
@@ -25,3 +26,6 @@
 
 
 }]
+
+--yellow-color:#c9e2e9;
+--light-pink-color:#1b76a3;
