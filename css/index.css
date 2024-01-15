@@ -57,63 +57,45 @@ body{
 /*Quitar la decoración de los hipervínculos*/
 a{text-decoration: none;}
 
- /*Modificar el aspecto de las listas del navegador*/
-.Top-nav-ul {
-    margin: 0;
-    padding: 0;
-    padding-inline-start: 0;
-    gap: 3rem;
-}
+
  /* Estilo para los enlaces del menú desplegable */
 .Top-nav-link {
     display: block;
     padding: 8px 0;
-    color: var(--background-color);
+    font-size: var(--h4--font-size--mobile);
+    color: var(--icon-color);
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.3s ease;
   }
-.Top-nav-li {
-    list-style-type: none;
-    padding: 18px 0px;
-  }
+
 
   .Top-nav-subMenu{
-    display: none;
+    display: flex;
     flex-direction: column;
-    position: fixed;
     background-color:var(--button-color);
     align-items: flex-start;
     transition: all 0.5s ease;
     width: 18.75rem;
     right: 1.25rem;
     border-radius: 5px;
-    padding: 20px 0px;
-    opacity: 0;
     box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);}
-  
- /*Uso de hover para hacer aparecer y desaparecer las opciones del menú del navegador*/
- .Top-nav-li:hover .Top-nav-subMenu{
-    display: block;
-    opacity: 1;
-    display: flex;
 
-  }
 
     /* Estilos para el menú desplegable */
 
   .Sub-item {
-    width: 84%;
+    justify-content: flex-end;
     display: flex;
     align-items: center;
     gap: 0.725rem;
     cursor: pointer;
     padding: 0.5rem 1.5rem;
+    text-align: right;
+    margin-right: 100px;
   }
 
-
 .Top-nav{
-    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -127,18 +109,12 @@ a{text-decoration: none;}
     position: fixed;
     z-index: 2;
 }
-
-.Top-nav-name{ 
+.Top-nav-logo{ 
     color: var(--button-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-left: 30px;
     margin-top: -5;
     font-family: "Macondo";
-}
-
-.Top-nav-menu{
-    display: flex;
-    flex-direction: row;
 }
 
 .Top-nav-profileImg{
@@ -148,10 +124,80 @@ a{text-decoration: none;}
     object-fit: cover;
     }
 
-.Top-nav-menuIcon{
-    margin-right: 50px;
+    .Nav-desktop ul{
+    list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      
+    }
+    .Nav-mobile ul {
+      list-style: none;
+      padding: 0;
+      margin-right: 50px;
 
-}
+      
+    }
+    
+    .Nav-desktop li,
+    .Nav-mobile li {
+      margin-right: 20px;
+    }
+    
+    .Nav-mobile a {
+        display: block;
+        padding: 8px 0;
+        color: var(--text-light-color);
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    
+    
+    .Nav-mobile {
+      display: none;
+    }
+    
+    .Nav-mobile-icon {
+      display: none;
+      cursor: pointer;
+    }
+    
+    
+    @media (max-width: 768px) {
+      .Nav-desktop {
+        display: none;
+      }
+    
+      .Nav-mobile {
+        display: none; /* Cambiado a none para ocultar inicialmente */
+        flex-direction: column;
+        position: absolute;
+        padding: 0.5rem 1.5rem;
+        gap: 0.725rem;
+        top: 60px;
+        width: 100%;
+        background-color: transparent;
+        overflow: hidden;
+      }
+    
+      .Nav-mobile.active {
+        display: flex; /* Mostrar cuando tiene la clase active */
+        z-index: 2;
+        flex-direction: row-reverse;
+        margin-right: 40px;
+      }
+    
+      .Nav-mobile-icon {
+        display: block;
+        margin-right: 40px;
+      }
+      .Top-nav-name{
+        font-size: var(--h3--font-size--mobile);
+      }
+
+    }
+
 /*---------------------------Contenido Principal----------------------------*/
 .Main-container{
 
@@ -598,10 +644,14 @@ a{text-decoration: none;}
         /*--------------------------ILUSTRACIONES--------------*/
 .Illustration-container{
     margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
         .Tarot{
-            display: inline-block;
-            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 30px;
             margin: 10px;
 
@@ -620,6 +670,16 @@ a{text-decoration: none;}
 
         .Ilustracion-h3{ font-size: var(--h3--font-size--mobile);
         margin: 0;}
+
+        @media screen and (min-width: 300px) {
+            .Tarot-img{
+                height: 450px;
+                width: 300px;
+   
+            }
+
+        }
+
 
 
         @media screen and (min-width: 768px) {
@@ -659,12 +719,8 @@ a{text-decoration: none;}
              .Top-nav-li:hover .Top-nav-subMenu{
                 display:none;
               }
-
-
-            
+   
         }
-
-
 
         /*----------------------------JUEGO TAROT---------------------------------------------*/
 
