@@ -46,6 +46,8 @@
 
         <h1>¡Bienvenido!</h1>
 
+        <img src="/img/icons/logo.png" alt="Logo de la tienda">
+
         <form action="" method="GET">
             <input class="Item-search" type="search" name="Buscador" placeholder="Buscar">
             <button class="Item-searchButton"><img class="Item-searchIcon" src="/img/icons/searchIcon.svg"
@@ -56,9 +58,40 @@
         <div class="Item-container" id="Articulo">
         </div>
 
+<h2 style="margin-top: 150px;">COLECCIÓN PICHI PICHI PITCH</h2>
+
+<div class="Item-container">
+    <div id="Articulo" class="Item-box">
+        <img id="imagen1" class="Item-img" src="/img/tienda/anillos/luchia1.webp" alt="Anillos Luchia">
+        <button onclick="cambiarImagen('imagen1', imagenesSeccion1)">Cambiar Imagen Sección 1</button>
+    </div>
+    <div id="Articulo" class="Item-box">
+        <img id="imagen2" class="Item-img" src="/img/tienda/anillos/converted_hanon1.webp" alt="Anillos Hanon">
+        <button onclick="cambiarImagen('imagen2', imagenesSeccion2)">Cambiar Imagen Sección 2</button>
+    </div>
+    <div id="Articulo" class="Item-box">
+        <img id="imagen3" class="Item-img" src="/img/tienda/anillos/converted_hanon1.webp" alt="Anillos Rina">
+        <button onclick="cambiarImagen('imagen3', imagenesSeccion3)">Cambiar Imagen Sección 2</button>
+    </div>
+    <div id="Articulo" class="Item-box">
+        <img id="imagen4" class="Item-img" src="/img/tienda/anillos/converted_hanon1.webp" alt="Anillos Karen">
+        <button onclick="cambiarImagen('imagen4', imagenesSeccion4)">Cambiar Imagen Sección 2</button>
+    </div>
+    <div id="Articulo" class="Item-box">
+        <img id="imagen5" class="Item-img" src="/img/tienda/anillos/converted_hanon1.webp" alt="Anillos Coco">
+        <button onclick="cambiarImagen('imagen5', imagenesSeccion5)">Cambiar Imagen Sección 2</button>
+    </div>
+    <div id="Articulo" class="Item-box">
+        <img id="imagen6" class="Item-img" src="/img/tienda/anillos/converted_hanon1.webp" alt="Anillos Noel">
+        <button onclick="cambiarImagen('imagen6', imagenesSeccion6)">Cambiar Imagen Sección 2</button>
+    </div>
+    <div id="Articulo" class="Item-box">
+        <img id="imagen7" class="Item-img" src="/img/tienda/anillos/converted_hanon1.webp" alt="Anillos Seira">
+        <button onclick="cambiarImagen('imagen7', imagenesSeccion7)">Cambiar Imagen Sección 2</button>
+    </div>
 
 
-
+</div>
 
 
     </main>
@@ -121,7 +154,55 @@ function mostrar(objetos){
 }
 
 
+</script>
+
+<script>
+
+//Las funciones cambiarImagen son específicas para cada sección, y se utiliza una condición para determinar cuál array de imágenes debe manipularse.
+
+      // Definir arrays con las rutas de las imágenes para cada sección
+      var imagenesSeccion1 = ["/img/tienda/anillos/luchia1.webp","/img/tienda/anillos/luchia2.webp"];
+      var imagenesSeccion2 = ["/img/tienda/anillos/converted_hanon1.webp", "/img/tienda/anillos/hanon2.webp"];
+      var imagenesSeccion3 = ["/img/tienda/anillos/rina1.webp","/img/tienda/anillos/rina2.webp"];
+      var imagenesSeccion4 = ["/img/tienda/anillos/converted_hanon1.webp", "/img/tienda/anillos/hanon2.webp"];
+      var imagenesSeccion5 = ["/img/tienda/anillos/converted_hanon1.webp", "/img/tienda/anillos/hanon2.webp"];
+      var imagenesSeccion6 = ["/img/tienda/anillos/converted_hanon1.webp", "/img/tienda/anillos/hanon2.webp"];
+      var imagenesSeccion7 = ["/img/tienda/anillos/converted_hanon1.webp", "/img/tienda/anillos/hanon2.webp"];
+    
+      // Inicializar índices para cada sección
+      var indiceImagenSeccion1 = 0;
+      var indiceImagenSeccion2 = 0;
+      var indiceImagenSeccion3 = 0;
+      var indiceImagenSeccion4 = 0;
+      var indiceImagenSeccion5 = 0;
+      var indiceImagenSeccion6 = 0;
+      var indiceImagenSeccion7 = 0;
+    
+      function cambiarImagen(idImagen, arrayImagenes) {
+        var imagen = document.getElementById(idImagen);
+    
+        // Cambiar la fuente de la imagen
+        //El símbolo % se utiliza para asegurarse de que el índice esté dentro de los límites del array, por lo que si llega al final, vuelve al principio.
+        if (arrayImagenes === imagenesSeccion1) {
+          indiceImagenSeccion1 = (indiceImagenSeccion1 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenSeccion1];
+        } else if (arrayImagenes === imagenesSeccion2) {
+          indiceImagenSeccion2 = (indiceImagenSeccion2 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenSeccion2];
+        }else if (arrayImagenes === imagenesSeccion3) {
+          indiceImagenSeccion3 = (indiceImagenSeccion3 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenSeccion3];
+        }else if (arrayImagenes === imagenesSeccion4) {
+          indiceImagenSeccion4 = (indiceImagenSeccion4 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenSeccion4];
+        }
+      }
+
+       //Al hacer clic en el botón, la función cambiarImagen se ejecutará, cambiando la fuente de la imagen al siguiente elemento en el array imagenes. 
     </script>
+
+
+
 
 
 

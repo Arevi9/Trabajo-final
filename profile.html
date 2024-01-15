@@ -39,65 +39,27 @@
         </nav>
       </header>
 
+<!-----------------Perfil con datos académicos y experiencia--------->
 
 
-<main class="Profile-container">
-   
-        <div class="Perfil-principal">
-            <img class="Perfil-img" src="/img/perfil/perfil2.jpg" alt="Imagen de perfil"> <div class="Perfil-name">
-                <span><h2>Alba Redondo</h2></span>
-               <span>22 años</span>
-         </div>
-        </div>
-            <div id="PerfilInfo" class="Perfil-info">
-            </div>
-            <div class="Perfil-me">
-              <h3>Estudios</h3>
-              <span><ul>
-                <li>Grado en Bellas Artes en la Universidad de Murcia</li>
-                <li>Máster en Diseño Gráfico y Web en CEI: Escuela de diseño y marketing</li>
-              </ul></span>
+<div id="PerfilInfo" class="Perfil-info">
+  <h2>Y ahora un poquito sobre mi</h2>
+  <img class="Profile-img" src="/img/perfil/perfil3.webp" alt="Mi imagen de perfil">
+</div>
+<div class="Perfil-me">
+  <h3>Estudios</h3>
+  <span><ul>
+    <li>Grado en Bellas Artes en la Universidad de Murcia</li>
+    <li>Máster en Diseño Gráfico y Web en CEI: Escuela de diseño y marketing</li>
+  </ul></span>
 
-              <h3>Experiencia</h3>
-              <span>
-                <ul><li>Camarera </li></ul>
-              </span>
-            </div>
-        
-       
-</main>
-   
-   
-   <script>
-       
-     const PerfilInfo = document.getElementById("PerfilInfo")
-   
-           var info = [ {
+  <h3>Experiencia</h3>
+  <span>
+    <ul><li>Camarera </li></ul>
+  </span>
+</div>
 
-               informacion: "Email",
-               nombre: "alba.rv912@gmail.com"
-   
-           }, {
-               informacion: "Teléfono de contacto",
-               nombre: "687 75 59 66"
-   
-           }];
-   
-           var ProfileBox = "";
-   
-   
-   info.forEach((dato) => {
-       ProfileBox = ProfileBox + `<div class="Perfil-info-general">
-           <div class= "Perfil-info-words"> 
-               <span>${dato.informacion}</span>
-               <span class=Perfil-info-dato2>${dato.nombre}</span>
-               </div> 
-               </div> 
-       `;
-   }
-   );
-       PerfilInfo.innerHTML= ProfileBox;
-   
-   </script>
+
+
 </body>
 </html>

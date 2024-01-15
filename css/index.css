@@ -517,6 +517,13 @@ a{text-decoration: none;}
     background-color: var(--light-pink-color);
     width: 100%;
 }
+.Profile-img{
+
+    width: 70%;
+    height: 600px;
+    object-fit: contain;
+    margin-top: 100px;
+}
 
 .Perfil-info{ display: flex;
     flex-direction: column;
@@ -524,7 +531,7 @@ a{text-decoration: none;}
     width: 90%;
     background-color: var(--background-color);
     border-radius: 20px;
-    margin: 20px 0;
+    margin: 100px 0 0 0;
     
 ;}
 

@@ -45,33 +45,9 @@
 
     <div class="Bg-title-game"></div> <h1 class="Bg-title-h1">Juego de mesa de Tarot</h1>
 
-    <div class="Info-container">
+    <div class="Info-container" id="desingInfo">
 
-           <div class="Info-date"><h2>2023</h2></div>
 
-        <div class="Info-container-description">
-            <p>El <strong>Tarot </strong>es una baraja de cartas utilizada para la lectura e interpretación del destino de 
-                la persona que lo consulta. El conjunto de cartas se divide en dos grupos principales: los Arcanos 
-                menores, compuestos por cincuenta y seis cartas, y los <strong>Arcanos Mayores</strong>, que cuentan con 
-                veintidós cartas. </p>
-                
-                <p>Este proyecto se centra en la creación de una baraja ilustrada del 
-                Tarot, con el objetivo de reexaminar y reinterpretar su significado y simbolismos originales. Su
-                objetivo principal es desafiar las supersticiones y creencias arraigadas en torno a la lectura del 
-                destino, las cuales pueden limitar la capacidad de las personas para tomar decisiones autónomas 
-                y conscientes.</p>
-
-               <p>Las cartas han sido ilustradas siguiendo una temática centrada en las supersticiones más 
-                comunes de la cultura occidental. Además, se ha buscado una estética inspirada en la Francia del 
-                siglo XVIII, conocido por ser el siglo de las luces, con el objetivo de aportar una atmósfera visual 
-                y artística particular a la baraja. El Tarot de Marsella, considerado uno de los Tarots más antiguos 
-                y conocidos, ha servido de base para la creación de la baraja ilustrada.</p> 
-                <p> Cada carta contiene 
-                una imagen original y evocadora, diseñada para invitar a la reflexión y promover una mayor 
-                conciencia sobre las decisiones y el poder de elección individual. La lectura de estas cartas se 
-                llevará a cabo a través de un juego de mesa diseñado específicamente para este propósito y del cual se han ideado las reglas para favorecer los resultados. 
- </p>
-        </div>
     </div>
 
     <div class="Desing-images">
@@ -120,7 +96,37 @@
 </footer>
 
 
+<script>
+const descripcion = document.getElementById ("desing-Info");
 
+
+ // Hacer una solicitud HTTP para obtener el JSON realizando fetch
+ fetch('./json/juego.json')
+    //trae los datos del JSON al HTML
+            .then( informacion =>{
+                return informacion.json();
+            })
+     //muestra los datos 
+            .then(datos =>{
+               
+                console.log(datos);
+                mostrar(datos);
+            })
+     //mensaje de error si los datos no son leídos
+            .catch(error => console.error('Error al obtener el JSON:', error));
+
+function mostrar(description){
+    description.forEach((info, i) => {
+        descripcion.innerHTML += `
+        <div class="Info-date"><h2>${descripcion.fecha}</h2></div>
+
+<div class="Info-container-description"> ${descripcion.informacion}
+    
+</div>
+            `
+    });
+}
+</script>
 
 
 
