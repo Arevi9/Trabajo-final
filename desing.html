@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-    <!-----------------------------NAVEGADOR---------------------->
+<!-----------------------------NAVEGADOR---------------------->
 
        
        <!--Menú desplegable hecho con listas para navegar por la página-->
@@ -16,7 +21,7 @@
           <ul>
             <li class="Sub-item"><a  class="Top-nav-link" href="./profile.html">Sobre mí</a></li>
             <li class="Sub-item"><a  class="Top-nav-link" href="./ilustracion.html">Ilustración</a></li>
-            <li class="Sub-item"><a  class="Top-nav-link" href="./diseño.html">Diseño</a></li>
+            <li class="Sub-item"><a  class="Top-nav-link" href="./desing.html">Diseño</a></li>
             <li class="Sub-item"><a  class="Top-nav-link" href="./joyas.html">Joyas</a></li>
             <li class="Sub-item "><a class="Top-nav-link" href="./contacto.html">Contacto</a></li>
           </ul>
@@ -27,7 +32,7 @@
           <ul class="Top-nav-subMenu">
             <li class="Sub-item"><a href="./profile.html">Sobre mí</a></li>
             <li class="Sub-item"><a  href="./ilustracion.html">Ilustración</a></li>
-            <li class="Sub-item"><a  href="./diseño.html">Diseño</a></li>
+            <li class="Sub-item"><a  href="./desing.html">Diseño</a></li>
             <li class="Sub-item"><a  href="./joyas.html">Joyas</a></li>
             <li class="Sub-item "><a href="./contacto.html">Contacto</a></li>
           </ul>
@@ -38,8 +43,19 @@
 
 
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileNavIcon = document.querySelector('.Nav-mobile-icon');
+  const mobileNav = document.querySelector('.Nav-mobile');
+
+  mobileNavIcon.addEventListener('click', function() {
+    mobileNav.classList.toggle('active');
+  });
+});
 
 
-      
+</script>
+
+
 </body>
 </html>

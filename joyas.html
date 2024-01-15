@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-Tienda</title>
     <link rel="stylesheet" href="/css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Quicksand:wght@400;500;600;700&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" 
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  
   
 </head>
 
@@ -22,7 +24,7 @@
           <ul>
             <li class="Sub-item"><a  class="Top-nav-link" href="./profile.html">Sobre mí</a></li>
             <li class="Sub-item"><a  class="Top-nav-link" href="./ilustracion.html">Ilustración</a></li>
-            <li class="Sub-item"><a  class="Top-nav-link" href="./diseño.html">Diseño</a></li>
+            <li class="Sub-item"><a  class="Top-nav-link" href="./desing.html">Diseño</a></li>
             <li class="Sub-item"><a  class="Top-nav-link" href="./joyas.html">Joyas</a></li>
             <li class="Sub-item "><a class="Top-nav-link" href="./contacto.html">Contacto</a></li>
           </ul>
@@ -33,7 +35,7 @@
           <ul class="Top-nav-subMenu">
             <li class="Sub-item"><a href="./profile.html">Sobre mí</a></li>
             <li class="Sub-item"><a  href="./ilustracion.html">Ilustración</a></li>
-            <li class="Sub-item"><a  href="./diseño.html">Diseño</a></li>
+            <li class="Sub-item"><a  href="./desing.html">Diseño</a></li>
             <li class="Sub-item"><a  href="./joyas.html">Joyas</a></li>
             <li class="Sub-item "><a href="./contacto.html">Contacto</a></li>
           </ul>
@@ -46,7 +48,7 @@
 
         <h1>¡Bienvenido!</h1>
 
-        <img src="/img/icons/logo.png" alt="Logo de la tienda">
+        <img class="Item-img" src="" alt="Logo de la tienda">
 
         <form action="" method="GET">
             <input class="Item-search" type="search" name="Buscador" placeholder="Buscar">
@@ -70,7 +72,7 @@
         <button onclick="cambiarImagen('imagen2', imagenesSeccion2)">Cambiar Imagen Sección 2</button>
     </div>
     <div id="Articulo" class="Item-box">
-        <img id="imagen3" class="Item-img" src="/img/tienda/anillos/converted_hanon1.webp" alt="Anillos Rina">
+        <img id="imagen3" class="Item-img" src="/img/tienda/anillos/rina1.webp" alt="Anillos Rina">
         <button onclick="cambiarImagen('imagen3', imagenesSeccion3)">Cambiar Imagen Sección 2</button>
     </div>
     <div id="Articulo" class="Item-box">
@@ -118,7 +120,14 @@
 
     <script>
 
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileNavIcon = document.querySelector('.Nav-mobile-icon');
+  const mobileNav = document.querySelector('.Nav-mobile');
 
+  mobileNavIcon.addEventListener('click', function() {
+    mobileNav.classList.toggle('active');
+  });
+});
 
  const listaTienda = document.getElementById("Articulo");
 
