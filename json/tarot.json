@@ -1,0 +1,93 @@
+[
+{ 
+    "img": "/img/tarot/loco.webp",
+  "alt": "El loco"
+},{ 
+    "img": "/img/tarot/mago.webp",
+  "alt": "El Mago"
+},{ 
+    "img": "/img/tarot/lamonja.webp",
+  "alt": "La Sacerdotisa"
+},{ 
+    "img": "/img/tarot/emperatriz.webp",
+  "alt": "La Emperatriz"
+},{ 
+    "img": "/img/tarot/emperador.webp",
+    "alt": "El Emperador"
+},{ 
+    "img": "/img/tarot/papa.webp",
+    "alt": "El Papa"
+},{ 
+    "img": "/img/tarot/enamorados.webp",
+    "alt": "Los Enamorados"
+},{ 
+    "img": "/img/tarot/carro.webp",
+    "alt": "El Carro"
+},{ 
+    "img":"/img/tarot/fuerza.webp" ,
+    "alt": "La Fuerza"
+},{ 
+    "img":"/img/tarot/ermi.webp" ,
+    "alt": "El Ermitaño"
+},{ 
+    "img": "/img/tarot/fotuna.webp",
+    "alt": "La Rueda de la Fortuna"
+},{ 
+    "img": "/img/tarot/justicia.webp",
+    "alt": "La Justicia"
+},{ 
+    "img": "/img/tarot/colgado.webp",
+    "alt": "El Colgado"
+},{ 
+    "img": "/img/tarot/muerte.webp",
+    "alt": "La Muerte"
+},{ 
+    "img": "/img/tarot/templ.webp",
+    "alt": "La Templanza"
+},{ 
+    "img": "/img/tarot/diablo.webp",
+    "alt": "El Diablo"
+},{ 
+    "img": "/img/tarot/torre.webp",
+    "alt": "La Torre"
+},{ 
+    "img":"/img/tarot/estre.webp" ,
+    "alt": "La Estrella"
+},{ 
+    "img": "/img/tarot/luna.webp",
+    "alt": "La Luna"
+},{ 
+    "img": "/img/tarot/sol.webp",
+    "alt": "El Sol"
+},{ 
+    "img": "/img/tarot/juicio.webp",
+    "alt": "El Juicio"
+},{ 
+    "img":"/img/tarot/mundo.webp" ,
+    "alt": "El Mundo"
+},{ 
+    "img": "/img/bellaBestia/elMago.webp",
+    "alt": "Bella y Bestia Mago"
+},{ 
+    "img": "/img/bellaBestia/elLoco.webp",
+    "alt": "Bella y Bestia Loco"
+},{ 
+    "img": "/img/bellaBestia/emperador.webp" ,
+    "alt": "Bella y Bestia Emperador"
+},{ 
+    "img": "/img/bellaBestia/emperatriz.webp",
+    "alt": "Bella y Bestia Emperatriz"
+},{ 
+    "img": "/img/bellaBestia/enamorados.webp",
+    "alt": "Bella y Bestia Enamorados"
+},{ 
+    "img": "/img/bellaBestia/laTorre.webp",
+    "alt": "Bella y Bestia Torre"
+},{ 
+    "img":"/img/bellaBestia/sacerdotisa.webp" ,
+    "alt": "Bella y Bestia Sacerdotisa"
+}
+
+]
+
+

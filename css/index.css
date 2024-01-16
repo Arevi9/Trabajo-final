@@ -104,9 +104,9 @@ a{text-decoration: none;}
     background-color: var(--background-color);
     box-shadow: 1px 1px 10px #65696e;
     padding: 10px;
-    margin: 0 0 0px 0;
+    margin: 0;
     width: 100%;
-    height: 45px;
+    height: 60px;
     position: fixed;
     z-index: 2;
 }
@@ -834,7 +834,7 @@ margin-bottom: 80px;
             justify-content: center;
             width: 100%;
             height: 200px;
-            background-image: url(/img/carta/headerCarta.png);
+            background-image: url(/img/carta/headerCarta.webp);
             background-repeat: no-repeat;
             filter: brightness(90%);
             object-fit: cover;
