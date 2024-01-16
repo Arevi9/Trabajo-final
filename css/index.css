@@ -1,3 +1,5 @@
+
+/*Paleta de color usada*/
 :root{
 
 --background-color: #fff8f0;
@@ -14,7 +16,7 @@
 
 
 }
-
+/*Tamaños de fuente*/
 :root{
 --h1--font-size--mobile:50px;
 --h2--font-size--mobile: 40px;
@@ -22,13 +24,14 @@
 --h4--font-size--mobile:16px;
 --h5--font-size--mobile:14px;
 --h6--font-size--mobile:12px;
+
+--h1-font-size--PC: 70px;
+--h2-font-size--PC: 70px;
+--h3-font-size--PC: 70px;
+--h4-font-size--PC: 70px;
+--h5-font-size--PC: 70px;
 }
 
-/*
-Medidas telefono:
-Medidas Tablet:
-Medidas PC:
-*/
 
 body{ 
     background-color: var(--background-color);
