@@ -2,7 +2,7 @@
 /*Paleta de color usada*/
 :root{
 
---background-color: #fff8f0;
+--background-color: #ffffff;
 --button-color: #ce8f5a;
 --button-color-hover:#efd199;
 --icon-color: #334755;
@@ -63,15 +63,42 @@ a{text-decoration: none;}
 
 
  /* Estilo para los enlaces del menú desplegable */
-.Top-nav-link {
+  .Nav-desktop a{
     display: block;
     padding: 8px 0;
     font-size: var(--h4--font-size--mobile);
     color: var(--icon-color);
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    position: relative;
   }
+  .Nav-desktop a:hover{
+    color: var(--light-blue-color);
+  }
+
+
+
+  /*Animación al posicionar el ratón sobre las opciones del menú*/
+  .Nav-desktop a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--light-blue-color);
+    z-index: 1;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .Nav-desktop a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+
 
   /*Estilos para el menú desplegable */
   .Top-nav-subMenu{
@@ -214,7 +241,7 @@ a{text-decoration: none;}
     flex-direction: column;
     align-items: center;
     background-color: var(--light-blue-color);
-    height: auto;
+    height: 550px;
     padding: 50px;
     margin-bottom: 100px;
 }
