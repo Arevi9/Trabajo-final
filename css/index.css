@@ -19,17 +19,17 @@
 /*Tamaños de fuente*/
 :root{
 --h1--font-size--mobile:50px;
---h2--font-size--mobile: 40px;
+--h2--font-size--mobile: 30px;
 --h3--font-size--mobile: 20px;
 --h4--font-size--mobile:16px;
 --h5--font-size--mobile:14px;
 --h6--font-size--mobile:12px;
 
---h1-font-size--PC: 70px;
---h2-font-size--PC: 70px;
---h3-font-size--PC: 70px;
---h4-font-size--PC: 70px;
---h5-font-size--PC: 70px;
+--h1--font-size--PC: 70px;
+--h2--font-size--PC: 55px;
+--h3--font-size--PC: 40px;
+--h4--font-size--PC: 26px;
+--h5--font-size--PC: 20px;
 }
 
 
@@ -54,6 +54,20 @@ body{
     margin-top: 20px;
     text-align: center;
 
+}
+
+.Page-h4{
+    font-size: var(--h4--font-size--mobile);
+}
+.Page-h2{
+    font-size: var(--h2--font-size--mobile);
+}
+.Page-h3{
+    font-size: var(--h3--font-size--mobile);
+}
+.Page-h5{
+    font-size: var(--h5--font-size--mobile);
+    font-weight: normal;
 }
 
 /*---------------Navegador principal---------------------*/
@@ -445,6 +459,8 @@ a{text-decoration: none;}
 .Footer-copyright{
     color: var(--background-color);
     font-weight: normal;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 
@@ -579,57 +595,71 @@ margin-bottom: 80px;
 }
 /*--------------------------------------Perfil----------------------------------------------------------*/
 
-.Profile-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 86px 0 0 0;
-    background-color: var(--backgound-blue-color);
+.Profile-Info{
+
     width: 100%;
-}
-.Profile-img{
-
-    width: 70%;
-    height: 600px;
-    object-fit: contain;
-    margin-top: 100px;
-}
-
-.Perfil-info{ display: flex;
-    flex-direction: column;
-    height: 40%;
-    width: 90%;
-    background-color: var(--background-color);
-    border-radius: 20px;
-    margin: 100px 0 0 0;
-    
-;}
-
-.Perfil-info-general{
-
+    margin-top: 150px;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 20%;
-    align-items: center;
-    gap: 20px;
-    padding: 10px;
-}
-.Perfil-info-words{
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    font-size: 0.9rem;
-    gap: 5px;
-   
-}
-.Perfil-info-dato2{  font-size: 0.9rem;
-    font-weight: light;
-    color: var(--text-color-2);}
+    justify-content: space-around;
+    flex-wrap: wrap;
+align-items: center;
 
-.Perfil-me{
+    
+
+}
+
+.Profile-img{
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    border: 20px solid var(--backgound-blue-color);
+    border-radius: 10px;
+
+
+}
+.Profile-intro{
+width: 80%;
+margin-top: 20px;
+
+}
+.Profile-about{
+    width: 100%;
+    background-color: var(--backgound-blue-color);
+    margin-top: 50px;
+    height: auto;
     padding: 20px;
 }
+
+@media screen and (min-width:768px) {
+
+    
+.Profile-img{
+    width: 35%;
+    height: auto;
+    object-fit: contain;
+
+
+}
+.Profile-intro{
+width: 40%;
+margin-right: 50px;
+}
+
+.Page-h2{
+    font-size: var(--h2--font-size--PC);
+    margin: -20px 0 100px 0;
+}
+
+.Page-h4{
+    font-size: var(--h5--font-size--PC);
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+    
+}
+
 /*-------------------------------------PARTE DE ARRIBA PERFIL---------------------------------------------*/
 
 
