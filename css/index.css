@@ -198,6 +198,7 @@ a{text-decoration: none;}
         font-weight: normal;
         text-decoration: none;
         transition: background-color 0.3s ease;
+        font-family: 'Macondo';
     }
     
     
@@ -222,7 +223,7 @@ a{text-decoration: none;}
         position: absolute;
         padding: 0.5rem 1.5rem;
         gap: 0.725rem;
-        top: 42px;
+        top: 70px;
         width: 100%;
         background-color: transparent;
         overflow: hidden;
@@ -285,7 +286,7 @@ a{text-decoration: none;}
     margin-bottom: 30px;
     border-radius: 10px;
     }
-    
+
 .Main-h1{
     font-weight: bold;
     color: var(--text-light-color);
@@ -366,8 +367,17 @@ a{text-decoration: none;}
     font-size: 30px;
     font-family: 'Macondo';
     text-shadow: 2px 1px 10px var(--icon-color);
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
 
 }
+
+.Main-categoria-title:hover{
+    --escala: 1.2;
+}
+
+
+
 .Main-separacion{
     display: flex;
     height: 100px;
@@ -389,6 +399,7 @@ a{text-decoration: none;}
 .Main-a{
     color: var(--text-light-color);
     font-weight: 500;
+    font-family: 'Macondo';
 }
 
 
@@ -407,14 +418,15 @@ a{text-decoration: none;}
 
 
 @media screen and (min-width: 1100px){
+
     .Main-title{ 
         font-size: 55px;
        }
-       .Main-aboutMe{
-     gap: 70px;
+    .Main-aboutMe{
+        gap: 70px;
     
     }
-       .Main-img{
+    .Main-img{
         height: 400px;
         width: 400px;
         margin-left: -50px;
@@ -441,6 +453,9 @@ a{text-decoration: none;}
         font-size: 2.2rem;
  
     }
+    .Main-a{
+        font-size: 20px;
+    }
 
 }
 
@@ -462,11 +477,26 @@ a{text-decoration: none;}
 .Footer-rrss{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     font-size: 20px;
     margin: auto 0 30px 0;
 }
+
+.Footer-rrss i{
+    color: var(--background-color);
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+}
+
+.Footer-rrss i:hover{
+    color: var(--icon-color);
+    --escala: 1.5;
+
+}
+
+
 .Footer-copyright{
     color: var(--background-color);
     font-weight: normal;
