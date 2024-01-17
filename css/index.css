@@ -45,27 +45,18 @@ body{
 
 }
 
-.Btn{ background-color: var(--button-color);
-    color: var(--background-color);
-    padding: 10px;
-    font-weight:bold;
-    font-size: 22px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    text-align: center;
-
-}
 #botonSubir {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    padding: 15px;
+    width: 50px;
+    background-color: var(--button-color-hover);
+    color: var(--text-light-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 50%;
+    font-size: 20px;
     cursor: pointer;
     z-index: 2;
   }
@@ -94,7 +85,8 @@ a{text-decoration: none;}
   .Nav-desktop a{
     display: block;
     padding: 8px 0;
-    font-size: var(--h4--font-size--mobile);
+    font-size: var(--h5--font-size--PC);
+    font-family: 'Macondo';
     color: var(--icon-color);
     font-weight: bold;
     text-decoration: none;
@@ -291,7 +283,9 @@ a{text-decoration: none;}
     width: 300px;
     object-fit: cover;
     margin-bottom: 30px;
+    border-radius: 10px;
     }
+    
 .Main-h1{
     font-weight: bold;
     color: var(--text-light-color);
@@ -370,6 +364,9 @@ a{text-decoration: none;}
 .Main-categoria-title{
     color: var(--background-color);
     font-size: 30px;
+    font-family: 'Macondo';
+    text-shadow: 2px 1px 10px var(--icon-color);
+
 }
 .Main-separacion{
     display: flex;
@@ -498,7 +495,7 @@ a{text-decoration: none;}
     padding: 6px;
     border-radius: 10px;
     margin: 0;
-    width: 250px;
+    width: 180px;
 }
 
 .Item-searchButton{
@@ -537,7 +534,7 @@ a{text-decoration: none;}
     flex-direction:row;
     justify-content: right;
     align-items: center;
-    width: 400px;
+    width: 355px;
     height: 300px;
     border-radius: 10px;
     margin: 10px 5px 5px 5px;
@@ -564,6 +561,15 @@ a{text-decoration: none;}
 
 }
 
+.Item-img-siren{
+
+    width: 90%;
+    height: 280px;
+    object-fit: cover;
+    margin: 0;
+    border-radius: 10px;
+}
+
 .Item-h2{
     font-size: 1rem;
     padding: 5px;
@@ -579,8 +585,15 @@ a{text-decoration: none;}
     border-radius: 35px;
     height: 50px;
     color: var(--text-light-color);
-margin-left: -30px;
+    margin-left: -30px;
 
+}
+.Siren-h2{
+    font-family:  "Macondo";
+    text-align: center;
+    font-size: 35px;
+    margin: 100px 0 80px 0;
+    color: var(--button-color);
 }
 
 @media (max-width: 768px) {
@@ -608,6 +621,15 @@ margin-left: -30px;
         height: 39px;
         width: 40px;
 
+
+    }
+    .Item-box-siren{
+
+        width: 400px;
+    }
+    .Siren-h2{
+
+        font-size: 55px;
 
     }
 }
@@ -849,6 +871,8 @@ margin-left: -30px;
             font-size: var(--h2--font-size--mobile);
             text-align: center;
             margin: -130px 0 0 10px;
+            font-family: 'Macondo';
+            font-weight: 400;
  
          
         }
@@ -875,8 +899,14 @@ margin-left: -30px;
 
         .Info-date{
 
-            background-color: var(--backgound-blue-color);
+            background-color: var(--button-color-hover);
             font-size: var(--h3--font-size--mobile);
+            text-align: center;
+            background-color: var(--button-color-hover);
+            padding: 20px;
+            height: 40px;
+            margin-top: 30px;
+            font-family: 'Macondo';
 
         }
         .Game-main{

@@ -110,7 +110,7 @@ window.onresize = function() {
 function mostrarOcultarBoton() {
   var botonSubir = document.getElementById("botonSubir");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 1200) {
       botonSubir.style.display = "block";
     } else {
       botonSubir.style.display = "none";
