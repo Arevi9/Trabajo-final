@@ -19,7 +19,7 @@
 /*Tamaños de fuente*/
 :root{
 --h1--font-size--mobile:50px;
---h2--font-size--mobile: 30px;
+--h2--font-size--mobile: 28px;
 --h3--font-size--mobile: 20px;
 --h4--font-size--mobile:16px;
 --h5--font-size--mobile:14px;
@@ -204,8 +204,8 @@ a{text-decoration: none;}
       cursor: pointer;
     }
     
-/*Responsive en varias pantallas*/
-    @media (max-width: 768px) {
+/*Responsive */
+    @media (max-width: 820px) {
       .Nav-desktop {
         display: none;
       }
@@ -254,7 +254,7 @@ a{text-decoration: none;}
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--light-blue-color);
+    background-image: url(/img/fondo.png);
     height: 550px;
     padding: 50px;
     margin-bottom: 100px;
@@ -275,38 +275,32 @@ a{text-decoration: none;}
     height: 200px;
     width: 300px;
     object-fit: cover;
-    box-shadow: 1px 2px 10px var(--text-dark-color);
+    margin-bottom: 30px;
     }
 .Main-h1{
     font-weight: bold;
     color: var(--text-light-color);
+    margin-top: 40px;
 }
 .Main-h3{
-    color: var(--text-light-color);
+    color: var(--text-dark-color);
 
 }
-.Main-h4{
-    font-size: 18px;
-    font-weight: 500;
 
-}
 .Main-h2{
-    color:var(--text-light-color);
+    color:var(--text-dark-color);
     margin-bottom: 0;
     font-weight: 400;
 }
-.Main-presentacion{
+
+.Main-description{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.Main-description{
-    padding: 20px;
-    font-weight: 500;
     text-align: center;
-    color: var(--icon-color);
-    background-color: var(--background-color);
-    box-shadow: 1px 2px 10px  #65696e;
+    gap: 15px;
+    padding: 20px;
+    border: 5px solid var(--button-color-hover);
     border-radius: 10px;
     width: 80%;
 
@@ -331,9 +325,6 @@ a{text-decoration: none;}
     align-items: center;
     margin-top: 20px;
     animation: contraccionExpandir 2s ;
-
-
-
 }
 
 .Main-categoria-diseño{
@@ -370,14 +361,20 @@ a{text-decoration: none;}
     justify-content: center;
     font-size: 20px;
 }
-.Main-shop-banner{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    height: 200px;
-    width: 100%;
-    padding: 10px;
+.Main-btn{
 
+    padding: 15px;
+    background-color: var(--button-color);
+    border-radius: 50px;
+    width: 150px;
+    text-align: center;
+}
+.Main-btn:hover{
+    background-color: var(--button-color-hover);
+}
+.Main-a{
+    color: var(--text-light-color);
+    font-weight: 500;
 }
 
 
@@ -475,7 +472,7 @@ a{text-decoration: none;}
 }
 .Logo-img{
     height: 200px;
-margin-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .Item-search{
@@ -502,21 +499,26 @@ margin-bottom: 80px;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
     gap: 60px;
 
 }
 .Item-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 400px;
     height: 300px;
     border-radius: 10px;
     margin: 10px 5px 5px 5px;
     text-align: center;
+
 }
 .Item-box-siren{
     display: flex;
     flex-direction:row;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center;
     width: 400px;
     height: 300px;
@@ -526,23 +528,22 @@ margin-bottom: 80px;
 }
 .Item-name{
     height:50px;
-    width: 100%;
+    width: 90%;
     background-color: var(--light-blue-color);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px ;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 1px 2px 10px var(--icon-color);
 }
 .Item-img{
 
-    width: 100%;
-    height: 300px;
+    width: 90%;
+    height: 280px;
     object-fit: cover;
-    box-shadow: 1px 2px 10px var(--icon-color);
     margin: 0;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 
 }
 
@@ -554,23 +555,23 @@ margin-bottom: 80px;
     color: var(--text-light-color);
 }
 .Jewel-btn{
+
     background-color: var(--light-blue-color);
     border: none;
     padding: 14px;
     border-radius: 35px;
     height: 50px;
     color: var(--text-light-color);
-    margin-left: -40px;
+margin-left: -30px;
 
 }
+
 @media (max-width: 768px) {
 
     .Item-box{
         width: 400px;
-        height: 300px;
-        border-radius: 10px;
-        margin: 10px 5px 5px 5px;
-        text-align: center;
+        height: 320px;
+
     }
 
 
@@ -579,19 +580,19 @@ margin-bottom: 80px;
 
 
 @media (max-width: 1600px) {
-.Item-search{
+    .Item-search{
 
-    padding: 10px;
-    margin-right: 5px;
-    width: 350px;
-}
+        padding: 10px;
+        margin-right: 5px;
+        width: 350px;
+    }
 
-.Item-searchButton{
-    height: 39px;
-    width: 40px;
+    .Item-searchButton{
+        height: 39px;
+        width: 40px;
 
 
-}
+    }
 }
 /*--------------------------------------Perfil----------------------------------------------------------*/
 
@@ -603,10 +604,7 @@ margin-bottom: 80px;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-align-items: center;
-
-    
-
+    align-items: center;
 }
 
 .Profile-img{
@@ -616,11 +614,10 @@ align-items: center;
     border: 20px solid var(--backgound-blue-color);
     border-radius: 10px;
 
-
 }
 .Profile-intro{
-width: 80%;
-margin-top: 20px;
+    width: 80%;
+    margin-top: 20px;
 
 }
 .Profile-about{
@@ -634,117 +631,88 @@ margin-top: 20px;
 @media screen and (min-width:768px) {
 
     
-.Profile-img{
-    width: 35%;
-    height: auto;
-    object-fit: contain;
+    .Profile-img{
+        width: 35%;
+        height: auto;
+        object-fit: contain;
 
-
-}
-.Profile-intro{
-width: 40%;
-margin-right: 50px;
-}
-
-.Page-h2{
-    font-size: var(--h2--font-size--PC);
-    margin: -20px 0 100px 0;
-}
-
-.Page-h4{
-    font-size: var(--h5--font-size--PC);
-    font-weight: 400;
-    line-height: 1.7;
-    letter-spacing: 1px;
-}
-    
-}
-
-/*-------------------------------------PARTE DE ARRIBA PERFIL---------------------------------------------*/
-
-
-.Perfil-principal{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 40px;
-    width: 80%;
-    align-items: center;
-    height: 40%;
-    margin-bottom: 30px;
-    }
-
-.Perfil-img{ 
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 20px 0 0 10px;
 
     }
+    .Profile-intro{
+        width: 40%;
+        margin-right: 50px;
+        }
 
+    .Page-h2{
+        font-size: var(--h2--font-size--PC);
+        margin: -20px 0 100px 0;
+    }
 
+    .Page-h4{
+        font-size: var(--h5--font-size--PC);
+        font-weight: 400;
+        line-height: 1.7;
+        letter-spacing: 1px;
+    }
+        
+    }
 
  /*-----------------------------------------DISEÑO------------------------------------*/
 
 
- .Desing-header{
-    margin-top: 100px;
-    background: var(--icon-color);
-    mix-blend-mode: var(--blendmode,normal);
-    opacity: calc(var(--opacity)/ 100);
- }
-.Diseño-h1{
-    font-family: "Macondo";
-    color: var(--button-color);
-    font-size: 36px;
-}
-.Diseño-title{
-    font-family: "Macondo";
-    color: var(--icon-color);
-    font-size: 20px;
-}
-.Diseño-change{
-
-    height: 300px; 
-    width: 500px; 
-    object-fit:contain;
-    margin-top: 30px;
-}
-.Diseño-descripcion{
-
-    font-weight: normal;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.Carta-mainContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 5px;
-    margin-top: 90px;
-    width: 100%;
-
-}
-.Carta-box{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-    height: auto;
-    padding: 5px;
-        background-color: var(--light-pink-color);
-}
-    .Carta-img{
-        height: 340px;
-        width: 450px;
-        object-fit: contain;
+    .Desing-header{
+        margin-top: 100px;
+        background: var(--icon-color);
+        mix-blend-mode: var(--blendmode,normal);
+        opacity: calc(var(--opacity)/ 100);
     }
+    .Diseño-h1{
+        font-family: "Macondo";
+        color: var(--button-color);
+        font-size: 36px;
+    }
+    .Diseño-title{
+        font-family: "Macondo";
+        color: var(--icon-color);
+        font-size: 20px;
+    }
+    .Diseño-change{
+
+        height: 300px; 
+        width: 500px; 
+        object-fit:contain;
+        margin-top: 30px;
+    }
+    .Diseño-descripcion{
+
+        font-weight: normal;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .Carta-mainContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 5px;
+        margin-top: 90px;
+        width: 100%;
+
+    }
+    .Carta-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        height: auto;
+        padding: 5px;
+            background-color: var(--light-pink-color);
+    }
+
 
         
 
@@ -858,17 +826,29 @@ margin-right: 50px;
             z-index: 1;
          
         }
+
+        
+        .Bg-title-h1{
+            font-size: var(--h2--font-size--mobile);
+            text-align: center;
+            margin: -130px 0 0 10px;
+ 
+         
+        }
         .Info-container-description{
-            font-size: var(--h5--font-size--mobile);
+            font-size: var(--h4--font-size--mobile);
             word-spacing:0.3rem ;
             padding: 10px;
+            margin-top: -30px;
+            width: 80%;
 
         }
 
         .Info-container{
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            flex-direction:column;
+            flex-wrap: wrap;
+            align-items: center;
             height:auto;
             width: 100%;
             margin: 100px 0 50px 0;
@@ -878,10 +858,9 @@ margin-right: 50px;
 
         .Info-date{
 
-            background-color: var(--light-pink-color);
-            width: 300px;
-            padding: 20px;
-            height: 100px;
+            background-color: var(--backgound-blue-color);
+            font-size: var(--h3--font-size--mobile);
+
         }
         .Game-main{
             object-fit: contain;
@@ -895,11 +874,12 @@ margin-right: 50px;
             width: 100%;
             height: 200px;
             background-image: url(/img/carta/headerCarta.webp);
+            background-color: #0e4675;
             background-repeat: no-repeat;
             filter: brightness(90%);
             object-fit: cover;
-            background-color: #0e4675;
             align-items: center;
+            margin-top: 30px;
 
         }
         .Bg-title-game{
@@ -911,9 +891,22 @@ margin-right: 50px;
             background-repeat: no-repeat;
             filter: brightness(80%);
             object-fit: contain;
-            background-color: #0e4675;
             align-items: center;
+            margin-top: 30px;
 
+        }
+
+        .Bg-title-books{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 200px;
+            background-image: url(/img/coleccionLibros/portadaLibros.webp);
+            background-repeat: no-repeat;
+            filter: brightness(80%);
+            object-fit: cover;
+            align-items: center;
+            margin-top: 30px;
         }
         .Game-position{
             display: flex; 
@@ -921,88 +914,98 @@ margin-right: 50px;
             flex-wrap: wrap;
             gap: 20px;
             justify-content: center;
+            align-items: center;
         }
+
+        /*----------Estilos para las imágenes----*/
+
         .Game-img-main{
-            height: 240px;
+            height: 220px;
             width: 340px;
             object-fit: cover;
-            box-shadow: 1px 1px 10px var(--icon-color);
+
+        }
+        .Books-img1{
+            height: 502px;
+            width: 340px;
+            object-fit: cover;
+
+        }
+
+        .Books-main-img{
+            height: 200px;
+            width: 440px;
+            object-fit: cover;}
+    
+        .Books-inside{
+            height: 340px;
+            width: 455px;
+
+        }
+        .Books-mockup-img{
+            height: 410px;
+            width: 413px;
+            object-fit: cover;
+
         }
         .Game-img1{
             height: 240px;
             width: 340px;
             object-fit: cover;
-            box-shadow: 1px 1px 10px var(--icon-color);
+
         }
         .Game-img2{
             height: 440px;
             width: 340px;
             object-fit: cover;
-            box-shadow: 1px 1px 10px var(--icon-color);
+
         }
 
         .Carta-img{
 
-            height: 240px;
-            width: 340px;
-            object-fit: cover;
-            box-shadow: 1px 1px 10px var(--icon-color);
+            height: 200px;
+            width: 280px;
+            object-fit: contain;
+
         }
         .Desing-images{
 
             display: flex;
+            width: 100%;
             flex-direction: column;
             gap: 30px;
             align-items: center;
         }
 
-        @media screen and (min-width: 320px) {
-
-
-            .Carta-img{
-
-                height: 200px;
-                width: 280px;
-                object-fit: contain;
-                box-shadow: 1px 1px 10px var(--icon-color);
-            }
-
-            .Bg-title-h1{
-                font-size: var(--h2--font-size--mobile);
-                text-align: center;
-                margin: -130px 0 0 10px;
-     
-             
-            }
-        }
 
         @media screen and (min-width: 768px) {
 
 
             .Carta-img{
 
-                height: 600px;
-                width: 1000px;
-                object-fit: contain;
-                box-shadow: 1px 1px 10px var(--icon-color);
+                height: 500px;
+                width: 700px;
+                object-fit: cover;
+
             }
             .Info-container{
                 display: flex;
                 flex-direction: row;
-                justify-content: space-around;
+                justify-content: center;
                 height:auto;
-                width: 60%;
+                width: 80%;
                 margin: 150px 0 100px 0;
-                gap:150px ;
+                gap: 80px;
+
             }
             .Info-container-description{
-                font-size: var(--h3--font-size--mobile);
+                font-size: var(--h4--font-size--mobile);
                 word-spacing:0.3rem ;
+                width: 50%;
             }
             .Info-date{
                text-align: center;
-                background-color: var(--light-pink-color);
-                width: 300px;
+                background-color: var(--backgound-blue-color);
                 padding: 20px;
                 height: 150px;
             }
@@ -1014,10 +1017,27 @@ margin-right: 50px;
             .Game-img-main{
                 height: 740px;
                 width: 1040px;    
+            }
+            .Game-img2{
+                height: 640px;
+                width: 440px;
+            }
+            .Books-main-img{
+
+                height: 310px;
+                width: 692px;
+                object-fit: contain;
+                box-shadow: 1px 1px 10px var(--icon-color);
+            }
+            .Books-mockup-img{
+                height: 510px;
+                width: 690px;
+
+            }
+            .Books-inside{
+                height: 340px;
+                width: 455px;
+
+            }
         }
-        .Game-img2{
-            height: 640px;
-            width: 440px;
-        }
-    }
 
