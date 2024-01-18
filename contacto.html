@@ -4,14 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="/css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" 
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 </head>
-<body>
 
+<style>
+
+.Contact-form{
+display: flex;
+flex-direction: column;
+width: 90%;
+height: 800px;
+background-color: var(--backgound-blue-color);
+margin-top: 100px;
+border-radius: 10px;
+padding: 3rem;
+}
+.Contact-form form{
+
+width: 90%;
+
+}
+
+.Contact-form input{
+  width: 90%;
+  padding: 2rem;
+  margin: 0.8em;
+  font-size: 1em;
+  border-radius: 10px;
+}
+.Contact-form textarea{
+  width: 90%;
+  padding: 2rem;
+  margin: 0.8em;
+  font-size: 1em;
+  border-radius: 10px;
+}
+.Contact-top{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 150px;
+
+
+}
+.Contact-imgBox{
+  display: flex;
+  justify-content: center;
+}
+.Contact-img{
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.Contact-main{
+margin-top: 50px;
+}
+.Contact-form label{
+font-size: 1.4em;
+font-weight: 500;
+}
+
+
+@media screen and (min-width:768px){
+  
+  .Contact-imgBox{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.Contact-img{
+  height: 500px;
+  width: 500px;
+}
+.Contact-main{
+  width: 30%;
+  margin-top: 100px;
+}
+
+}
+
+@media screen and (min-width:1200px){
+  
+  .Contact-imgBox{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+.Contact-img{
+  height: 700px;
+  width: 700px;
+}
+.Contact-main{
+  width: 40%;
+  margin-top: 100px;
+}
+.Contact-form form{
+margin-left: 30px;
+}
+
+}
+</style>
+<body>
 <!-----------------------------NAVEGADOR---------------------->
 
        
@@ -20,11 +121,11 @@
         <a href="./index.html"><h1 class="Top-nav-logo">Alba Redondo</h1></a>
         <nav class="Nav-desktop">
           <ul>
-            <li class="Sub-item"><a  class="Top-nav-link" href="./profile.html">Sobre mí</a></li>
-            <li class="Sub-item"><a  class="Top-nav-link" href="./ilustracion.html">Ilustración</a></li>
-            <li class="Sub-item"><a  class="Top-nav-link" href="./desing.html">Diseño</a></li>
-            <li class="Sub-item"><a  class="Top-nav-link" href="./joyas.html">Joyas</a></li>
-            <li class="Sub-item "><a class="Top-nav-link" href="./contacto.html">Contacto</a></li>
+            <li class="Sub-item"><a href="./profile.html">Sobre mí</a></li>
+            <li class="Sub-item"><a href="./ilustracion.html">Ilustración</a></li>
+            <li class="Sub-item"><a href="./desing.html">Diseño</a></li>
+            <li class="Sub-item"><a  href="./joyas.html">Accesorios</a></li>
+            <li class="Sub-item "><a  href="./contacto.html">Contacto</a></li>
           </ul>
         </nav>
         <div class="Nav-mobile-icon"> <img src="/img/icons/menuIcon.svg" alt="Menú">
@@ -34,7 +135,7 @@
             <li class="Sub-item"><a href="./profile.html">Sobre mí</a></li>
             <li class="Sub-item"><a  href="./ilustracion.html">Ilustración</a></li>
             <li class="Sub-item"><a  href="./desing.html">Diseño</a></li>
-            <li class="Sub-item"><a  href="./joyas.html">Joyas</a></li>
+            <li class="Sub-item"><a  href="./joyas.html">Accesorios</a></li>
             <li class="Sub-item "><a href="./contacto.html">Contacto</a></li>
           </ul>
         </nav>
@@ -42,19 +143,37 @@
 
 
 
+      <button id="botonSubir" onclick="subirAlInicio()"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
 <!--Datos de contacto-->
 
-      
-<main class="Profile-container">
-   
-    <div class="Perfil-principal">
-        <img class="Perfil-img" src="/img/perfil/perfil2.jpg" alt="Imagen de perfil"> <div class="Perfil-name">
-            <span><h2>Alba Redondo</h2></span>
+         
+    <div class="Contact-top">
+       <div class="Contact-imgBox"><img class="Contact-img" src="/img/perfil/perfil2.jpg" alt="Imagen de perfil"></div>
+      <main class="Contact-main"> 
+          <span><h2>Alba Redondo</h2></span>
            <span>22 años</span>
+          </main>
      </div>
-    </div>
 
-    
+<div class="Contact-form">
+    <form action="contacto.html" method="get">
+
+      <label for="Nombre y Apellidos">Nombre y Apellidos</label><br>
+      <input type="text" name="Nombre y apellidos" id=""><br>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" placeholder="email"><br>
+      <label for="asunto">Asunto</label><br>
+      <input type="text" name="asunto" id=""><br>
+
+      <label for="mensaje">Mensaje</label><br>
+      <textarea name="mensaje" id="" cols="30" rows="10"></textarea><br>
+      <input class="Main-btn" type="submit" value="Enviar">
+
+    </form>
+</div>
    
 </main>
 
@@ -67,7 +186,7 @@
   <!--Redes sociales y contacto-->
   <div class="Footer-rrss">
      <a href="https://www.instagram.com/arevi__rv9/"><i class="fa-brands fa-instagram"></i></a> 
-     <i class="fa-solid fa-envelope"></i>
+     <a href="/contacto.html"><i class="fa-solid fa-envelope"></i></a>
       <a href="https://www.linkedin.com/in/alba-redondo-villaescusa-33476a23b/"><i class="fa-brands fa-linkedin-in"></i></a>
   </div>
 
@@ -75,35 +194,6 @@
 <script src="./js/proyecto.js">
 
 </script>
-   
- const PerfilInfo = document.getElementById("PerfilInfo")
-
-       var info = [ {
-
-           informacion: "Email",
-           nombre: "alba.rv912@gmail.com"
-
-       }, {
-           informacion: "Teléfono de contacto",
-           nombre: "687 75 59 66"
-
-       }];
-
-       var ProfileBox = "";
-
-
-info.forEach((dato) => {
-   ProfileBox = ProfileBox + `<div class="Perfil-info-general">
-       <div class= "Perfil-info-words"> 
-           <span>${dato.informacion}</span>
-           <span class=Perfil-info-dato2>${dato.nombre}</span>
-           </div> 
-           </div> 
-   `;
-}
-);
-   PerfilInfo.innerHTML= ProfileBox;
-
-</script>
+  
 </body>
 </html>

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const listaTienda = document.getElementById("Articulo");
 
 // Hacer una solicitud HTTP para obtener el JSON realizando fetch
-       fetch('./json/homeTienda.json')
+       fetch('./db/homeTienda.json')
    //trae los datos del JSON al HTML
            .then( informacion =>{
                return informacion.json();
@@ -27,7 +27,7 @@ const listaTienda = document.getElementById("Articulo");
                console.log(datos);
                mostrar(datos);
            })
-    //mensaje de error si los datos no son leídos
+    //mensaje de error si los datos no se imprimen
            .catch(error => console.error('Error al obtener el JSON:', error));
 
 
@@ -50,49 +50,50 @@ function mostrar(objetos){
 //Las funciones cambiarImagen son específicas para cada sección, y se utiliza una condición para determinar que array de imágenes debe manipularse.
 
       // Definir arrays con las rutas de las imágenes para cada sección
-      var imagenesSeccion1 = ["/img/tienda/anillos/luchia1.webp","/img/tienda/anillos/luchia2.webp"];
-      var imagenesSeccion2 = ["/img/tienda/anillos/converted_hanon1.webp", "/img/tienda/anillos/hanon2.webp"];
-      var imagenesSeccion3 = ["/img/tienda/anillos/rina1.webp","/img/tienda/anillos/rina2.webp"];
-      var imagenesSeccion4 = ["/img/tienda/anillos/karen1.webp", "/img/tienda/anillos/karen2.webp"];
-      var imagenesSeccion5 = ["/img/tienda/anillos/coco1.webp", "/img/tienda/anillos/coco2.webp"];
-      var imagenesSeccion6 = ["/img/tienda/anillos/noel1.webp", "/img/tienda/anillos/noel2.webp"];
-      var imagenesSeccion7 = ["/img/tienda/anillos/seira1.webp", "/img/tienda/anillos/seira2.webp"];
+      let imagenesItem1 = ["/img/tienda/anillos/luchia1.webp","/img/tienda/anillos/luchia2.webp"];
+      let imagenesItem2 = ["/img/tienda/anillos/converted_hanon1.webp", "/img/tienda/anillos/hanon2.webp"];
+      let imagenesItem3 = ["/img/tienda/anillos/rina1.webp","/img/tienda/anillos/rina2.webp"];
+      let imagenesItem4 = ["/img/tienda/anillos/karen1.webp", "/img/tienda/anillos/karen2.webp"];
+      let imagenesItem5 = ["/img/tienda/anillos/coco1.webp", "/img/tienda/anillos/coco2.webp"];
+      let imagenesItem6 = ["/img/tienda/anillos/noel1.webp", "/img/tienda/anillos/noel2.webp"];
+      let imagenesItem7 = ["/img/tienda/anillos/seira1.webp", "/img/tienda/anillos/seira2.webp"];
     
       // Inicializar índices para cada sección
-      var indiceImagenSeccion1 = 0;
-      var indiceImagenSeccion2 = 0;
-      var indiceImagenSeccion3 = 0;
-      var indiceImagenSeccion4 = 0;
-      var indiceImagenSeccion5 = 0;
-      var indiceImagenSeccion6 = 0;
-      var indiceImagenSeccion7 = 0;
+      let indiceImagenItem1 = 0;
+      let indiceImagenItem2 = 0;
+      let indiceImagenItem3 = 0;
+      let indiceImagenItem4 = 0;
+      let indiceImagenItem5 = 0;
+      let indiceImagenItem6 = 0;
+      let indiceImagenItem7 = 0;
     
       function cambiarImagen(idImagen, arrayImagenes) {
-        var imagen = document.getElementById(idImagen);
+        let imagen = document.getElementById(idImagen);
     
         // Cambiar la fuente de la imagen
+
         //El símbolo % se utiliza para asegurarse de que el índice esté dentro de los límites del array, por lo que si llega al final, vuelve al principio.
-        if (arrayImagenes === imagenesSeccion1) {
-          indiceImagenSeccion1 = (indiceImagenSeccion1 + 1) % arrayImagenes.length;
-          imagen.src = arrayImagenes[indiceImagenSeccion1];
-        } else if (arrayImagenes === imagenesSeccion2) {
-          indiceImagenSeccion2 = (indiceImagenSeccion2 + 1) % arrayImagenes.length;
-          imagen.src = arrayImagenes[indiceImagenSeccion2];
-        }else if (arrayImagenes === imagenesSeccion3) {
-          indiceImagenSeccion3 = (indiceImagenSeccion3 + 1) % arrayImagenes.length;
-          imagen.src = arrayImagenes[indiceImagenSeccion3];
-        }else if (arrayImagenes === imagenesSeccion4) {
-          indiceImagenSeccion4 = (indiceImagenSeccion4 + 1) % arrayImagenes.length;
-          imagen.src = arrayImagenes[indiceImagenSeccion4];
-        }else if (arrayImagenes === imagenesSeccion5) {
-          indiceImagenSeccion5 = (indiceImagenSeccion5 + 1) % arrayImagenes.length;
-          imagen.src = arrayImagenes[indiceImagenSeccion5];
-        }else if (arrayImagenes === imagenesSeccion6) {
-          indiceImagenSeccion6 = (indiceImagenSeccion6 + 1) % arrayImagenes.length;
-          imagen.src = arrayImagenes[indiceImagenSeccion6];
-        }else if (arrayImagenes === imagenesSeccion7) {
-          indiceImagenSeccion7 = (indiceImagenSeccion7 + 1) % arrayImagenes.length;
-          imagen.src = arrayImagenes[indiceImagenSeccion7];
+        if (arrayImagenes === imagenesItem1) {
+          indiceImagenItem1 = (indiceImagenItem1 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenItem1];
+        } else if (arrayImagenes === imagenesItem2) {
+          indiceImagenItem2 = (indiceImagenItem2 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenItem2];
+        }else if (arrayImagenes === imagenesItem3) {
+          indiceImagenItem3 = (indiceImagenItem3 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenItem3];
+        }else if (arrayImagenes === imagenesItem4) {
+          indiceImagenItem4 = (indiceImagenItem4 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenItem4];
+        }else if (arrayImagenes === imagenesItem5) {
+          indiceImagenItem5 = (indiceImagenItem5 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenItem5];
+        }else if (arrayImagenes === imagenesItem6) {
+          indiceImagenItem6 = (indiceImagenItem6 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenItem6];
+        }else if (arrayImagenes === imagenesItem7) {
+          indiceImagenItem7 = (indiceImagenItem7 + 1) % arrayImagenes.length;
+          imagen.src = arrayImagenes[indiceImagenItem7];
         }
       }
 
@@ -108,7 +109,7 @@ window.onresize = function() {
 };
 
 function mostrarOcultarBoton() {
-  var botonSubir = document.getElementById("botonSubir");
+  let botonSubir = document.getElementById("botonSubir");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     if (window.innerWidth < 1200) {
       botonSubir.style.display = "block";

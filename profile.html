@@ -6,14 +6,12 @@
     <title>Sobre mí</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="/css/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" 
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 </head>
 <body>
-  
 <!-----------------------------NAVEGADOR---------------------->
 
        
@@ -22,11 +20,11 @@
         <a href="./index.html"><h1 class="Top-nav-logo">Alba Redondo</h1></a>
         <nav class="Nav-desktop">
           <ul>
-            <li class="Sub-item"><a  class="Top-nav-link" href="./profile.html">Sobre mí</a></li>
-            <li class="Sub-item"><a  class="Top-nav-link" href="./ilustracion.html">Ilustración</a></li>
-            <li class="Sub-item"><a  class="Top-nav-link" href="./desing.html">Diseño</a></li>
-            <li class="Sub-item"><a  class="Top-nav-link" href="./joyas.html">Joyas</a></li>
-            <li class="Sub-item "><a class="Top-nav-link" href="./contacto.html">Contacto</a></li>
+            <li class="Sub-item"><a href="./profile.html">Sobre mí</a></li>
+            <li class="Sub-item"><a href="./ilustracion.html">Ilustración</a></li>
+            <li class="Sub-item"><a href="./desing.html">Diseño</a></li>
+            <li class="Sub-item"><a  href="./joyas.html">Accesorios</a></li>
+            <li class="Sub-item "><a  href="./contacto.html">Contacto</a></li>
           </ul>
         </nav>
         <div class="Nav-mobile-icon"> <img src="/img/icons/menuIcon.svg" alt="Menú">
@@ -36,42 +34,46 @@
             <li class="Sub-item"><a href="./profile.html">Sobre mí</a></li>
             <li class="Sub-item"><a  href="./ilustracion.html">Ilustración</a></li>
             <li class="Sub-item"><a  href="./desing.html">Diseño</a></li>
-            <li class="Sub-item"><a  href="./joyas.html">Joyas</a></li>
+            <li class="Sub-item"><a  href="./joyas.html">Accesorios</a></li>
             <li class="Sub-item "><a href="./contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </header>
 
+
+
+      <button id="botonSubir" onclick="subirAlInicio()"><i class="fa-solid fa-arrow-up"></i></button>
+
 <!-----------------Perfil con datos académicos y experiencia--------->
 
 
-<div class="Profile-Info">
+<main class="Profile-Info">
  <img class="Profile-img" src="/img/perfil/perfil3.webp" alt="Mi imagen de perfil">
   <div class="Profile-intro"> 
       <h2 class="Page-h2">¡Soy Alba!</h2>
       <h3 class="Page-h4"><p> Actualmente me encuentro cursando un máster de diseño gráfico y diseño web en Valencia.</p> <br>
       <p>Apasionada por el mundo de las artes y el diseño, mi objetivo es fusionar creatividad y funcionalidad para dar vida a proyectos únicos.
         Mi estilo está definido por el uso de una paleta de color amplia, enfocada también a la estética del siglo XVIII, muy presente en mis proyectos de ilustración. </p></h3>
-  </div>
+ </main>
 
 <div class="Profile-about">
-  <h3>Estudios</h3>
-  <ul>
-    <li>Grado en Bellas Artes en la Universidad de Murcia</li>
-    <li>Máster en Diseño Gráfico y Web en CEI: Escuela de diseño y marketing</li>
-  </ul>
-
-  <h3>Habilidades</h3>
-  <ul>
-    <li>Illustrator</li>
-    <li>Photoshop</li>
-    <li>InDesing</li>
-    <li>Blender</li>
-    <li>Canva</li>
-
-
-  </ul>
-
+  <section>
+    <h3>Estudios</h3>
+    <ul>
+      <li>Grado en Bellas Artes en la Universidad de Murcia</li>
+      <li>Máster en Diseño Gráfico y Web en CEI: Escuela de diseño y marketing</li>
+    </ul>
+</section>
+<section>
+    <h3>Habilidades</h3>
+    <ul>
+      <li>Illustrator</li>
+      <li>Photoshop</li>
+      <li>InDesing</li>
+      <li>Blender</li>
+      <li>Canva</li>
+    </ul>
+</section>
   <h5 class="Page-h5"> Gracias por explorar mi portfolio. Si estás buscando dar vida a tu visión con un toque creativo y funcional, ¡me encantaría trabajar contigo!</h5>
 
 </div>
@@ -86,7 +88,7 @@
   <!--Redes sociales y contacto-->
   <div class="Footer-rrss">
      <a href="https://www.instagram.com/arevi__rv9/"><i class="fa-brands fa-instagram"></i></a> 
-     <i class="fa-solid fa-envelope"></i>
+     <a href="/contacto.html"><i class="fa-solid fa-envelope"></i></a>
       <a href="https://www.linkedin.com/in/alba-redondo-villaescusa-33476a23b/"><i class="fa-brands fa-linkedin-in"></i></a>
   </div>
 
