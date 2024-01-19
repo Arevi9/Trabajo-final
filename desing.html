@@ -58,36 +58,59 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:30px;
+    gap:70px;
     margin-top: 150px;
   }
 
-  .Desing-front-carta{
+  .Desing-front{
     height: 380px;
     width: 300px;
-    object-fit: cover;
-    background-image: url(./img/carta/cartFront.webp);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
-  .Desing-front-tarot{
+  .Desing-front-img{
     height: 380px;
     width: 300px;
+    border-radius: 10px;
     object-fit: cover;
-    background-image: url(./img/tarot/lamonja.webp);
-  }
-  .Desing-front-books{
-    height: 380px;
-    width: 300px;
-    background-image: url(./img/coleccionLibros/PortadaLila.webp);
-    object-fit: contain;
+    filter: brightness(80%);
 
   }
+.Desing-h2{
+  font-family: 'Macondo';
+ color: var(--button-color-hover);
+ font-size: 20px;
+ text-shadow: 2px 1px 10px var(--icon-color);
+}
+
 
   @media screen and (min-width: 768px) {
     .Desing-main{
     gap:50px;
     margin-top: 200px;
   }
-    
+  .Desing-front{
+    height: 580px;
+    width: 400px;
+    transform: scale(var(--escala, 1));
+        transition: transform 0.25s;
+
+  }
+  .Desing-front:hover{
+    --escala: 1.1;
+
+  }
+  .Desing-front-img{
+    height: 560px;
+    width: 400px;
+  }
+  .Desing-h2{
+  font-family: 'Macondo';
+ font-size: 40px;
+
+}
   }
 
 </style>
@@ -95,11 +118,11 @@
       <div class="Desing-body">
         <main class="Desing-main">
           
-          <a href="/cartaMenu.html"> <div class="Desing-front-carta"> </div></a> 
+          <a href="/cartaMenu.html"> <div class="Desing-front"><img class="Desing-front-img" src="./img/carta/cartFront.webp" alt="Menú cafetería"> <h2 class="Desing-h2">Carta cafetería BBAA </h2> </div></a> 
 
-          <a href="/juegoTarot.html"><div class="Desing-front-tarot"></div></a>
+          <a href="/juegoTarot.html"><div class="Desing-front"><img class="Desing-front-img" src="./img/tarot/lamonja.webp" alt="Juego de Tarot"> <h2 class="Desing-h2">Juego de mesa </h2></div></a>
 
-          <a href="/coleccion.html"><div class="Desing-front-books"></div></a>
+          <a href="/coleccion.html"><div class="Desing-front"><img class="Desing-front-img" src="./img/coleccionLibros/PortadaLila.webp" alt="Colección de libros"> <h2 class="Desing-h2">Colección de libros </h2></div></a>
 
         </main>
       </div>
