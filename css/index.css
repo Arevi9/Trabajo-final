@@ -46,7 +46,6 @@ body{
 }
 
 #botonSubir {
-    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -212,7 +211,8 @@ a{text-decoration: none;}
       cursor: pointer;
     }
     
-/*Responsive */
+ /*Media Query para pantallas con tamaño mínimo de 768px*/   
+
     @media (max-width: 768px) {
       .Nav-desktop {
         display: none;
@@ -261,13 +261,15 @@ a{text-decoration: none;}
 
 .Main-page{
     display: flex;
-    flex-direction: column;
     align-items: center;
     background-image: url(/img/fondos/fondo.png);
-    height: 550px;
-    padding: 50px;
-    margin-bottom: 100px;
+    object-fit: cover;
+    height: 750px;
+    margin: 30px 0 100px 0;
     width: 100%;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
 }
 
 
@@ -289,20 +291,18 @@ a{text-decoration: none;}
     border-radius: 10px;
     }
 
-.Main-h1{
-    font-weight: bold;
-    color: var(--text-light-color);
-    margin-top: 40px;
-}
 .Main-h3{
     color: var(--text-dark-color);
 
 }
 
 .Main-h2{
-    color:var(--text-dark-color);
-    margin-bottom: 0;
-    font-weight: 400;
+    font-family: 'Macondo';
+    font-size: 34px;
+    line-height: 2;
+    font-weight: 300;
+    width: 80%;
+
 }
 
 .Main-description{
@@ -417,9 +417,19 @@ a{text-decoration: none;}
       width: 100%; /* Expansión completa */
     }
   }
+  @media screen and (min-width: 768px){
 
+    .Main-page{
 
-@media screen and (min-width: 1100px){
+        text-align: left;
+    }
+    .Main-h2{
+        font-size: 50px;
+    }
+
+  }
+ /*Media Query para pantallas con tamaño mínimo de 1100px*/   
+@media screen and (min-width: 1200px){
 
     .Main-title{ 
         font-size: 55px;
@@ -436,7 +446,7 @@ a{text-decoration: none;}
   
         }
     .Main-description{
-       height: 200px;
+       height: 300px;
        width: 700px;
        text-align: center;
     }
@@ -444,8 +454,11 @@ a{text-decoration: none;}
         font-size: 18px;
     }
     .Main-h2{
-        font-size: 36px;
-        margin-bottom: 0;
+        font-family: 'Macondo';
+        font-size: 65px;
+        line-height: 2.5;
+        font-weight: 500;
+
     }
     .Main-h3{
         font-size: 20px;
@@ -457,6 +470,15 @@ a{text-decoration: none;}
     }
     .Main-a{
         font-size: 20px;
+    }
+    .Main-page{
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        height: 800px;
+        text-align: left;
+
+
     }
 
 }
@@ -608,6 +630,7 @@ a{text-decoration: none;}
     color: var(--button-color);
 }
 
+ /*Media Query para pantallas con tamaño mínimo de 768px*/   
 @media (max-width: 768px) {
 
     .Item-box{
@@ -632,19 +655,7 @@ a{text-decoration: none;}
 
 
 @media (max-width: 1600px) {
-    .Item-search{
 
-        padding: 10px;
-        margin-right: 5px;
-        width: 350px;
-    }
-
-    .Item-searchButton{
-        height: 39px;
-        width: 40px;
-
-
-    }
     .Item-box-siren{
 
         width: 400px;
@@ -673,9 +684,8 @@ a{text-decoration: none;}
     width: 100%;
     margin-top: 150px;
     display: flex;
-    flex-direction: row;
+   flex-flow: wrap;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -693,14 +703,61 @@ a{text-decoration: none;}
 
 }
 .Profile-about{
+
     display: flex;
-    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
     width: 100%;
     background-color: var(--backgound-blue-color);
     margin-top: 50px;
-    padding: 50px;
 }
 
+.Profile-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px;
+    margin: 20px;
+    width: 50%;
+    
+  }
+  .Profile-section li{
+    margin: 10px;
+    list-style: none;
+    
+  }
+  .Page-h2{
+    font-size: var(--h1--font-size--mobile);
+    margin: 10px 0 50px 0;
+    text-align: center;
+
+}
+.Profile-h3{
+    margin-bottom: 20px;
+    font-family: 'Macondo';
+    font-size: 28px;
+    color: var(--text-light-color);
+}
+
+.Page-h4{
+    font-size: var(--h3--font-size--mobile);
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+.Page-h5{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--h3--font-size--mobile);
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    margin-top: 60px;
+}
+
+ /*Media Query para pantallas con tamaño mínimo de 768px*/   
 @media screen and (min-width:768px) {
 
     
@@ -728,7 +785,28 @@ a{text-decoration: none;}
         line-height: 1.7;
         letter-spacing: 1px;
     }
+    .Profile-h3{
+        font-size: 53px;
+
+    }
+    .Profile-section li{
+        margin: 10px;
+        list-style: none;
+        font-size: 22px;
         
+      }
+
+    .Profile-section{
+        width: 50%;
+    }
+    .Profile-about{
+        flex-flow: row;
+        margin-top: 100px;
+    }
+    .Page-h5{
+
+        margin: 120px 0 50px 0;
+    }
     }
 
  /*-----------------------------------------DISEÑO------------------------------------*/
@@ -806,7 +884,7 @@ a{text-decoration: none;}
 
         }
 
-
+ /*Media Query para pantallas con tamaño mínimo de 768px*/   
 
         @media screen and (min-width: 768px) {
 
@@ -1036,7 +1114,7 @@ a{text-decoration: none;}
             align-items: center;
         }
 
-
+ /*Media Query para pantallas con tamaño mínimo de 768px*/   
         @media screen and (min-width: 768px) {
 
 
@@ -1100,3 +1178,147 @@ a{text-decoration: none;}
             }
         }
 
+/*--------------------------------------------------CONTACTO-----------------------------------------------------*/
+
+/*Estilo para el contenedor del form*/
+.Contact-form{
+    width: 100%;
+    height: 850px;
+    background-color: var(--backgound-blue-color);
+    border-radius: 10px;
+    margin-top: 50px;
+    
+    }
+    /*Estilo para el form*/
+    .Contact-form form{
+      display: flex;
+      flex-direction: column;
+      margin: 40px 20px 20px 20px;
+      width: 90%;
+    
+    }
+    /*Estilo para los inputs*/
+    .Contact-form input{
+      width: 80%;
+      padding: 1.6rem;
+      font-size: 1em;
+      border-radius: 10px;
+    }
+    /*Estilo para las etiquetas/nombre de cada parte del form*/
+    .Contact-form label{
+        font-size: 1.4em;
+        font-weight: 500;
+        }
+    /*Estilo para el textarea*/
+    .Contact-form textarea{
+      width: 80%;
+      padding: 1.8rem;
+      font-size: 1em;
+      border-radius: 10px;
+    }
+
+     /*Estilo para el botón de enviar*/
+    .Contact-form input[type=submit]{
+        width: 40%;
+     }
+
+/*Estilos para la caja main de información de contacto*/
+        
+    .Contact-main{
+        margin-top: 50px;
+        }
+    /*Estilo flexbox para la información de contacto*/
+    .Contact-top{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 150px;
+    }
+
+/*Estilo para el h3 de contacto*/
+    .Contact-h3{
+      font-size: 26px;
+      font-weight: 400;
+      font-family: 'Macondo';
+      font-weight: 660;
+    }
+
+    
+ /*Media Query para pantallas con tamaño mínimo de 768px*/ 
+  
+    @media screen and (min-width:768px){
+    .Contact-form{
+      height: 900px;
+   }
+      .Contact-imgBox{
+      width: 60%;
+      display: flex;
+      justify-content: center;
+    }
+    .Contact-img{
+      height: 500px;
+      width: 500px;
+    }
+    .Contact-main{
+      width: 30%;
+      margin-top: 100px;
+    }
+    .Contact-form input{
+        width: 100%;
+        font-size: 1em;
+     }
+     .Contact-form textarea{
+        width: 100%;
+        font-size: 1em;
+     }
+      .Contact-form input[type=submit]{
+        width: 30%;
+      
+     }
+    
+    }
+     /*Media Query para pantallas con tamaño mínimo de 1200px*/   
+    
+    @media screen and (min-width:1200px){
+      
+      .Contact-imgBox{
+      width: 60%;
+      display: flex;
+      justify-content: center;
+    }
+    .Contact-img{
+      height: 700px;
+      width: 700px;
+    }
+    .Contact-main{
+      width: 50%;
+      margin-top: 100px;
+    }
+    .Contact-form form{
+    margin-left: 30px;
+
+    }
+    .Contact-form{
+
+        width: 70%;
+        }
+
+    .Contact-form input{
+        width: 100%;
+        font-size: 1.3em;
+     }
+     .Contact-form textarea{
+        width: 100%;
+        font-size: 1.3em;
+     }
+     .Contact-form input[type=submit]{
+        width: 30%;
+      
+     }
+     .Contact-h3{
+        font-size: 35px;
+     }
+    
+    }
