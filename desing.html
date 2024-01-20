@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 </head>
-<body>
+<body style="background-image: none;">
 <!-----------------------------NAVEGADOR---------------------->
 
        
@@ -44,78 +44,9 @@
 
       <button id="botonSubir" onclick="subirAlInicio()"><i class="fa-solid fa-arrow-up"></i></button>
 
-<style>
-  .Desing-body{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
 
-  .Desing-main{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap:70px;
-    margin-top: 150px;
-  }
-
-  .Desing-front{
-    height: 380px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .Desing-front-img{
-    height: 380px;
-    width: 300px;
-    border-radius: 10px;
-    object-fit: cover;
-    filter: brightness(80%);
-
-  }
-.Desing-h2{
-  font-family: 'Macondo';
- color: var(--button-color-hover);
- font-size: 20px;
- text-shadow: 2px 1px 10px var(--icon-color);
-}
-
-
-  @media screen and (min-width: 768px) {
-    .Desing-main{
-    gap:50px;
-    margin-top: 200px;
-  }
-  .Desing-front{
-    height: 580px;
-    width: 400px;
-    transform: scale(var(--escala, 1));
-        transition: transform 0.25s;
-
-  }
-  .Desing-front:hover{
-    --escala: 1.1;
-
-  }
-  .Desing-front-img{
-    height: 560px;
-    width: 400px;
-  }
-  .Desing-h2{
-  font-family: 'Macondo';
- font-size: 40px;
-
-}
-  }
-
-</style>
-
-      <div class="Desing-body">
+<!--Links al interior de cada trabajo de diseño-->
+      <div>
         <main class="Desing-main">
           
           <a href="/cartaMenu.html"> <div class="Desing-front"><img class="Desing-front-img" src="./img/carta/cartFront.webp" alt="Menú cafetería"> <h2 class="Desing-h2">Carta cafetería BBAA </h2> </div></a> 

@@ -32,10 +32,12 @@ fetch('./db/tarot.json')
 
 
 
+//función para imprimir las imágenes en el HTML
+
 function mostrar(cartas){
   cartas.forEach((tarot, i) => {
       imagenesTarot.innerHTML += `
-      <img class="Tarot-img" src=${tarot.img} alt=${tarot.alt}>
+      <img class="Tarot-img" src=${tarot.img} alt=${tarot.alt}  loading="lazy">
           `
   });
 }

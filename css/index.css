@@ -215,7 +215,7 @@ a{text-decoration: none;}
     
  /*Responsive para pantallas con tamaño máximo de 768px*/   
 
-    @media (max-width: 768px) {
+    @media (max-width: 770px) {
       .Nav-desktop {
         display: none;
       }
@@ -570,7 +570,7 @@ a{text-decoration: none;}
 }
 /*Logo "Are Jewelry" - nombre de la tienda de pulseras*/
 .Logo-img{
-    height: 250px;
+    height: 220px;
     margin-bottom: 80px;
 }
 /*Flexbox para las imágenes*/
@@ -690,8 +690,13 @@ a{text-decoration: none;}
         margin-left: -47px;
     
     }
+    .Logo-img{
+        height: 250px;
+        margin-bottom: 80px;
+    }
 
 }
+
 
 
  /*Media Query para pantallas con tamaño mínimo de 1200px*/   
@@ -719,6 +724,10 @@ a{text-decoration: none;}
         color: var(--text-light-color);
         margin-left: -47px;
     
+    }
+    .Logo-img{
+        height: 250px;
+        margin-bottom: 80px;
     }
 }
 /*--------------------------------------Perfil----------------------------------------------------------*/
@@ -931,7 +940,7 @@ a{text-decoration: none;}
 
  /*Media Query para pantallas con tamaño mínimo de 768px*/   
 
-        @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     .Tarot-img{
         height: 390px;
@@ -945,30 +954,7 @@ a{text-decoration: none;}
         justify-content: center;
         gap: 20px;
 
-
     }
-
-    .Top-nav-menuIcon{
-        display: none;
-    }
-    .Top-nav-subMenu{
-        display: flex;
-        flex-direction: column;
-        background-color:var(--button-color);
-        align-items: flex-start;
-        transition: all 0.5s ease;
-        width: 18.75rem;
-        right: 1.25rem;
-        border-radius: 5px;
-        padding: 20px 0px;
-        opacity: 0;
-        box-shadow: 0px 0px 100px rgba(20, 18, 18, 0.25);}
-    
-    /*Uso de hover para hacer aparecer y desaparecer las opciones del menú del navegador*/
-    .Top-nav-li:hover .Top-nav-subMenu{
-        display:none;
-    }
-
 }
  /*Media Query para pantallas con tamaño mínimo de 1200px*/   
         @media screen and (min-width: 1200px) {
@@ -1140,9 +1126,9 @@ a{text-decoration: none;}
 
     .Carta-img{
 
-        height: 200px;
-        width: 280px;
-        object-fit: contain;
+        height: 241px;
+        width: 340px;
+        object-fit: cover;
 
     }
     .Desing-images{
@@ -1374,3 +1360,67 @@ a{text-decoration: none;}
      }
     
     }
+/*---------------------------Home Diseño---------------------------------------*/
+
+      /*Caja flexbox*/
+  .Desing-main{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:70px;
+    margin-top: 150px;
+  }
+  /*Contenedor de las imágenes y fuentes*/
+  .Desing-front{
+    height: 380px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+    /*Tamaño de las imágenes*/
+  .Desing-front-img{
+    height: 380px;
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+
+  }
+  /*Estilos para la fuente de los títulos de cada sección*/
+.Desing-h2{
+    font-family: 'Macondo';
+    color: var(--icon-color);
+    font-size: 18px;
+}
+
+/*Responsive para pantallas de mínimo 768px*/
+  @media screen and (min-width: 768px) {
+    .Desing-main{
+    gap:50px;
+    margin: 200px 0 100px 0;
+  }
+  .Desing-front{
+    height: 580px;
+    width: 400px;
+    transform: scale(var(--escala, 1));
+    transition: transform 0.25s;
+  }
+  
+  .Desing-front:hover{
+    --escala: 1.1;
+
+  }
+  .Desing-front-img{
+    height: 560px;
+    width: 400px;
+  }
+  .Desing-h2{
+    font-family: 'Macondo';
+    font-size: 40px;
+
+}
+  }

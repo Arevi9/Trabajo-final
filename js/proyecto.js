@@ -50,9 +50,9 @@ function mostrar(objetos){
 //Las funciones cambiarImagen son específicas para cada sección, y se utiliza una condición para determinar que array de imágenes debe manipularse.
 
       // Definir arrays con las rutas de las imágenes para cada sección
-      let imagenesItem1 = ["/img/tienda/anillos/luchia1.webp","/img/tienda/anillos/luchia2.webp"];
-      let imagenesItem2 = ["/img/tienda/anillos/converted_hanon1.webp", "/img/tienda/anillos/hanon2.webp"];
-      let imagenesItem3 = ["/img/tienda/anillos/rina1.webp","/img/tienda/anillos/rina2.webp"];
+      let imagenesItem1 = ["/img/tienda/anillos/luchia1.webp","/img/tienda/anillos/luchia2.webp","/img/tienda/anillos/anillosPichi.webp","/img/tienda/anillos/anillosPichi2.webp"];
+      let imagenesItem2 = ["/img/tienda/anillos/converted_hanon1.webp", "/img/tienda/anillos/hanon2.webp","/img/tienda/anillos/anillosPichi.webp","/img/tienda/anillos/anillosPichi2.webp"];
+      let imagenesItem3 = ["/img/tienda/anillos/rina1.webp","/img/tienda/anillos/rina2.webp","/img/tienda/anillos/anillosPichi.webp","/img/tienda/anillos/anillosPichi2.webp"];
       let imagenesItem4 = ["/img/tienda/anillos/karen1.webp", "/img/tienda/anillos/karen2.webp"];
       let imagenesItem5 = ["/img/tienda/anillos/coco1.webp", "/img/tienda/anillos/coco2.webp"];
       let imagenesItem6 = ["/img/tienda/anillos/noel1.webp", "/img/tienda/anillos/noel2.webp"];
@@ -69,10 +69,9 @@ function mostrar(objetos){
     
       function cambiarImagen(idImagen, arrayImagenes) {
         let imagen = document.getElementById(idImagen);
-    
-        // Cambiar la fuente de la imagen
 
-        //El símbolo % se utiliza para asegurarse de que el índice esté dentro de los límites del array, por lo que si llega al final, vuelve al principio.
+
+        //El símbolo % se utiliza para cuando se llegue al final del array, se vuelva al principio.
         if (arrayImagenes === imagenesItem1) {
           indiceImagenItem1 = (indiceImagenItem1 + 1) % arrayImagenes.length;
           imagen.src = arrayImagenes[indiceImagenItem1];
@@ -98,8 +97,7 @@ function mostrar(objetos){
       }
 
 
-
- // Función para mostrar u ocultar el botón basado en la posición de desplazamiento y el ancho de la ventana
+ // Función para mostrar u ocultar el botón basado en la posición de desplazamiento y el ancho de la ventana. Se ha usado ChatGPT para esta función
  window.onscroll = function() {
   mostrarOcultarBoton();
 };
@@ -107,6 +105,7 @@ function mostrar(objetos){
 window.onresize = function() {
   mostrarOcultarBoton();
 };
+
 
 function mostrarOcultarBoton() {
   let botonSubir = document.getElementById("botonSubir");

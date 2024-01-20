@@ -1,43 +1,49 @@
  [
     {
             
-    "imagen": "/img/tienda/conjunto.jpg",
+    "imagen": "/img/tienda/conjunto.webp",
     "nombre":"Conjunto azul eléctrico"
 
 
 },{
     
-    "imagen": "/img/tienda/pulsera3.jpg",
+    "imagen": "/img/tienda/pulsera3.webp",
     "nombre":"Pulsera flores elegante"
 
 
 },{
     
-   "imagen": "/img/tienda/pulseras1.jpg",
+   "imagen": "/img/tienda/florLotoAzul.webp",
     "nombre":"Pulsera Flor de Loto"
 
 
 },{
     
-    "imagen": "/img/tienda/pulsera2.jpg",
+    "imagen": "/img/tienda/florLotoRosa.webp",
+     "nombre":"Pulsera Flor de Loto"
+ 
+ 
+ },{
+    
+    "imagen": "/img/tienda/pulsera2.webp",
     "nombre":"Pulsera Winter"
 
 
 },{
     
-    "imagen": "/img/tienda/pendientesVerdes.jpg",
+    "imagen": "/img/tienda/pendientesVerdes.webp",
     "nombre":"Pendientes verdes"
 
 
 },{
     
-    "imagen": "/img/tienda/pendientesFlorAzul.jpg",
+    "imagen": "/img/tienda/pendientesFlorAzul.webp",
     "nombre":"Pendientes de flor azules"
 
 
 },{
     
-    "imagen": "/img/tienda/pendientesFlorRosa.jpg",
+    "imagen": "/img/tienda/pendientesFlorRosa.webp",
     "nombre":"Pendientes de flor rosas"
 
 
@@ -54,7 +60,6 @@
 
 
 }
-
 
 ]
 
