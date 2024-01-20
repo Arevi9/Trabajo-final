@@ -32,7 +32,7 @@ El nombre de la página es Alba Redondo y cuenta con distintos apartados en los 
 
 
 ## Identidad visual
-La paleta de color protagonista para mi portfolio es protagonizada por colores fríos, contando con los cálidos para los secundarios.
+La paleta de color para mi portfolio es protagonizada por colores fríos, contando con los cálidos para los secundarios.
 En cuanto a tipografías, 'Macondo' es la protagonista, siendo la utilizada para el logo de la página, el menú, y los títulos de las distintas secciones.
 'Bitter' es la tipografía secundaria usada para los textos e información menos importante.
 
@@ -55,7 +55,7 @@ Sobre mí contiene información personal, como una pequeña descripción de mis 
 
 La página de ilustración muestra de forma ordenada todas las ilustraciones que he realizado hasta la fecha.
 
-En Diseño encontramos tres links con los que accederemos a tres secciones distintas:
+En Diseño encontramos tres links con los que accederemos a tres proyectos distintos cuya página contendrá información del proyecto, el año de realización e imágenes::
  La primera de ellas es un proyecto en el que se diseñó una carta para una cafetería de bellas artes. 
  El segundo, un juego de mesa que incluye el tarot entre sus cartas.
   El tercero es un pequeño proyecto en el que se diseñaron y maquetaron la portada y primeras páginas para una colección de libros.
