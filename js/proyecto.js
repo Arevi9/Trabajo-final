@@ -37,7 +37,7 @@ function mostrar(objetos){
    objetos.forEach((item, i) => {
        listaTienda.innerHTML += `
        <div id="Articulo" class="Item-box">
-               <img class="Item-img" src="${item.imagen}" alt="Producto"> 
+               <img class="Item-img" src="${item.imagen}" alt="Producto" loading="lazy"> 
                <div class="Item-name"><h2 class="Item-h2">${item.nombre}</h2></div>
 
        </div>
