@@ -1270,20 +1270,23 @@ a{text-decoration: none;}
         width: 40%;
      }
 
-/*Estilos para la caja main de información de contacto*/
+/*Estilos para la caja main de información de contacto
         
     .Contact-main{
+        background-color: var(--button-color-hover);
+        padding: 20px;
         margin-top: 50px;
         }
-    /*Estilo flexbox para la información de contacto*/
+    /*Estilo flexbox para la información de contacto
     .Contact-top{
       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: space-around;
       width: 100%;
       margin-top: 150px;
-    }
+     align-items: center;
+
+    }*/
 
 /*Estilo para el h3 de contacto*/
     .Contact-h3{
@@ -1291,6 +1294,7 @@ a{text-decoration: none;}
       font-weight: 400;
       font-family: 'Macondo';
       font-weight: 660;
+      margin-top: 150px ;
     }
 
     
