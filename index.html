@@ -12,14 +12,16 @@
   
 </head>
 <body style="background-image: none;">
-<!-----------------------------NAVEGADOR---------------------->
+<!-----------------------------NAVEGADOR------------------------>
 
        
        <!--Menú desplegable hecho con listas para navegar por la página-->
        <header class="Top-nav">
         <a href="./index.html"><h1 class="Top-nav-logo">Alba Redondo</h1></a>
+         <!--Menú para pantallas grandes-->
         <nav class="Nav-desktop">
           <ul>
+             <!--Distintas páginas que componen mi web-->
             <li class="Sub-item"><a href="./profile.html">Sobre mí</a></li>
             <li class="Sub-item"><a href="./ilustracion.html">Ilustración</a></li>
             <li class="Sub-item"><a href="./desing.html">Diseño</a></li>
@@ -27,10 +29,13 @@
             <li class="Sub-item "><a  href="./contacto.html">Contacto</a></li>
           </ul>
         </nav>
+         <!--Menú para pantallas pequeñas-->
         <div class="Nav-mobile-icon"> <img src="/img/icons/menuIcon.svg" alt="Menú">
         </div>
         <nav class="Nav-mobile">
+            <!--Clase usada para el menú desplegable-->
           <ul class="Top-nav-subMenu">
+              <!--Distintas páginas que componen mi web-->
             <li class="Sub-item"><a href="./profile.html">Sobre mí</a></li>
             <li class="Sub-item"><a  href="./ilustracion.html">Ilustración</a></li>
             <li class="Sub-item"><a  href="./desing.html">Diseño</a></li>
@@ -40,7 +45,7 @@
         </nav>
       </header>
 
-
+  <!--Botón para volver al inicio de la página-->
 
       <button id="botonSubir" onclick="subirAlInicio()"><i class="fa-solid fa-arrow-up"></i></button>
 
@@ -56,29 +61,34 @@
       </div>
 
     <!--Distintas categorías dentro de mi portfolio a las que acceder-->
-    <section class="Main-categoria">
-
-        <div class="Main-categoria-ilustracion">
-           <a href="./Ilustracion.html"> <h3 class="Main-categoria-title">ILUSTRACIÓN</h3></a>
+    <section class="Main-cathegory">
+ <!--Sección de ilustracion-->
+        <div class="Main-cathegory-ilustracion">
+           <a href="./Ilustracion.html"> <h3 class="Main-cathegory-title">ILUSTRACIÓN</h3></a>
         </div>
-
-       <div class="Main-categoria-diseño">
-            <a href="./diseño.html"> <h3 class="Main-categoria-title">DISEÑO</h3></a>
+ <!--Sección de diseño-->
+       <div class="Main-cathegory-diseño">
+            <a href="./diseño.html"> <h3 class="Main-cathegory-title">DISEÑO</h3></a>
         </div>
-        
-        <div class="Main-categoria-joyas">
-            <a href="./joyas.html"><h3 class="Main-categoria-title">ACCESORIOS</h3></a>
+   <!--Sección de joyas/artesanía-->      
+        <div class="Main-cathegory-joyas">
+            <a href="./joyas.html"><h3 class="Main-cathegory-title">ACCESORIOS</h3></a>
         </div>
 
     </section>
 
-
+<!--Introducción a visitar la página de mi perfil-->
     <section class="Main-aboutMe"> 
+      <!--Imágen de perfil-->
       <div><img class="Main-img" src="/img/perfil/perfil.jpg" alt="Alba Redondo">
     </div>
+     <!--Pequeña introducción con acceso a la página a través de un botón/link-->
     <div class="Main-description">
+       <!--Nombre de la creadora de la página-->
       <h2 class="Main-h2"> Alba Redondo</h2>
+       <!--A que se dedica-->
       <h3 class="Main-h3">Diseñadora web</h3>
+       <!--Invitación a saber más sobre la artista-->
       <span>Para saber más sobre mí puedes pulsar aquí:</span>
       <div class="Main-btn"><a class="Main-a" href="/profile.html"> Sobre mí </a></div>
     </div>
@@ -89,6 +99,7 @@
 <!------------------------Footer--------------------------------------------------------->
 <footer class="Footer-index">
     <div>
+       <!--Copyright-->
         <h5 class="Footer-copyright">© 2024, Alba Redondo</h5>
     </div>
 
@@ -102,7 +113,7 @@
 </footer>
 
 
-
+ <!--JavaScript de la página-->
 <script src="./js/proyecto.js">
 
 </script>
