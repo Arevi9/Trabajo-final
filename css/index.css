@@ -6,7 +6,6 @@
 --button-color: #ce8f5a;
 --button-color-hover:#efd199;
 --icon-color: #334755;
---nav-color: #c5dfe1;
 --backgound-blue-color:#80c8bc;
 --light-blue-color:#5ec0ca;
 --text-light-color:#ffffff;
@@ -34,7 +33,6 @@ body{
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
 
 }
 /*Identificador del botón para subir hacia arriba*/
@@ -81,7 +79,7 @@ a{text-decoration: none;}
   .Nav-desktop a{
     display: block;
     padding: 8px 0;
-    font-size: var(--h5--font-size--PC);
+    font-size: 16px;
     font-family: 'Macondo';
     color: var(--icon-color);
     font-weight: bold;
@@ -255,7 +253,6 @@ a{text-decoration: none;}
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: 50px;
     width: 100%;
 
 }
@@ -266,8 +263,8 @@ a{text-decoration: none;}
     align-items: center;
     background-image: url(/img/fondos/fondo.png);
     object-fit: cover;
-    height: 750px;
-    margin: 30px 0 100px 0;
+    height: 780px;
+    margin: 50px 0 100px 0;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -479,7 +476,7 @@ a{text-decoration: none;}
     }
     .Main-h2{
         font-family: 'Macondo';
-        font-size: 65px;
+        font-size: 50px;
         line-height: 2.5;
         font-weight: 500;
 
@@ -500,7 +497,6 @@ a{text-decoration: none;}
         display: flex;
         align-items:center ;
         justify-content: center;
-        height: 800px;
         text-align: left;
 
 
@@ -578,10 +574,9 @@ a{text-decoration: none;}
     display:flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 30px;
-    gap: 60px;
 
 }
 
@@ -602,7 +597,7 @@ a{text-decoration: none;}
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 355px;
+    width: 415px;
     height: 300px;
     border-radius: 10px;
     margin: 10px 5px 5px 5px;
@@ -611,19 +606,20 @@ a{text-decoration: none;}
 /*Nombre de las pulserasy pendientes*/
 .Item-name{
     height:50px;
-    width: 90%;
+    width: 100%;
     background-color: var(--light-blue-color);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px ;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Macondo';
 }
 
 /*Estilos de las imágenes*/
 .Item-img{
 
-    width: 90%;
+    width: 100%;
     height: 280px;
     object-fit: cover;
     margin: 0;
@@ -702,8 +698,8 @@ a{text-decoration: none;}
  /*Media Query para pantallas con tamaño mínimo de 1200px*/   
 @media (min-width: 1200px) {
     .Item-box{
-     width: 533px;
-    height: 346px;
+        width: 465px;
+        height: 346px;
     }
     .Item-box-siren{
 
@@ -728,6 +724,10 @@ a{text-decoration: none;}
     .Logo-img{
         height: 250px;
         margin-bottom: 80px;
+    }
+    .Item-h2{
+        font-size: 20px;
+
     }
 }
 /*--------------------------------------Perfil----------------------------------------------------------*/
@@ -762,7 +762,7 @@ a{text-decoration: none;}
 
     display: flex;
     flex-flow: wrap;
-    justify-content: center;
+    justify-content: left;
     width: 100%;
     background-color: var(--backgound-blue-color);
     margin-top: 50px;
@@ -789,6 +789,7 @@ a{text-decoration: none;}
     font-size: var(--h1--font-size--mobile);
     margin: 10px 0 50px 0;
     text-align: center;
+    font-weight: 300;
 
 }
 .Profile-h3{
@@ -806,7 +807,7 @@ a{text-decoration: none;}
 }
 .Page-h5{
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     text-align: center;
     font-size: var(--h3--font-size--mobile);
@@ -861,6 +862,7 @@ a{text-decoration: none;}
     .Profile-about{
         flex-flow: row;
         margin-top: 100px;
+        justify-content: center;
     }
     .Page-h5{
 
@@ -983,7 +985,7 @@ a{text-decoration: none;}
         font-size: var(--h2--font-size--mobile);
         color: var(--text-light-color);
         text-shadow: 2px 1px 10px var(--icon-color);
-        margin: -130px 0 0 30px;
+        margin: -130px 0 0 0;
         z-index: 1;
         font-family: 'Macondo';
         font-weight: 400;
@@ -1039,7 +1041,7 @@ a{text-decoration: none;}
         width: 100%;
         height: 200px;
         background-image: url(/img/carta/headerCarta.webp);
-        filter: brightness(90%);
+        filter: brightness(50%);
         object-fit: cover;
         align-items: center;
         margin-top: 30px;
@@ -1052,7 +1054,7 @@ a{text-decoration: none;}
         width: 100%;
         height: 200px;
         background-image: url(/img/tarot/juegoHeader.png);
-        filter: brightness(80%);
+        filter: brightness(50%);
         object-fit: cover;
         align-items: center;
         margin-top: 30px;
@@ -1065,7 +1067,7 @@ a{text-decoration: none;}
         width: 100%;
         height: 200px;
         background-image: url(/img/coleccionLibros/portadaLibros.webp);
-        filter: brightness(80%);
+        filter: brightness(50%);
         object-fit: cover;
         align-items: center;
         margin-top: 30px;
@@ -1208,7 +1210,11 @@ a{text-decoration: none;}
 
     .Game-img-main{
         height: 740px;
-        width: 1040px; }
+        width: 1040px; 
+    }
+        .Bg-title-h1{
+            font-size: 40px;  
+        }
 
 }
 
@@ -1223,56 +1229,39 @@ a{text-decoration: none;}
     margin-top: 50px;
     
     }
-    /*Estilo para el form*/
-    .Contact-form form{
-      display: flex;
-      flex-direction: column;
-      margin: 40px 20px 20px 20px;
-      width: 90%;
-    
+/*Estilo para el form*/
+.Contact-form form{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px 20px 20px;
+    width: 90%;
+
+}
+/*Estilo para los inputs*/
+.Contact-form input{
+    width: 80%;
+    padding: 1.6rem;
+    font-size: 1em;
+    border-radius: 10px;
+}
+/*Estilo para las etiquetas/nombre de cada parte del form*/
+.Contact-form label{
+    font-size: 1.4em;
+    font-weight: 500;
     }
-    /*Estilo para los inputs*/
-    .Contact-form input{
-      width: 80%;
-      padding: 1.6rem;
-      font-size: 1em;
-      border-radius: 10px;
-    }
-    /*Estilo para las etiquetas/nombre de cada parte del form*/
-    .Contact-form label{
-        font-size: 1.4em;
-        font-weight: 500;
-        }
-    /*Estilo para el textarea*/
-    .Contact-form textarea{
-      width: 80%;
-      padding: 1.8rem;
-      font-size: 1em;
-      border-radius: 10px;
+/*Estilo para el textarea*/
+.Contact-form textarea{
+    width: 80%;
+    padding: 1.8rem;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+    /*Estilo para el botón de enviar*/
+.Contact-form input[type=submit]{
+    width: 40%;
     }
 
-     /*Estilo para el botón de enviar*/
-    .Contact-form input[type=submit]{
-        width: 40%;
-     }
-
-/*Estilos para la caja main de información de contacto
-        
-    .Contact-main{
-        background-color: var(--button-color-hover);
-        padding: 20px;
-        margin-top: 50px;
-        }
-    /*Estilo flexbox para la información de contacto
-    .Contact-top{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      width: 100%;
-      margin-top: 150px;
-     align-items: center;
-
-    }*/
 
 /*Estilo para el h3 de contacto*/
     .Contact-h3{
@@ -1290,19 +1279,7 @@ a{text-decoration: none;}
     .Contact-form{
       height: 900px;
    }
-      .Contact-imgBox{
-      width: 60%;
-      display: flex;
-      justify-content: center;
-    }
-    .Contact-img{
-      height: 500px;
-      width: 500px;
-    }
-    .Contact-main{
-      width: 30%;
-      margin-top: 100px;
-    }
+
     .Contact-form input{
         width: 100%;
         font-size: 1em;
@@ -1320,28 +1297,15 @@ a{text-decoration: none;}
      /*Media Query para pantallas con tamaño mínimo de 1200px*/   
     
     @media screen and (min-width:1200px){
-      
-      .Contact-imgBox{
-      width: 60%;
-      display: flex;
-      justify-content: center;
-    }
-    .Contact-img{
-      height: 700px;
-      width: 700px;
-    }
-    .Contact-main{
-      width: 50%;
-      margin-top: 100px;
-    }
+
+
     .Contact-form form{
     margin-left: 30px;
 
     }
     .Contact-form{
-
         width: 70%;
-        }
+     }
 
     .Contact-form input{
         width: 100%;
@@ -1401,11 +1365,11 @@ a{text-decoration: none;}
   @media screen and (min-width: 768px) {
     .Desing-main{
     gap:50px;
-    margin: 200px 0 100px 0;
+    margin: 150px 0 100px 0;
   }
   .Desing-front{
-    height: 580px;
-    width: 400px;
+    height: 447px;
+    width: 305px;
     transform: scale(var(--escala, 1));
     transition: transform 0.25s;
   }
@@ -1415,12 +1379,12 @@ a{text-decoration: none;}
 
   }
   .Desing-front-img{
-    height: 560px;
-    width: 400px;
+    height: 427px;
+    width: 305px;
   }
   .Desing-h2{
     font-family: 'Macondo';
-    font-size: 40px;
+    font-size: 30px;
 
 }
   }

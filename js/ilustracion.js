@@ -44,7 +44,7 @@ function mostrar(cartas){
 
 
 
- // Función para mostrar u ocultar el botón basado en la posición de desplazamiento y el ancho de la ventana
+ // Función para mostrar u ocultar el botón basado en la posición de desplazamiento y el ancho de la ventana.  Se ha usado ChatGPT para esta función
  window.onscroll = function() {
     mostrarOcultarBoton();
   };
