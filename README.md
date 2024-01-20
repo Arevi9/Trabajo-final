@@ -1,6 +1,6 @@
-## Trabajo final Diseño web con HTML, CSS y JavaScript
+## Alba Redondo
 
-<h1 align="center"> Alba Redondo </h1>
+<h1 align="center"> Trabajo final Diseño web con HTML, CSS y JavaScript </h1>
 
 
 # Índice
@@ -21,11 +21,11 @@
 
 8. Licencia.
 
-
+***
 
 # Portfolio Alba Redondo
 
-Este proyecto consiste en la realización de una página web donde mostrar mi portfolio y los conocimientos adquiridos a lo largo del curso de diseño web.
+Este proyecto consiste en la realización de una página web donde mostrar mi **Portfolio** y los conocimientos adquiridos a lo largo del curso de diseño web.
 El nombre de la página es Alba Redondo y cuenta con distintos apartados en los que se mostrarán mis trabajos realizados dentro del campo del diseño gráfico, la ilustración y las manualidades.
 
 
@@ -33,8 +33,8 @@ El nombre de la página es Alba Redondo y cuenta con distintos apartados en los 
 
 ## Identidad visual
 La paleta de color para mi portfolio es protagonizada por colores fríos, contando con los cálidos para los secundarios.
-En cuanto a tipografías, 'Macondo' es la protagonista, siendo la utilizada para el logo de la página, el menú, y los títulos de las distintas secciones.
-'Bitter' es la tipografía secundaria usada para los textos e información menos importante.
+En cuanto a tipografías, **'Macondo'** es la protagonista, siendo la utilizada para el logo de la página, el menú, y los títulos de las distintas secciones.
+**'Bitter'** es la tipografía secundaria usada para los textos e información menos importante.
 
 ![Paleta de color y tipografía usadas](/img/paleta.png)
 
@@ -83,6 +83,9 @@ Dentro de los archivos del proyecto encontramos todos los HTML y carpetas que se
 
 ***
 
+### Puedes encontrar mi web en el siguiente enlace:
+
+[Página web Alba Redondo](https://albaredondo.com)
 
 
 
