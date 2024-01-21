@@ -932,13 +932,13 @@ a{text-decoration: none;}
 
  /*Media Query para pantallas con tamaño mínimo de 300px*/ 
  @media screen and (min-width: 300px) {
-            .Tarot-img{
-                height: 278px;
-                width: 160px;
-   
-            }
+    .Tarot-img{
+        height: 278px;
+        width: 160px;
 
-        }
+    }
+
+}
 
  /*Media Query para pantallas con tamaño mínimo de 768px*/   
 
@@ -971,176 +971,176 @@ a{text-decoration: none;}
         /*----------------------------JUEGO TAROT---------------------------------------------*/
 
 /*Flexbox para las páginas*/
-    .Desing-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 50px;
+.Desing-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
 
-    }
+}
 /*Tipografía y estilos título*/
-    .Bg-title-h1{
-        font-size: var(--h2--font-size--mobile);
-        color: var(--text-light-color);
-        text-shadow: 2px 1px 10px var(--icon-color);
-        margin: -130px 0 0 0;
-        z-index: 1;
-        font-family: 'Macondo';
-        font-weight: 400;
-        text-align: center;
-        
-    }
-
-
-
-    /*Contenedor con la información del proyecto*/ 
-    .Info-container{
-        display: flex;
-        flex-direction:column;
-        flex-wrap: wrap;
-        align-items: center;
-        height:auto;
-        width: 100%;
-        margin: 100px 0 50px 0;
-        gap:50px ;
+.Bg-title-h1{
+    font-size: var(--h2--font-size--mobile);
+    color: var(--text-light-color);
+    text-shadow: 2px 1px 10px var(--icon-color);
+    margin: -130px 0 0 0;
+    z-index: 1;
+    font-family: 'Macondo';
+    font-weight: 400;
+    text-align: center;
     
-    }
-    .Info-container-description{
-        font-size: var(--h4--font-size--mobile);
-        word-spacing:0.3rem ;
-        padding: 10px;
-        margin-top: -30px;
-        width: 80%;
+}
 
-    }
-    /*Fecha de cada proyecto*/ 
-    .Info-date{
 
-        background-color: var(--button-color-hover);
-        font-size: var(--h3--font-size--mobile);
-        text-align: center;
-        background-color: var(--button-color-hover);
-        padding: 20px;
-        height: 40px;
-        margin-top: 30px;
-        font-family: 'Macondo';
 
-    }
-     /*Contenedor principal*/ 
-    .Game-main{
-        object-fit: contain;
-        height: 500px;
-        width: 600px;
-    }
-    /*Fondo para los headers de cada proyecto*/ 
-    .Bg-title-menu{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 200px;
-        background-image: url(/img/carta/headerCarta.webp);
-        filter: brightness(50%);
-        object-fit: cover;
-        align-items: center;
-        margin-top: 30px;
+/*Contenedor con la información del proyecto*/ 
+.Info-container{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    height:auto;
+    width: 100%;
+    margin: 100px 0 50px 0;
+    gap:50px ;
 
-    }
+}
+.Info-container-description{
+    font-size: var(--h4--font-size--mobile);
+    word-spacing:0.3rem ;
+    padding: 10px;
+    margin-top: -30px;
+    width: 80%;
 
-    .Bg-title-game{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 200px;
-        background-image: url(/img/tarot/juegoHeader.png);
-        filter: brightness(50%);
-        object-fit: cover;
-        align-items: center;
-        margin-top: 30px;
+}
+/*Fecha de cada proyecto*/ 
+.Info-date{
 
-    }
+    background-color: var(--button-color-hover);
+    font-size: var(--h3--font-size--mobile);
+    text-align: center;
+    background-color: var(--button-color-hover);
+    padding: 20px;
+    height: 40px;
+    margin-top: 30px;
+    font-family: 'Macondo';
 
-    .Bg-title-books{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 200px;
-        background-image: url(/img/coleccionLibros/portadaLibros.webp);
-        filter: brightness(50%);
-        object-fit: cover;
-        align-items: center;
-        margin-top: 30px;
-    }
- /*Flexbox para las imagenes*/ 
-    .Game-position{
-        display: flex; 
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
-    }
+}
+    /*Contenedor principal*/ 
+.Game-main{
+    object-fit: contain;
+    height: 500px;
+    width: 600px;
+}
+/*Fondo para los headers de cada proyecto*/ 
+.Bg-title-menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/carta/headerCarta.webp);
+    filter: brightness(50%);
+    object-fit: cover;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.Bg-title-game{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/tarot/juegoHeader.png);
+    filter: brightness(50%);
+    object-fit: cover;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.Bg-title-books{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/coleccionLibros/portadaLibros.webp);
+    filter: brightness(50%);
+    object-fit: cover;
+    align-items: center;
+    margin-top: 30px;
+}
+/*Flexbox para las imagenes*/ 
+.Game-position{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
 /*----------Estilos para las imágenes--------------------*/
 
-    .Game-img-main{
-        height: 220px;
-        width: 340px;
-        object-fit: cover;
+.Game-img-main{
+    height: 220px;
+    width: 340px;
+    object-fit: cover;
 
-    }
-    .Books-img1{
-        height: 502px;
-        width: 340px;
-        object-fit: cover;
+}
+.Books-img1{
+    height: 502px;
+    width: 340px;
+    object-fit: cover;
 
-    }
+}
 
-    .Books-main-img{
-        height: 200px;
-        width: 440px;
-        object-fit: cover;}
+.Books-main-img{
+    height: 200px;
+    width: 440px;
+    object-fit: cover;}
 
-    .Books-inside{
-        height: 340px;
-        width: 455px;
+.Books-inside{
+    height: 340px;
+    width: 455px;
 
-    }
-    .Books-mockup-img{
-        height: 410px;
-        width: 413px;
-        object-fit: cover;
+}
+.Books-mockup-img{
+    height: 410px;
+    width: 413px;
+    object-fit: cover;
 
-    }
-    .Game-img1{
-        height: 240px;
-        width: 340px;
-        object-fit: cover;
+}
+.Game-img1{
+    height: 240px;
+    width: 340px;
+    object-fit: cover;
 
-    }
-    .Game-img2{
-        height: 440px;
-        width: 340px;
-        object-fit: cover;
+}
+.Game-img2{
+    height: 440px;
+    width: 340px;
+    object-fit: cover;
 
-    }
+}
 
-    .Carta-img{
+.Carta-img{
 
-        height: 241px;
-        width: 340px;
-        object-fit: cover;
+    height: 241px;
+    width: 340px;
+    object-fit: cover;
 
-    }
-    .Desing-images{
+}
+.Desing-images{
 
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-    }
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
 
  /*Media Query para pantallas con tamaño mínimo de 768px*/   
         @media screen and (min-width: 768px) {
@@ -1212,9 +1212,9 @@ a{text-decoration: none;}
         height: 740px;
         width: 1040px; 
     }
-        .Bg-title-h1{
-            font-size: 40px;  
-        }
+    .Bg-title-h1{
+        font-size: 40px;  
+    }
 
 }
 
@@ -1257,46 +1257,46 @@ a{text-decoration: none;}
     border-radius: 10px;
 }
 
-    /*Estilo para el botón de enviar*/
+/*Estilo para el botón de enviar*/
 .Contact-form input[type=submit]{
     width: 40%;
     }
 
 
 /*Estilo para el h3 de contacto*/
-    .Contact-h3{
-      font-size: 26px;
-      font-weight: 400;
-      font-family: 'Macondo';
-      font-weight: 660;
-      margin-top: 150px ;
-    }
+.Contact-h3{
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Macondo';
+    font-weight: 660;
+    margin-top: 150px ;
+}
 
     
  /*Media Query para pantallas con tamaño mínimo de 768px*/ 
   
-    @media screen and (min-width:768px){
-    .Contact-form{
-      height: 900px;
-   }
+@media screen and (min-width:768px){
+.Contact-form{
+    height: 900px;
+}
 
-    .Contact-form input{
-        width: 100%;
-        font-size: 1em;
-     }
-     .Contact-form textarea{
-        width: 100%;
-        font-size: 1em;
-     }
-      .Contact-form input[type=submit]{
-        width: 30%;
-      
-     }
+.Contact-form input{
+    width: 100%;
+    font-size: 1em;
+    }
+    .Contact-form textarea{
+    width: 100%;
+    font-size: 1em;
+    }
+    .Contact-form input[type=submit]{
+    width: 30%;
     
     }
-     /*Media Query para pantallas con tamaño mínimo de 1200px*/   
-    
-    @media screen and (min-width:1200px){
+
+}
+    /*Media Query para pantallas con tamaño mínimo de 1200px*/   
+
+@media screen and (min-width:1200px){
 
 
     .Contact-form form{
@@ -1304,26 +1304,26 @@ a{text-decoration: none;}
 
     }
     .Contact-form{
-        width: 70%;
-     }
+    width: 70%;
+    }
 
     .Contact-form input{
-        width: 100%;
-        font-size: 1.3em;
-     }
-     .Contact-form textarea{
-        width: 100%;
-        font-size: 1.3em;
-     }
-     .Contact-form input[type=submit]{
-        width: 30%;
-      
-     }
-     .Contact-h3{
-        font-size: 35px;
-     }
+    width: 100%;
+    font-size: 1.3em;
+    }
+    .Contact-form textarea{
+    width: 100%;
+    font-size: 1.3em;
+    }
+    .Contact-form input[type=submit]{
+    width: 30%;
     
     }
+    .Contact-h3{
+    font-size: 35px;
+    }
+
+}
 /*---------------------------Home Diseño---------------------------------------*/
 
       /*Caja flexbox*/
@@ -1355,11 +1355,11 @@ a{text-decoration: none;}
 
   }
   /*Estilos para la fuente de los títulos de cada sección*/
-.Desing-h2{
-    font-family: 'Macondo';
-    color: var(--icon-color);
-    font-size: 18px;
-}
+    .Desing-h2{
+        font-family: 'Macondo';
+        color: var(--icon-color);
+        font-size: 18px;
+    }
 
 /*Responsive para pantallas de mínimo 768px*/
   @media screen and (min-width: 768px) {
