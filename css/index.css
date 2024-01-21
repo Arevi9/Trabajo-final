@@ -39,10 +39,10 @@ body{
 
 #botonSubir {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px;
-    width: 50px;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    padding: 0.9375rem;
+    width: 3.125rem;
     background-color: var(--button-color-hover);
     color: var(--text-light-color);
     border: none;
@@ -78,8 +78,8 @@ a{text-decoration: none;}
  /* Estilo para los enlaces del menú desplegable */
   .Nav-desktop a{
     display: block;
-    padding: 8px 0;
-    font-size: 16px;
+    padding: 0.5rem 0;
+    font-size: 1em;
     font-family: 'Macondo';
     color: var(--icon-color);
     font-weight: bold;
@@ -150,10 +150,10 @@ a{text-decoration: none;}
     align-items: center;
     background-color: var(--background-color);
     box-shadow: 1px 1px 10px #65696e;
-    padding: 10px;
+    padding: 0.625rem;
     margin: 0;
     width: 100%;
-    height: 60px;
+    height: 3.75rem;
     position: fixed;
     z-index: 2;
 }
@@ -162,7 +162,7 @@ a{text-decoration: none;}
 .Top-nav-logo{ 
     color: var(--light-blue-color);
     font-size: 1.5rem;
-    margin-left: 30px;
+    margin-left: 1.875rem;
     margin-top: -5;
     font-family: "Macondo";
     text-transform: uppercase;
@@ -179,14 +179,14 @@ a{text-decoration: none;}
     .Nav-mobile ul {
       list-style: none;
       padding: 0;
-      margin-right: 50px;
+      margin-right: 3.125rem;
 
       
     }
     /*Margen para los elementos de la lista del menú*/
     .Nav-desktop li,
     .Nav-mobile li {
-      margin-right: 20px;
+      margin-right: 1.25rem;
     }
     
     .Nav-mobile a {
@@ -224,7 +224,7 @@ a{text-decoration: none;}
         position: absolute;
         padding: 0.5rem 1.5rem;
         gap: 0.725rem;
-        top: 70px;
+        top: 4.375rem;
         width: 100%;
         background-color: transparent;
         overflow: hidden;
@@ -234,12 +234,12 @@ a{text-decoration: none;}
         display: flex; /* Mostrar cuando tiene la clase active */
         z-index: 2;
         flex-direction: row-reverse;
-        margin-right: 40px;
+        margin-right: 2.5rem;
       }
     
       .Nav-mobile-icon {
         display: block;
-        margin-right: 40px;
+        margin-right: 2.5rem;
       }
       .Top-nav-name{
         font-size: var(--h3--font-size--mobile);
@@ -263,10 +263,10 @@ a{text-decoration: none;}
     align-items: center;
     background-image: url(/img/fondos/fondo.png);
     object-fit: cover;
-    height: 780px;
-    margin: 50px 0 100px 0;
+    height: 48.75rem;
+    margin: 3.125rem 0 6.25rem 0;
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem;
     text-align: center;
     justify-content: center;
 }
@@ -278,15 +278,15 @@ a{text-decoration: none;}
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 2.5rem;
 
 }
 /*Medidas para la imagen*/
 .Main-img{
-    height: 200px;
-    width: 300px;
+    height: 12.5rem;
+    width: 18.75rem;
     object-fit: cover;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     border-radius: 10px;
     }
 
@@ -313,8 +313,8 @@ a{text-decoration: none;}
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 15px;
-    padding: 20px;
+    gap: 0.9375rem;
+    padding: 1.25rem;
     border: 5px solid var(--button-color-hover);
     background-color: var(--background-color);
     border-radius: 10px;
@@ -327,10 +327,7 @@ a{text-decoration: none;}
     display:flex;
     flex-wrap: wrap;
     width: 100%;
-    gap: 20px;
-    animation-name: aaa;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    gap: 1.25rem;
 }
 
 .Main-cathegory-ilustracion{
@@ -341,7 +338,7 @@ a{text-decoration: none;}
     justify-content: center;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     animation-delay: 2s;
     animation-name: reduccionIndex;
     animation-duration: 2s ;
@@ -349,7 +346,7 @@ a{text-decoration: none;}
 
 .Main-cathegory-diseño{
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     background-image: url(/img/fondos/fondo3.png);
     background-size: cover;
     justify-content: center;
@@ -364,7 +361,7 @@ a{text-decoration: none;}
 
 .Main-cathegory-joyas{
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     background-image: url(/img/fondos/fondo4.png);
     background-size: cover;
     justify-content: center;
@@ -387,10 +384,10 @@ a{text-decoration: none;}
 /*Botón para ir a la página "Sobre mí"*/
 .Main-btn{
 
-    padding: 15px;
+    padding: 0.9375rem;
     background-color: var(--button-color);
     border-radius: 50px;
-    width: 150px;
+    width: 9.375rem;
     text-align: center;
 }
 /*Cambia de color al pasar por encima*/
@@ -447,7 +444,7 @@ a{text-decoration: none;}
         font-size: 55px;
        }
     .Main-aboutMe{
-        gap: 70px;
+        gap: 4.375rem;
     
     }
     .Main-cathegory-title{
@@ -460,15 +457,15 @@ a{text-decoration: none;}
         --escala: 1.2;
     }
     .Main-img{
-        height: 400px;
-        width: 400px;
-        margin-left: -50px;
-        margin-top: 40px;
+        height: 25rem;
+        width: 25rem;
+        margin-left: -3.125rem;
+        margin-top: 2.5rem;
   
         }
     .Main-description{
-       height: 300px;
-       width: 700px;
+       height: 18.75rem;
+       width: 43.75rem;
        text-align: center;
     }
     .Main-h4{
@@ -482,8 +479,8 @@ a{text-decoration: none;}
 
     }
     .Main-h3{
-        font-size: 20px;
-        margin-top: -40px;
+        font-size: 1.25rem;
+        margin-top: -2.5rem;
     }
     .Top-nav-logo{ 
         
@@ -517,8 +514,8 @@ a{text-decoration: none;}
     flex-direction: column;
     width: 100%;
     align-items: center;
-    height: 100px;
-    margin: 100px 0 0 0;
+    height: 6.25rem;
+    margin: 6.25rem 0 0 0;
     
 }
 /*Redes sociales*/
@@ -527,9 +524,9 @@ a{text-decoration: none;}
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
     font-size: 20px;
-    margin: auto 0 30px 0;
+    margin: auto 0 1.875rem 0;
 }
 /*Estilos y cambio de color y tamaño de los iconos*/
 .Footer-rrss i{
@@ -549,8 +546,7 @@ a{text-decoration: none;}
 .Footer-copyright{
     color: var(--background-color);
     font-weight: normal;
-    margin-top: 25px;
-    margin-bottom: 15px;
+    margin: 1.5625rem 0 0.9375rem 0;
 }
 
 
@@ -561,13 +557,13 @@ a{text-decoration: none;}
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 7.5rem;
 
 }
 /*Logo "Are Jewelry" - nombre de la tienda de pulseras*/
 .Logo-img{
-    height: 220px;
-    margin-bottom: 80px;
+    height: 13.75rem;
+    margin-bottom: 5rem;
 }
 /*Flexbox para las imágenes*/
 .Item-container{
@@ -576,7 +572,7 @@ a{text-decoration: none;}
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 
 }
 
@@ -585,8 +581,8 @@ a{text-decoration: none;}
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    height: 320px;
+    width: 25rem;
+    height: 20rem;
     border-radius: 10px;
     margin: 10px 5px 5px 5px;
     text-align: center;
@@ -597,15 +593,15 @@ a{text-decoration: none;}
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 415px;
-    height: 300px;
+    width: 25.9375rem;
+    height: 18.75rem;
     border-radius: 10px;
     margin: 10px 5px 5px 5px;
 
 }
 /*Nombre de las pulserasy pendientes*/
 .Item-name{
-    height:50px;
+    height:3.125rem;
     width: 100%;
     background-color: var(--light-blue-color);
     border-bottom-left-radius: 10px;
@@ -620,7 +616,7 @@ a{text-decoration: none;}
 .Item-img{
 
     width: 100%;
-    height: 280px;
+    height: 17.5rem;
     object-fit: cover;
     margin: 0;
     border-top-right-radius: 10px;
@@ -631,7 +627,7 @@ a{text-decoration: none;}
 .Item-img-siren{
 
     width: 90%;
-    height: 280px;
+    height: 17.5rem;
     object-fit: cover;
     margin: 0;
     border-radius: 10px;
@@ -640,7 +636,7 @@ a{text-decoration: none;}
 /*Estilos de la fuente de los nombres*/
 .Item-h2{
     font-size: 1rem;
-    padding: 5px;
+    padding: 0.3125rem;
     margin: 0;
     font-weight: 400;
     color: var(--text-light-color);
@@ -651,11 +647,11 @@ a{text-decoration: none;}
 
     background-color: var(--light-blue-color);
     border: none;
-    padding: 14px;
+    padding: 0.875rem;
     border-radius: 35px;
-    height: 50px;
+    height: 3.125rem;
     color: var(--text-light-color);
-    margin-left: -30px;
+    margin-left: -1.875rem;
 
 }
 /*Estilo de la fuente del título de la seccion de sirenas*/
@@ -663,7 +659,7 @@ a{text-decoration: none;}
     font-family:  "Macondo";
     text-align: center;
     font-size: 35px;
-    margin: 100px 0 80px 0;
+    margin: 6.25rem 0 5rem 0;
     color: var(--button-color);
 }
 
@@ -671,8 +667,8 @@ a{text-decoration: none;}
 @media (min-width: 768px) {
 
     .Item-box{
-        width: 400px;
-        height: 320px;
+        width: 25rem;
+        height: 20rem;
 
     }
     .Jewel-btn{
@@ -681,14 +677,14 @@ a{text-decoration: none;}
         border: none;
         padding: 14px;
         border-radius: 35px;
-        height: 50px;
+        height: 3.125rem;
         color: var(--text-light-color);
-        margin-left: -47px;
+        margin-left: -2.9375rem;
     
     }
     .Logo-img{
-        height: 250px;
-        margin-bottom: 80px;
+        height: 15.625rem;
+        margin-bottom: 5rem;
     }
 
 }
@@ -698,12 +694,12 @@ a{text-decoration: none;}
  /*Media Query para pantallas con tamaño mínimo de 1200px*/   
 @media (min-width: 1200px) {
     .Item-box{
-        width: 465px;
-        height: 346px;
+        width: 29.0625rem;
+        height: 21.625rem;
     }
     .Item-box-siren{
 
-        width: 460px;
+        width: 28.75rem;
     }
     .Siren-h2{
 
@@ -714,16 +710,16 @@ a{text-decoration: none;}
 
         background-color: var(--light-blue-color);
         border: none;
-        padding: 14px;
+        padding: 0.875rem;
         border-radius: 35px;
-        height: 50px;
+        height: 3.125rem;
         color: var(--text-light-color);
-        margin-left: -47px;
+        margin-left: -2.9375rem;
     
     }
     .Logo-img{
-        height: 250px;
-        margin-bottom: 80px;
+        height: 15.625rem;
+        margin-bottom: 5rem;
     }
     .Item-h2{
         font-size: 20px;
@@ -736,7 +732,7 @@ a{text-decoration: none;}
 .Profile-Info{
 
     width: 100%;
-    margin-top: 150px;
+    margin-top: 9.375rem;
     display: flex;
    flex-flow: wrap;
     justify-content: space-around;
@@ -754,7 +750,7 @@ a{text-decoration: none;}
  /*Caja que contiene información*/   
 .Profile-intro{
     width: 80%;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 
 }
  /*Información sobre mí*/   
@@ -765,7 +761,7 @@ a{text-decoration: none;}
     justify-content: left;
     width: 100%;
     background-color: var(--backgound-blue-color);
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
  /*Sección con mis estudios y habilidades*/   
 
@@ -773,27 +769,27 @@ a{text-decoration: none;}
     display: flex;
     flex-direction: column;
     justify-content: left;
-    padding: 10px;
-    margin: 20px;
+    padding: 0.625rem;
+    margin: 1.25rem;
     width: 50%;
     
   }
    /*Estilo de las listas*/   
   .Profile-section li{
-    margin: 10px;
+    margin: 0.625rem;
     list-style: none;
     
   }
    /*Estilo fuentes del perfil*/   
   .Page-h2{
     font-size: var(--h1--font-size--mobile);
-    margin: 10px 0 50px 0;
+    margin: 0.625rem 0 3.125rem 0;
     text-align: center;
     font-weight: 300;
 
 }
 .Profile-h3{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-family: 'Macondo';
     font-size: 28px;
     color: var(--text-light-color);
@@ -814,7 +810,7 @@ a{text-decoration: none;}
     font-weight: 500;
     line-height: 1.7;
     letter-spacing: 1px;
-    margin-top: 60px;
+    margin-top: 3.75rem;
 }
 
  /*Media Query para pantallas con tamaño mínimo de 768px*/   
@@ -830,12 +826,12 @@ a{text-decoration: none;}
     }
     .Profile-intro{
         width: 40%;
-        margin-right: 50px;
+        margin-right: 3.125rem;
         }
 
     .Page-h2{
         font-size: var(--h2--font-size--PC);
-        margin: -20px 0 100px 0;
+        margin: -1.25rem 0 6.25rem 0;
 
     }
 
@@ -850,7 +846,7 @@ a{text-decoration: none;}
 
     }
     .Profile-section li{
-        margin: 10px;
+        margin: 0.625rem;
         list-style: none;
         font-size: 22px;
         
@@ -861,12 +857,12 @@ a{text-decoration: none;}
     }
     .Profile-about{
         flex-flow: row;
-        margin-top: 100px;
+        margin-top: 6.25rem;
         justify-content: center;
     }
     .Page-h5{
 
-        margin: 120px 0 50px 0;
+        margin: 7.5rem 0 3.125rem 0;
     }
     }
 
@@ -874,7 +870,7 @@ a{text-decoration: none;}
 
  /*Header de las páginas con los trabajos de diseño con el fondo oscurecido para resaltar el título*/   
     .Desing-header{
-        margin-top: 100px;
+        margin-top: 6.25rem;
         background: var(--icon-color);
         mix-blend-mode: var(--blendmode,normal);
         opacity: calc(var(--opacity)/ 100);
@@ -885,8 +881,8 @@ a{text-decoration: none;}
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 5px;
-        margin-top: 90px;
+        padding: 0.3125rem;
+        margin-top: 5.625rem;
         width: 100%;
 
     }
@@ -896,10 +892,10 @@ a{text-decoration: none;}
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 30px;
+        gap: 1.875rem;
         width: 100%;
         height: auto;
-        padding: 5px;
+        padding: 0.3125rem;
     }
 
 
@@ -918,23 +914,23 @@ a{text-decoration: none;}
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    margin: 10px;
+    gap: 1.875rem;
+    margin: 0.625rem;
 
 }
  /*Imagen de ilustración*/   
 .Tarot-img{
     object-fit: contain;
-    height: 350px;
-    width: 200px;
+    height: 21.875rem;
+    width: 12.5rem;
 }
 
 
  /*Media Query para pantallas con tamaño mínimo de 300px*/ 
  @media screen and (min-width: 300px) {
     .Tarot-img{
-        height: 278px;
-        width: 160px;
+        height: 17.375rem;
+        width: 10rem;
 
     }
 
@@ -945,8 +941,8 @@ a{text-decoration: none;}
 @media screen and (min-width: 768px) {
 
     .Tarot-img{
-        height: 390px;
-        width: 230px;
+        height: 24.375rem;
+        width: 14.375rem;
 
     }
     .Tarot{
@@ -954,15 +950,15 @@ a{text-decoration: none;}
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 1.25rem;
 
     }
 }
  /*Media Query para pantallas con tamaño mínimo de 1200px*/   
         @media screen and (min-width: 1200px) {
             .Tarot-img{
-                height: 507px;
-                width: 308px;
+                height: 31.6875rem;
+                width: 19.25rem;
    
             }
 
@@ -977,7 +973,7 @@ a{text-decoration: none;}
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 
 }
 /*Tipografía y estilos título*/
@@ -985,7 +981,7 @@ a{text-decoration: none;}
     font-size: var(--h2--font-size--mobile);
     color: var(--text-light-color);
     text-shadow: 2px 1px 10px var(--icon-color);
-    margin: -130px 0 0 0;
+    margin: -8.125rem 0 0 0;
     z-index: 1;
     font-family: 'Macondo';
     font-weight: 400;
@@ -1003,15 +999,15 @@ a{text-decoration: none;}
     align-items: center;
     height:auto;
     width: 100%;
-    margin: 100px 0 50px 0;
-    gap:50px ;
+    margin: 6.25rem 0 3.125rem 0;
+    gap:3.125rem ;
 
 }
 .Info-container-description{
     font-size: var(--h4--font-size--mobile);
     word-spacing:0.3rem ;
-    padding: 10px;
-    margin-top: -30px;
+    padding: 0.625rem;
+    margin-top: -1.875rem;
     width: 80%;
 
 }
@@ -1022,24 +1018,24 @@ a{text-decoration: none;}
     font-size: var(--h3--font-size--mobile);
     text-align: center;
     background-color: var(--button-color-hover);
-    padding: 20px;
-    height: 40px;
-    margin-top: 30px;
+    padding: 1.25rem;
+    height: 2.5rem;
+    margin-top: 1.875rem;
     font-family: 'Macondo';
 
 }
     /*Contenedor principal*/ 
 .Game-main{
     object-fit: contain;
-    height: 500px;
-    width: 600px;
+    height: 31.25rem;
+    width: 37.5rem;
 }
 /*Fondo para los headers de cada proyecto*/ 
 .Bg-title-menu{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     background-image: url(/img/carta/headerCarta.webp);
     filter: brightness(50%);
     object-fit: cover;
@@ -1052,12 +1048,12 @@ a{text-decoration: none;}
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     background-image: url(/img/tarot/juegoHeader.png);
     filter: brightness(50%);
     object-fit: cover;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 
 }
 
@@ -1065,19 +1061,19 @@ a{text-decoration: none;}
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     background-image: url(/img/coleccionLibros/portadaLibros.webp);
     filter: brightness(50%);
     object-fit: cover;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 /*Flexbox para las imagenes*/ 
 .Game-position{
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: center;
     align-items: center;
 }
@@ -1085,51 +1081,51 @@ a{text-decoration: none;}
 /*----------Estilos para las imágenes--------------------*/
 
 .Game-img-main{
-    height: 220px;
-    width: 340px;
+    height: 13.75rem;
+    width: 21.25rem;
     object-fit: cover;
 
 }
 .Books-img1{
-    height: 502px;
-    width: 340px;
+    height: 31.375rem;
+    width: 21.25rem;
     object-fit: cover;
 
 }
 
 .Books-main-img{
-    height: 200px;
-    width: 440px;
+    height: 12.5rem;
+    width: 27.5rem;
     object-fit: cover;}
 
 .Books-inside{
-    height: 340px;
-    width: 455px;
+    height: 21.25rem;
+    width: 28.4375rem;
 
 }
 .Books-mockup-img{
-    height: 410px;
-    width: 413px;
+    height: 25.625rem;
+    width: 25.8125rem;
     object-fit: cover;
 
 }
 .Game-img1{
-    height: 240px;
-    width: 340px;
+    height: 15rem;
+    width: 21.25rem;
     object-fit: cover;
 
 }
 .Game-img2{
-    height: 440px;
-    width: 340px;
+    height: 27.5rem;
+    width: 21.25rem;
     object-fit: cover;
 
 }
 
 .Carta-img{
 
-    height: 241px;
-    width: 340px;
+    height: 15.0625rem;
+    width: 21.25rem;
     object-fit: cover;
 
 }
@@ -1138,7 +1134,7 @@ a{text-decoration: none;}
     display: flex;
     width: 100%;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875rem;
     align-items: center;
 }
 
@@ -1148,8 +1144,8 @@ a{text-decoration: none;}
 
     .Carta-img{
 
-        height: 500px;
-        width: 700px;
+        height: 31.25rem;
+        width: 43.75rem;
         object-fit: cover;
 
     }
@@ -1159,8 +1155,8 @@ a{text-decoration: none;}
         justify-content: center;
         height:auto;
         width: 80%;
-        margin: 150px 0 100px 0;
-        gap: 80px;
+        margin: 9.375rem 0 6.25rem 0;
+        gap: 5rem;
 
     }
     .Info-container-description{
@@ -1171,37 +1167,37 @@ a{text-decoration: none;}
     .Info-date{
         text-align: center;
         background-color: var(--button-color-hover);
-        padding: 20px;
-        height: 150px;
+        padding: 1.25rem;
+        height: 9.375rem;
     }
     .Game-img1{
-        height: 440px;
-        width: 640px;
+        height: 27.5rem;
+        width: 40rem;
 
     }
     .Game-img-main{
-        height: 572px;
-        width: 781px; 
+        height: 35.75rem;
+        width: 48.8125rem; 
     }
     .Game-img2{
-        height: 640px;
-        width: 440px;
+        height: 40rem;
+        width: 27.5rem;
     }
     .Books-main-img{
 
-        height: 310px;
-        width: 692px;
+        height: 19.375rem;
+        width: 43.25rem;
         object-fit: contain;
         box-shadow: 1px 1px 10px var(--icon-color);
     }
     .Books-mockup-img{
-        height: 510px;
-        width: 690px;
+        height: 31.875rem;
+        width: 43.125rem;
 
     }
     .Books-inside{
-        height: 340px;
-        width: 455px;
+        height: 21.25rem;
+        width: 28.4375rem;
 
     }
 }
@@ -1209,8 +1205,8 @@ a{text-decoration: none;}
 @media screen and (min-width: 1200px) {
 
     .Game-img-main{
-        height: 740px;
-        width: 1040px; 
+        height: 46.25rem;
+        width: 65rem; 
     }
     .Bg-title-h1{
         font-size: 40px;  
@@ -1223,17 +1219,17 @@ a{text-decoration: none;}
 /*Estilo para el contenedor del form*/
 .Contact-form{
     width: 100%;
-    height: 850px;
+    height: 53.125rem;
     background-color: var(--backgound-blue-color);
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     
     }
 /*Estilo para el form*/
 .Contact-form form{
     display: flex;
     flex-direction: column;
-    margin: 40px 20px 20px 20px;
+    margin: 2.5rem 1.25rem 1.25rem 1.25rem;
     width: 90%;
 
 }
@@ -1277,7 +1273,7 @@ a{text-decoration: none;}
   
 @media screen and (min-width:768px){
 .Contact-form{
-    height: 900px;
+    height: 56.25rem;
 }
 
 .Contact-form input{
@@ -1300,7 +1296,7 @@ a{text-decoration: none;}
 
 
     .Contact-form form{
-    margin-left: 30px;
+    margin-left: 1.875rem;
 
     }
     .Contact-form{
@@ -1334,22 +1330,22 @@ a{text-decoration: none;}
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:70px;
-    margin-top: 150px;
+    gap:4.375rem;
+    margin-top: 9.375rem;
   }
   /*Contenedor de las imágenes y fuentes*/
   .Desing-front{
-    height: 380px;
-    width: 300px;
+    height: 23.75rem;
+    width: 18.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
   }
     /*Tamaño de las imágenes*/
   .Desing-front-img{
-    height: 380px;
-    width: 300px;
+    height: 23.75rem;
+    width: 18.75rem;
     border-radius: 10px;
     object-fit: cover;
 
@@ -1364,12 +1360,12 @@ a{text-decoration: none;}
 /*Responsive para pantallas de mínimo 768px*/
   @media screen and (min-width: 768px) {
     .Desing-main{
-    gap:50px;
-    margin: 150px 0 100px 0;
+    gap:3.125rem;
+    margin: 9.375rem 0 6.25rem 0;
   }
   .Desing-front{
-    height: 447px;
-    width: 305px;
+    height: 27.9375rem;
+    width: 19.0625rem;
     transform: scale(var(--escala, 1));
     transition: transform 0.25s;
   }
@@ -1379,8 +1375,8 @@ a{text-decoration: none;}
 
   }
   .Desing-front-img{
-    height: 427px;
-    width: 305px;
+    height: 26.6875rem;
+    width: 19.0625rem;
   }
   .Desing-h2{
     font-family: 'Macondo';
